@@ -42,4 +42,54 @@ img, video, svg {
     scroll-behavior: auto !important;
     transition: none;
   }
-}   
+}
+/* CSS VARS */
+:root {
+  --color-primary: #FBFBFB;
+  --color-secondary: #3B3B3B;
+}
+/* TEXT STYLES */
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+/* GLOBAL STYLES */
+body {
+  background-color: var(--color-primary);
+}
+footer {
+  background-color: var(--color-secondary);
+}
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
