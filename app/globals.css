@@ -47,6 +47,7 @@ img, video, svg {
 :root {
   --color-primary: #FBFBFB;
   --color-secondary: #3B3B3B;
+  --color-detail: #A29567;
 }
 /* TEXT STYLES */
 h1 {
@@ -82,12 +83,46 @@ body {
   background-color: var(--color-primary);
 }
 footer {
+  color: var(--color-primary);
   background-color: var(--color-secondary);
+}
+#aside-nav {
+  background-color: var(--color-secondary);
+  width: 50vw;
+  height: 50vh;
+}
+.colNav {
+  display: block;
+}
+.hamburgerMenu > nav > a {
+  font-weight: 600;
+  padding: 0.25rem;
+  border-bottom: 2px solid var(--color-detail);
+}
+
+.rowNav {
+  display: none;
+}
+.rowNav > div > a {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: var(--color-primary);
+    background-color: var(--color-detail);
+  }
 }
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
 }
 @media (min-width: 1024px) {
+  .colNav {
+    display: none;
+  }
+  .rowNav {
+    display: block;
+  }
 }
 @media (min-width: 1280px) {
 }

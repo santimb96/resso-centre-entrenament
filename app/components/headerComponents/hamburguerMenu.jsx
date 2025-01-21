@@ -1,6 +1,7 @@
 'use client'
 
 import { Close, Hamburguer } from '@/components/icons'
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default function HamburguerMenu () {
@@ -10,18 +11,17 @@ export default function HamburguerMenu () {
   }
   return (
     <>
-      <button className='min-w-6 ml-auto cursor-pointer relative' onClick={handleMenu}>
+      <button className='colNav min-w-6 ml-auto cursor-pointer relative animate-fade animate-once animate-duration-300 animate-ease-in-out' onClick={handleMenu}>
         {isOpen ? <Close /> : <Hamburguer />}
       </button>
       {isOpen && (
-        <div className='min-w-max w-[50vw] shadow-md border rounded-lg absolute top-[10vh] right-2.5 bg-[var(--color-primary)]'>
-          <ul className='p-5 flex flex-col items-end gap-5'>
-            <li>¿Quién soy?</li>
-            <li>Workshops</li>
-            <li>Patrocinadores</li>
-            <li>Section</li>
-          </ul>
-        </div>
+        <aside className='hamburgerMenu min-w-max w-[25vw] shadow-md border rounded-lg absolute top-[10vh] right-2.5 md:right-[20vw] bg-[var(--color-primary)]'>
+          <nav className='p-5 flex flex-col items-end gap-5'>
+            <Link href='#quien-soy'>¿Quién soy?</Link>
+            <Link href='#workshops'>Workshops</Link>
+            <Link href='#patrocinadores'>Patrocinadores</Link>
+          </nav>
+        </aside>
       )}
     </>
   )
