@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 /* CSS RESET by midudev (https://github.com/midudev) */
-
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'Poppins', sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
