@@ -4,6 +4,8 @@ import { Close, Hamburger } from '@/components/icons'
 import { MENU } from '@/constants/vars'
 import Link from 'next/link'
 import { useState } from 'react'
+import Divider from '../divider'
+import { ArrowRightHamMenu } from '../icons'
 
 export default function HamburgerMenu () {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,9 +19,14 @@ export default function HamburgerMenu () {
       </button>
       {isOpen && (
         <aside className='hamburgerMenu z-50 min-w-max w-[25vw] shadow-md border rounded-lg absolute top-[10vh] right-2.5 md:right-[20vw] bg-[var(--color-primary)]'>
-          <nav className='p-5 flex flex-col items-end gap-5'>
+          <nav className='p-5 flex flex-col items-center gap-2.5'>
+            <h5>Menú</h5>
+            <Divider />
             {MENU.map((menuItem, index) => (
-              <Link key={index + menuItem.href} href={menuItem.href}>{menuItem.name}</Link>
+              <Link onClick={handleMenu} key={index + menuItem.href} href={menuItem.href}>
+                <ArrowRightHamMenu />
+                <span>{menuItem.name}</span>
+              </Link>
             ))}
           </nav>
         </aside>
