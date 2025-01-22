@@ -8,6 +8,7 @@ html {
   text-rendering: optimizeSpeed;
   font-family: 'Poppins', sans-serif;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -53,65 +54,97 @@ img, video, svg {
   --color-secondary: #3B3B3B;
   --color-detail: #A29567;
 }
+
 /* TEXT STYLES */
 h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+
 h2 {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+
 h3 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+
 h4 {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+
 h5 {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+
 h6 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 /* GLOBAL STYLES */
 body {
   background-color: var(--color-primary);
 }
+
 footer {
   color: var(--color-primary);
   background-color: var(--color-secondary);
 }
+
 #aside-nav {
   background-color: var(--color-secondary);
   width: 50vw;
   height: 50vh;
 }
+
 .colNav {
   display: block;
 }
+
 .hamburgerMenu > nav > a {
   font-weight: 600;
   padding: 0.25rem;
   border-bottom: 2px solid var(--color-detail);
 }
+
 .profileImg {
   aspect-ratio: 400 / 600;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
 			mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
 }
 
+#scrollToTop {
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+	border-radius: 10px;
+	border: 2px solid var(--color-secondary);
+	padding: 10px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	opacity: 0;
+	transition: all 0.25s ease-in-out;
+}
+
+.scrollToTopActive {
+	opacity: 1 !important;
+}
+
 .rowNav {
   display: none;
 }
+
 .rowNav > div > a {
   font-weight: 600;
   padding: 0.25rem 0.5rem;
@@ -124,16 +157,27 @@ footer {
 }
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
+  #scrollToTop {
+    right: 20px; /* For mobile screens */
+  }
 }
 @media (min-width: 1024px) {
   .colNav {
     display: none;
   }
+
   .rowNav {
     display: block;
   }
+
+  #scrollToTop {
+    right: calc((100vw - 75vw) / 2 + 20px); /* For medium screens */
+  }
 }
 @media (min-width: 1280px) {
+  #scrollToTop {
+    right: calc((100vw - 80vw) / 2 + 20px); /* For large screens */
+  }
 }
 @media (min-width: 1536px) {
 }

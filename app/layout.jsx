@@ -1,5 +1,6 @@
 import Footer from '@/components/footer'
 import Header from '@/components/headerComponents/header'
+import ScrollToTop from './components/scrollToTop'
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
         <section className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-start gap-5 p-2.5'>
           {children}
         </section>
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
