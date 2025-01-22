@@ -99,6 +99,11 @@ footer {
   padding: 0.25rem;
   border-bottom: 2px solid var(--color-detail);
 }
+.profileImg {
+  aspect-ratio: 400 / 600;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
+			mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
+}
 
 .rowNav {
   display: none;

@@ -1,10 +1,11 @@
 'use client'
 
-import { Close, Hamburguer } from '@/components/icons'
+import { Close, Hamburger } from '@/components/icons'
+import { MENU } from '@/constants/vars'
 import Link from 'next/link'
 import { useState } from 'react'
 
-export default function HamburguerMenu () {
+export default function HamburgerMenu () {
   const [isOpen, setIsOpen] = useState(false)
   const handleMenu = () => {
     setIsOpen(!isOpen)
@@ -12,14 +13,14 @@ export default function HamburguerMenu () {
   return (
     <>
       <button className='colNav min-w-6 ml-auto cursor-pointer relative animate-fade animate-once animate-duration-300 animate-ease-in-out' onClick={handleMenu}>
-        {isOpen ? <Close /> : <Hamburguer />}
+        {isOpen ? <Close /> : <Hamburger />}
       </button>
       {isOpen && (
-        <aside className='hamburgerMenu min-w-max w-[25vw] shadow-md border rounded-lg absolute top-[10vh] right-2.5 md:right-[20vw] bg-[var(--color-primary)]'>
+        <aside className='hamburgerMenu z-50 min-w-max w-[25vw] shadow-md border rounded-lg absolute top-[10vh] right-2.5 md:right-[20vw] bg-[var(--color-primary)]'>
           <nav className='p-5 flex flex-col items-end gap-5'>
-            <Link href='#quien-soy'>¿Quién soy?</Link>
-            <Link href='#workshops'>Workshops</Link>
-            <Link href='#patrocinadores'>Patrocinadores</Link>
+            {MENU.map((menuItem, index) => (
+              <Link key={index + menuItem.href} href={menuItem.href}>{menuItem.name}</Link>
+            ))}
           </nav>
         </aside>
       )}

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import HamburguerMenu from './hamburguerMenu'
+import HamburgerMenu from './hamburgerMenu'
 import RowMenu from './rowMenu'
 
 export default function Header () {
@@ -16,7 +16,7 @@ export default function Header () {
           />
         </Link>
         {/* <h1>PfisicMario</h1> */}
-        <HamburguerMenu />
+        <HamburgerMenu />
         <RowMenu />
       </section>
     </header>

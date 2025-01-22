@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className='flex flex-col items-center relative'>
         <Header />
-        <section className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-start gap-2.5 p-2.5 h-[90vh]'>
+        <section className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-start gap-2.5 p-2.5'>
           {children}
         </section>
         <Footer />
