@@ -1,8 +1,9 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
-import { ArrowRightHamMenu, Calendar, Location } from '../components/icons'
+// import Link from 'next/link'
+import { Link } from 'next-view-transitions'
+import { ArrowRightHamMenu, Calendar, Location } from '../icons'
 
 export default function Workshop ({ id, title, description, date, location, img}) {
   return (

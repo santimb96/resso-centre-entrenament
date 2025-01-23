@@ -1,5 +1,6 @@
 import Presentation from '@/components/presentation'
 import Workshops from '@/components/workshopComponents/workshops'
+
 export default function Home() {
   return (
     <main className='flex flex-col gap-5'>

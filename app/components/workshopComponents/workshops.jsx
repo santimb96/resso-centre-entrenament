@@ -1,8 +1,8 @@
 import { promises as fs } from 'fs'
 import Link from 'next/link'
 import { Suspense } from 'react'
-import { ArrowRightHamMenu } from '../components/icons'
-import Slider from '../components/slider'
+import { ArrowRightHamMenu } from '../icons'
+import Slider from '../slider'
 import Workshop from './workshop'
 
 async function WorkshopsList (){
