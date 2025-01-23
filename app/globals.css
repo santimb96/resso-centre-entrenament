@@ -166,7 +166,30 @@ footer {
     background-color: var(--color-detail);
   }
 }
-/* MEDIA QUERIES */
+/* SLIDER */
+.keen-slider {
+  width: 90vw !important;
+  border-radius: 20px;
+}
+.sliderWrapper {
+  display: flex;
+}
+.workshopList {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .keen-slider {
+    width: 35vw !important;
+  }
+  .sliderWrapper {
+    display: none;
+  }
+  .workshopList {
+    display: flex;
+  }
+}
+/* MEDIA QUERY SLIDER */
 @media (min-width: 768px) {
   #scrollToTop {
     right: 20px; /* For mobile screens */
