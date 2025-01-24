@@ -11,7 +11,7 @@ export default function Presentation () {
           <Image src='/img/pfisicLogo.png' alt='Logo' width={180} height={180} />
         </picture>
       </div>
-      <div className='hidden md:flex flex-col items-center justify-center gap-2.5 mt-5'>
+      <div className='hidden md:flex flex-col items-center justify-center gap-1 mt-10'>
         <Mouse />
         <span className='animate-bounce'>
           <CaretDown />

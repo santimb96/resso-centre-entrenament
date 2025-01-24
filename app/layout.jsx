@@ -8,9 +8,9 @@ export default function RootLayout({ children }) {
   return (
     <ViewTransitions>
       <html lang="es">
-        <body className='flex flex-col items-center gap-5 justify-start relative'>
+        <body className='flex flex-col items-center justify-start relative'>
           <Header />
-          <section className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-start gap-5 px-2.5 md:px-0'>
+          <section className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-start gap-5 px-2.5 md:px-0 mb-5'>
             {children}
           </section>
           <ScrollToTop />
