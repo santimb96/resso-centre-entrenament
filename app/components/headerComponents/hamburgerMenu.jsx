@@ -23,7 +23,7 @@ export default function HamburgerMenu () {
             <h5>Menú</h5>
             <Divider />
             {MENU.map((menuItem, index) => (
-              <Link onClick={handleMenu} key={index + menuItem.href} href={menuItem.href}>
+              <Link onClick={handleMenu} key={index + menuItem.href} href={location !== '/' ? `/${menuItem.href}`: menuItem.href}>
                 <ArrowRightHamMenu />
                 <span>{menuItem.name}</span>
               </Link>

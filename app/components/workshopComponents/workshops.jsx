@@ -18,19 +18,24 @@ async function WorkshopsList (){
       return { code: 500, error, data: null }
     }
   }
-  const data = await getData()
-  console.log(data)
+
+  const fullData = await getData()
+  let data = fullData.data
+  if (data.length > 3){
+    data = data.slice(0, 3)
+  }
+
   return (
     <div className='w-full flex flex-col justify-start items-start gap-5'>
       <div className='sliderWrapper w-full flex justify-center items-center'>
         <Slider>
-          {data.data.map((workshop, index) => (
+          {data.map((workshop, index) => (
             <Workshop key={index} {...workshop} />
           ))}
         </Slider>
       </div>
       <div className='w-full workshopList md:grid md:grid-cols-2 lg:grid-cols-3 items-center gap-2.5'>
-        {data.data.map((workshop, index) => (
+        {data.map((workshop, index) => (
           <Workshop key={index} {...workshop} />
         ))}
       </div>

@@ -1,6 +1,8 @@
 import { FaArrowRight, FaArrowUp } from 'react-icons/fa6'
-import { IoCalendarOutline, IoCloseOutline, IoLocationOutline } from 'react-icons/io5'
+import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
+import { MdOutlinePlace } from 'react-icons/md'
 import { RxHamburgerMenu } from 'react-icons/rx'
+
 
 export function Hamburger () {
   return <RxHamburgerMenu size={24} />
@@ -19,7 +21,7 @@ export function ArrowRightHamMenu () {
 }
 
 export function Location ({size = 24}) {
-  return <IoLocationOutline size={size} />
+  return <MdOutlinePlace size={size} />
 }
 
 export function Calendar ({size = 24}) {

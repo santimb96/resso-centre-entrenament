@@ -7,7 +7,7 @@ import { ArrowRightHamMenu, Calendar, Location } from '../icons'
 
 export default function Workshop ({ id, title, description, date, location, img}) {
   return (
-    <picture className='relative w-[100%] h-[400px] block keen-slider__slide md:rounded-lg'>
+    <picture className='relative w-[100%] h-[400px] block keen-slider__slide md:rounded-lg hover:brightness-110 md:transition-all md:duration-200 md:ease-in-out'>
       <Image
         className='object-cover md:rounded-lg'
         src={img}
@@ -17,13 +17,13 @@ export default function Workshop ({ id, title, description, date, location, img}
       />
       <div className="md:rounded-lg absolute inset-0 bg-gradient-to-b from-transparent to-black" />
       <div className='pr-5 pl-5 w-full absolute flex flex-col justify-start items-start gap-2.5 bottom-10 text-[var(--color-primary)]'>
-        <h2>{title}</h2>
+        <h2 className='drop-shadow-md'>{title}</h2>
         <div className='flex flex-row items-start justify-center gap-5'>
           <small className='flex flex-row justify-center items-center gap-2.5'><Calendar size={16} />{date}</small>
           <small className='flex flex-row justify-center items-center gap-2.5'><Location size={16} />{location}</small>
         </div>
         <p className='line-clamp-2'>{description}</p>
-        <Link className='flex justify-center gap-2.5 pb-1 border-b-2 border-[var(--color-detail)]' href={`/workshop/${id}`}><ArrowRightHamMenu/>Más información</Link>
+        <Link className='flex justify-center gap-2.5 pb-1 border-b-2 border-[var(--color-detail)] hover:text-[var(--color-detail)] hover:brightness-110 transition-all duration-200 ease-in-out' href={`/workshop/${id}`}><ArrowRightHamMenu/>Más información</Link>
       </div>
     </picture>
   )

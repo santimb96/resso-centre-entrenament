@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Workshop 1",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
     "date": "2023-05-01",
     "location": "Location 1",
     "img": "/img/judoWorkshop.jpg"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Workshop 2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
     "date": "2023-05-01",
     "location": "Location",
     "img": "/img/judoWorkshop.jpg"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Workshop 3",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
     "date": "2023-05-01",
     "location": "Location",
     "img": "/img/judoWorkshop.jpg"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Workshop 4",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro, modi, ducimus sit ullam velit voluptatum quibusdam obcaecati fuga tempore autem? Ab, mollitia ad aliquid animi sapiente iste! Iure, alias.",
     "date": "2023-05-01",
     "location": "Location",
     "img": "/img/judoWorkshop.jpg"
