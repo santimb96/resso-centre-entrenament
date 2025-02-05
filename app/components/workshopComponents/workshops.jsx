@@ -1,4 +1,4 @@
-import { promises as fs } from 'fs'
+import { getWorkshops } from '@/services/getData'
 import Link from 'next/link'
 import { Suspense } from 'react'
 import { ArrowRightHamMenu } from '../icons'
@@ -6,20 +6,7 @@ import Slider from '../slider'
 import Workshop from './workshop'
 
 async function WorkshopsList (){
-  const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms))
-  
-  const getData = async () => {
-    try {
-      await delay(2000)
-      const res = await fs.readFile(process.cwd() + '/app/db/workshops.json')
-      const data = JSON.parse(res)
-      return { code: 200, error: null, data }
-    } catch (error) {
-      return { code: 500, error, data: null }
-    }
-  }
-
-  const fullData = await getData()
+  const fullData = await getWorkshops()
   let data = fullData.data
   if (data.length > 3){
     data = data.slice(0, 3)
@@ -34,12 +21,12 @@ async function WorkshopsList (){
           ))}
         </Slider>
       </div>
-      <div className='w-full workshopList md:grid md:grid-cols-2 lg:grid-cols-3 items-center gap-2.5'>
+      <div className='w-full workshopList md:grid md:grid-cols-2 xl:grid-cols-3 items-center gap-2.5'>
         {data.map((workshop, index) => (
           <Workshop key={index} {...workshop} />
         ))}
       </div>
-      <Link href='/workshops' className='ml-2.5 font-bold flex justify-center gap-2.5 pb-1 border-b-2 border-[var(--color-detail)]'><ArrowRightHamMenu/> Ver todos los workshops</Link>
+      <Link href='/workshops' className='font-semibold flex justify-center gap-2.5 px-5 py-2.5 border border-[var(--color-secondary)] rounded-md hover:bg-[var(--color-secondary)] hover:text-[var(--color-primary)] transition-all duration-200 ease-in-out'><ArrowRightHamMenu/> Ver todos los workshops</Link>
     </div>
   )
 }

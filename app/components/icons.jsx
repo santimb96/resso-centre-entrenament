@@ -1,8 +1,11 @@
 import { FaArrowRight, FaArrowUp } from 'react-icons/fa6'
+import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuMouse } from 'react-icons/lu'
 import { MdOutlinePlace } from 'react-icons/md'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
+
+
 
 export function Hamburger () {
   return <RxHamburgerMenu size={24} />
@@ -34,4 +37,12 @@ export function Mouse ({size = 24}) {
 
 export function CaretDown ({size = 24}) {
   return <RxCaretDown size={size} />
+}
+
+export function CheckCircle ({size = 24}) {
+  return <IoMdCheckmarkCircle size={size} />
+}
+
+export function CloseCircle ({size = 24}) {
+  return <IoMdCloseCircle size={size} />
 }
