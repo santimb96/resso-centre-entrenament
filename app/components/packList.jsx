@@ -26,7 +26,7 @@ function Pack ({pack}) {
       </div>
       <div className='flex justify-start items-end gap-2.5'>
         <div className='flex justify-start items-start text-blue-900'>
-          <h1 className='text-6xl'>
+          <h1 className='!text-6xl'>
             {price}
           </h1>
           <span className='text-xl font-bold'>€</span>

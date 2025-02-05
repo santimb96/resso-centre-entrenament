@@ -1,7 +1,8 @@
+import JapanHeader from '@/components/japanHeader'
+import PackList from '@/components/packList'
 import Presentation from '@/components/presentation'
 import Workshops from '@/components/workshopComponents/workshops'
-import JapanHeader from './components/japanHeader'
-import PackList from './components/packList'
+import InfiniteSlider from './components/infiniteSlider'
 
 export default function Home() {
   return (
@@ -35,9 +36,12 @@ export default function Home() {
           <JapanHeader text='スポンサー' />
           <h2 id='patrocinadores'>Patrocinadores</h2>
         </div>
-        <p>
+        <p className='max-w-[75ch]'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestias deserunt minima at officiis ex rem quia voluptatum minus. Possimus, magnam ea molestias et maiores inventore rerum suscipit quas assumenda?
         </p>
+        <div className='max-w-[90vw]'>
+          <InfiniteSlider />
+        </div>
       </section>
     </main>
   )

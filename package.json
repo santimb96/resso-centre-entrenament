@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@devnomic/marquee": "^1.0.3",
     "keen-slider": "^6.8.6",
     "next": "15.1.5",
     "next-view-transitions": "^0.3.4",
