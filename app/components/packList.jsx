@@ -1,6 +1,5 @@
 
 import { PACK_LIST } from '@/constants/vars'
-import Divider from './divider'
 import { CheckCircle, CloseCircle } from './icons'
 
 export default function PackList () {
@@ -19,22 +18,23 @@ export default function PackList () {
 function Pack ({pack}) {
   const { title, description, includes, notIncludes, price, link, discount, popular } = pack
   return (
-    <div className={`rounded-xl h-full shadow-sm border border-[var(--color-secondary)]/50 min-h-content w-full flex flex-col gap-5 p-5 ${popular ? 'xl:scale-105 bg-gradient-to-b from-blue-50 to-[var(--color-primary)]' : 'bg-[var(--color-primary)]'}`}>
+    <div className={`rounded-xl h-full shadow-sm border border-[var(--color-secondary)]/50 min-h-content w-full flex flex-col gap-5 p-5 bg-[var(--color-primary)] ${popular && 'xl:scale-105 '}`}>
       <div className='flex justify-between items-center'>
-        <h4>{title}</h4>
-        {popular && <span className='text-[12px] py-1 px-5 rounded-full bg-purple-500 text-white font-semibold animate-pulse'>Popular</span>}
+        <h3 className={`${popular && 'text-purple-600'}`}>{title}</h3>
+        {popular && <div className='text-[14px] py-1 px-5 rounded-full border border-purple-800 text-purple-800 bg-purple-100 font-bold animate-pulse'>Popular</div>}
       </div>
-      <div className='flex justify-start items-end gap-2.5'>
-        <div className='flex justify-start items-start text-blue-900'>
+      <div className={`flex justify-start items-end gap-2.5 ${popular ? 'text-purple-800' : 'text-blue-900'}`}>
+        <div className='flex justify-start items-start'>
           <h1 className='!text-6xl'>
             {price}
           </h1>
           <span className='text-xl font-bold'>€</span>
         </div>
-        <span className='text-[12px] mb-1.5 opacity-60'>*Pago mensual</span>
+        <span className='text-[12px] mb-1.5 opacity-50'>*Pago mensual</span>
       </div>
       <p className='opacity-80'>{description}</p>
-      <Divider />
+      {discount && <h6 className='line-through'>{price - price/2}</h6>}
+      <a href={link} target='_blank' className={`mt-auto bg-[var(--color-primary)] ${popular ? 'hover:bg-purple-600 hover:border-purple-600 border border-purple-600 text-purple-700' : 'hover:bg-blue-900 hover:border-blue-900 border border-[var(--color-secondary)]'}  hover:text-[var(--color-primary)] transition-all duration-200 ease-in-out border border-[var(--color-secondary)] py-2.5 px-5 rounded-full text-center w-full font-semibold`}>Únete ahora</a>
       <div className='flex flex-col justify-start items-start gap-2.5'>
         <div className='flex flex-col justify-start items-start gap-2.5'>
           {includes.map((include, index) => {
@@ -63,8 +63,6 @@ function Pack ({pack}) {
           </div>
         )}
       </div>
-      {discount && <h6 className='line-through'>{price - price/2}</h6>}
-      <a href={link} target='_blank' className='mt-auto bg-[var(--color-primary)] hover:bg-blue-900 hover:border-blue-900 hover:text-[var(--color-primary)] transition-all duration-200 ease-in-out border border-[var(--color-secondary)] py-2.5 px-5 rounded-full text-center w-full font-semibold'>Únete ahora</a>
     </div>
   )
 }

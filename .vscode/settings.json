@@ -12,5 +12,6 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }
