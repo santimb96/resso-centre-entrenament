@@ -46,6 +46,17 @@ export default function HamburgerMenu () {
               </Link>
             ))}
           </nav>
+          <Divider />
+          <h4 className='text-center my-2.5'>Sígueme en redes!</h4>
+          <div className='flex justify-center items-center gap-5 my-2.5'>
+            <div className='w-7 h-7 bg-slate-300 rounded-md'></div>
+            <div className='w-7 h-7 bg-slate-300 rounded-md'></div>
+          </div>
+          <Divider />
+          <div className='mt-5 w-full flex flex-col items-center gap-2.5'>
+            <h6 className='text-pretty text-center opacity-80'>2025 - Mario Martín</h6>
+            <small className='text-pretty text-center opacity-80'>Hecho con ♥️ por <Link className='underline hover:text-[var(--color-detail)] ease-in-out duration-300' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
+          </div>
         </div>
       )}
     </>

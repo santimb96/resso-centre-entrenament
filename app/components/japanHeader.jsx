@@ -1,5 +1,5 @@
 export default function JapanHeader ({text}) {
   return (
-    <h5 className='japanHeader text-black/50'>{text}</h5>
+    <h6 className='japanHeader text-black/40'>{text}</h6>
   )
 }

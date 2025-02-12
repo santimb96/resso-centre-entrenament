@@ -1,3 +1,7 @@
+const PERSONAL_INFO = {
+  description: 'Soy <strong>Mario Martín</strong>, <strong>entrenador</strong> y <strong>preparador físico</strong> con una sólida trayectoria en deportes reglados, principalmente en <strong>judo</strong>, <strong>natación</strong> y <strong>escalada</strong>. \n\nDurante años, he sido responsable de entrenar y preparar a <em>judokas que compiten a nivel nacional</em>, enfocándome en conducirlos a alcanzar su <em>máximo potencial competitivo</em>. \n\nMi experiencia no solo abarca el entrenamiento, sino también el <strong>desarrollo integral del atleta</strong>, incluyendo el <em>análisis biomecánico de técnicas</em>, <em>optimización de rendimiento</em> y <em>corrección de compensaciones posturales</em>.\n\nAdemás de mi labor en el entrenamiento, imparto <strong>charlas y formaciones especializadas</strong> para <strong>maestros de judo</strong> sobre temas clave como <em>preparación física</em> y <em>planificación de temporada</em>. También ofrezco <strong>mentorías para entrenadores</strong>, ayudándoles a perfeccionar sus métodos y mejorar los resultados de sus propios deportistas. Esta combinación de <em>experiencia práctica y educativa</em> me permite contribuir al crecimiento de la comunidad de judo, promoviendo la <strong>excelencia</strong> en cada nivel.'
+}
+
 const MENU = [
   {
     id: 1,
@@ -95,5 +99,5 @@ const PACK_LIST = [
   }
 ]
 
-export { MENU, PACK_LIST }
+export { MENU, PACK_LIST, PERSONAL_INFO }
 

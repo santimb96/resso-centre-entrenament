@@ -1,22 +1,15 @@
+import InfiniteSlider from '@/components/infiniteSlider'
 import JapanHeader from '@/components/japanHeader'
 import PackList from '@/components/packList'
 import Presentation from '@/components/presentation'
+import WhoIAm from '@/components/whoIAm'
 import Workshops from '@/components/workshopComponents/workshops'
-import InfiniteSlider from './components/infiniteSlider'
 
 export default function Home() {
   return (
-    <main className='flex flex-col gap-5 mt-20'>
+    <main className='flex flex-col gap-10 mt-20'>
       <Presentation />
-      <section id='quien-soy' className='flex flex-col gap-5 scroll-m-24'>
-        <div className='w-full'>
-          <JapanHeader text='私は誰?' />
-          <h2>¿Quién soy?</h2>
-        </div>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestias deserunt minima at officiis ex rem quia voluptatum minus. Possimus, magnam ea molestias et maiores inventore rerum suscipit quas assumenda?
-        </p>
-      </section>
+      <WhoIAm />
       <section id='planes' className='flex flex-col gap-5 scroll-m-24'>
         <div className='w-full'>
           <JapanHeader text='パック' />
