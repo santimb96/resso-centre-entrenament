@@ -14,7 +14,7 @@ async function WorkshopsList (){
 
   return (
     <div className='w-full flex flex-col justify-start items-start gap-5'>
-      <div className='sliderWrapper w-full flex justify-center items-center'>
+      <div className='sliderWrapper'>
         <Slider>
           {data.map((workshop, index) => (
             <Workshop key={index} {...workshop} />

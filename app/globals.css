@@ -219,6 +219,8 @@ footer {
 }
 .sliderWrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .workshopList {
   display: none;

@@ -39,8 +39,10 @@ export default function Home() {
         <p className='max-w-[75ch]'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestias deserunt minima at officiis ex rem quia voluptatum minus. Possimus, magnam ea molestias et maiores inventore rerum suscipit quas assumenda?
         </p>
-        <div className='max-w-[90vw]'>
-          <InfiniteSlider />
+        <div className='w-full flex justify-center items-center'> 
+          <div className='max-w-[75vw]'>
+            <InfiniteSlider />
+          </div>
         </div>
       </section>
     </main>

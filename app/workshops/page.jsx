@@ -10,7 +10,7 @@ async function WorkshopsList (){
     <div className='w-full grid grid-cols-1 place-items-start md:grid-cols-2 gap-5'>
       {
         data.map(workshop => (
-          <WorkshopCard  key={workshop.id} workshop={workshop} />
+          <WorkshopCard key={workshop.id} workshop={workshop} />
         ))
       }
     </div>
