@@ -1,9 +1,11 @@
+import { FaFacebookSquare, FaInstagram } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuMouse } from 'react-icons/lu'
 import { MdOutlinePlace } from 'react-icons/md'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
+
 
 
 
@@ -45,4 +47,12 @@ export function CheckCircle ({size = 24}) {
 
 export function CloseCircle ({size = 24}) {
   return <IoMdCloseCircle size={size} />
+}
+
+export function Instagram ({size = 24}) {
+  return <FaInstagram size={size} />
+}
+
+export function Facebook ({size = 24}) {
+  return <FaFacebookSquare size={size} />
 }

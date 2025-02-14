@@ -2,6 +2,7 @@
 
 import { MENU } from '@/constants/vars'
 import Link from 'next/link'
+import { Facebook, Instagram } from '../icons'
 export default function RowMenu () {
   const location = window.location.pathname
   return (
@@ -12,8 +13,8 @@ export default function RowMenu () {
         ))}
       </div>
       <div className='flex justify-center items-center gap-2.5'>
-        <div className='w-7 h-7 bg-slate-300 rounded-md'></div>
-        <div className='w-7 h-7 bg-slate-300 rounded-md'></div>
+        <span className='min-w-8 p-1 hover:text-blue-900 duration-200 ease-in-out cursor-pointer'><Instagram size={32}/></span>
+        <span className='min-w-8 p-1 hover:text-blue-900 duration-200 ease-in-out cursor-pointer'><Facebook size={32} /></span>
       </div>
     </nav>
   )
