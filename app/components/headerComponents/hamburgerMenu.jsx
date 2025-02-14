@@ -1,6 +1,6 @@
 'use client'
 
-import { Close, Hamburger } from '@/components/icons'
+import { Close, Facebook, Hamburger, Instagram } from '@/components/icons'
 import { MENU } from '@/constants/vars'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -49,8 +49,8 @@ export default function HamburgerMenu () {
           <Divider />
           <h4 className='text-center my-2.5'>Sígueme en redes!</h4>
           <div className='flex justify-center items-center gap-5 my-2.5'>
-            <div className='w-7 h-7 bg-slate-300 rounded-md'></div>
-            <div className='w-7 h-7 bg-slate-300 rounded-md'></div>
+            <span className='min-w-8 p-1 hover:text-blue-900 duration-200 ease-in-out cursor-pointer'><Instagram size={32}/></span>
+            <span className='min-w-8 p-1 hover:text-blue-900 duration-200 ease-in-out cursor-pointer'><Facebook size={32} /></span>
           </div>
           <Divider />
           <div className='mt-5 w-full flex flex-col items-center gap-2.5'>
