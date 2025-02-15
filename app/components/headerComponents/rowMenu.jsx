@@ -2,10 +2,16 @@
 
 import { MENU } from '@/constants/vars'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import Rrss from '../rrss'
 
-export default function RowMenu () {
-  const location = window?.location.pathname
+export default function RowMenu() {
+  const [location, setLocation] = useState('')
+
+  useEffect(() => {
+    setLocation(window.location.pathname)
+  }, [])
+
   return (
     <nav className='rowNav'>
       <div className='flex flex-row justify-start items-center ml-5 gap-5'>
