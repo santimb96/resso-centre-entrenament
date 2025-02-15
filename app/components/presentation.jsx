@@ -7,7 +7,7 @@ export default function Presentation () {
         <picture>
           <Image className='profileImg' src='/img/test.webp' alt='Mario Martín, preparador físico' width={400} height={400} />
         </picture>
-        <picture className='absolute bottom-0 landscape:bottom-0 bg-[var(--color-primary)] rounded-full'>
+        <picture className='absolute bottom-0 landscape:bottom-0 bg-primary rounded-full'>
           <Image src='/img/pfisicLogo.png' alt='Logo' width={180} height={180} />
         </picture>
       </div>

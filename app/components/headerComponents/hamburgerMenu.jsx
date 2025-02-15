@@ -1,11 +1,12 @@
 'use client'
 
-import { Close, Facebook, Hamburger, Instagram } from '@/components/icons'
+import { Close, Hamburger } from '@/components/icons'
 import { MENU } from '@/constants/vars'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import Divider from '../divider'
+import Rrss from '../rrss'
 
 export default function HamburgerMenu () {
   const [isOpen, setIsOpen] = useState(false)
@@ -49,13 +50,12 @@ export default function HamburgerMenu () {
           <Divider />
           <h4 className='text-center my-2.5'>Sígueme en redes!</h4>
           <div className='flex justify-center items-center gap-5 my-2.5'>
-            <span className='min-w-8 p-1 hover:text-blue-900 duration-200 ease-in-out cursor-pointer'><Instagram size={32}/></span>
-            <span className='min-w-8 p-1 hover:text-blue-900 duration-200 ease-in-out cursor-pointer'><Facebook size={32} /></span>
+            <Rrss />
           </div>
           <Divider />
           <div className='mt-5 w-full flex flex-col items-center gap-2.5'>
             <h6 className='text-pretty text-center opacity-80'>2025 - Mario Martín</h6>
-            <small className='text-pretty text-center opacity-80'>Hecho con ♥️ por <Link className='underline hover:text-[var(--color-detail)] ease-in-out duration-300' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
+            <small className='text-pretty text-center opacity-80'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-300 text-[12px]' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
           </div>
         </div>
       )}

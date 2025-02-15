@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        accent: 'var(--color-detail)',
+        instagramStart: '#FDDC5C',
+        instagramEnd: '#EA2F85',
+        facebook: '#1877F2' 
       },
     },
   },

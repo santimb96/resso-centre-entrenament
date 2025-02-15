@@ -22,6 +22,11 @@ const MENU = [
     id: 4,
     name: 'Patrocinadores',
     href: '#patrocinadores'
+  },
+  {
+    id: 5,
+    name: 'Contacto',
+    href: '#contacto'
   }
 ]
 

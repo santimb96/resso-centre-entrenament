@@ -14,7 +14,7 @@ export default function Workshop ({ id, title, description, date, location, img}
           sizes="500px"
         />
         <div className="md:rounded-xl absolute inset-0 bg-gradient-to-b from-transparent to-black" />
-        <div className='pr-5 pl-5 w-full absolute flex flex-col justify-start items-start gap-2.5 bottom-10 text-[var(--color-primary)]'>
+        <div className='pr-5 pl-5 w-full absolute flex flex-col justify-start items-start gap-2.5 bottom-10 text-primary'>
           <h2 className='drop-shadow-md'>{title}</h2>
           <div className='flex flex-row items-center justify-start gap-2.5'>
             <small className='flex flex-row justify-start items-center gap-1 min-w-max'><span className='min-w-[18px]'><Calendar size={16} /></span>{date}</small>

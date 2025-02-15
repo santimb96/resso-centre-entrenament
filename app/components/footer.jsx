@@ -9,7 +9,7 @@ export default function Footer() {
           <Link href='/'>
             <picture>
               <Image
-                className='bg-[var(--color-primary)] rounded-full'
+                className='bg-primary rounded-full'
                 src='/img/pfisicLogo.png'
                 alt='PfisicMario logo'
                 width={100}
@@ -22,7 +22,7 @@ export default function Footer() {
         <div className='w-full xl:hidden'>
           <Divider />
         </div>
-        <small className='text-pretty text-center opacity-80'>Hecho con ♥️ por <Link className='underline hover:text-[var(--color-detail)] ease-in-out duration-300' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
+        <small className='text-pretty text-center opacity-80 text-[12px] lg:text-[14px]'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-100 text-[12px] lg:text-[14px] hover:brightness-125' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
       </div>
     </footer>  
   )

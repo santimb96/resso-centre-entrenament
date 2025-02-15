@@ -3,7 +3,7 @@ import JapanHeader from './japanHeader'
 
 export default function Sponsors() {
   return (
-    <section id='patrocinadores' className='flex flex-col gap-5 scroll-m-24'>
+    <section id='patrocinadores' className='scrollAppear flex flex-col gap-5 scroll-m-24'>
       <div className='w-full'>
         <JapanHeader text='スポンサー' />
         <h2>Patrocinadores</h2>
