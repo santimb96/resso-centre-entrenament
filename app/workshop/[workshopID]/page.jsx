@@ -25,7 +25,7 @@ export default async function WorkshopInfo(props) {
   }
   const { title, description, date, location, img } = workshop
   return (
-    <section className='w-full flex flex-col justify-start items-center gap-5 xl:flex-row xl:items-start mb-5'>
+    <section className='w-full mt-24 flex flex-col justify-start items-center gap-5 xl:flex-row xl:items-start mb-5'>
       <picture className='relative w-full h-[40vh] block rounded-md'>
         <Image
           className='object-cover rounded-md'
