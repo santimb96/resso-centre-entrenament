@@ -12,8 +12,8 @@ export default function Header () {
             <Image
               src='/img/pfisicLogo.png'
               alt='PfisicMario logo'
-              width={70}
-              height={70}
+              width={100}
+              height={100}
             />
           </picture>
         </Link>

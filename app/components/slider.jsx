@@ -6,6 +6,10 @@ import { useKeenSlider } from 'keen-slider/react'
 export default function Slider ({ children }) {
   const [sliderRef] = useKeenSlider({
     loop: true,
+    slides: {
+      perView: 1,
+      spacing: 5,
+    },
   })
 
   return (

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { CaretDown, Mouse } from './icons'
 export default function Presentation () {
   return (
-    <section className='min-h-[90vh]'>
+    <section className='min-h-[90vh] flex flex-col items-center justify-center gap-5'>
       <div className='relative flex flex-col items-center justify-start gap-5 h-full'>
         <picture>
           <Image className='profileImg' src='/img/test.webp' alt='Mario Martín, preparador físico' width={400} height={400} />

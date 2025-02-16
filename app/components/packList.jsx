@@ -5,7 +5,7 @@ import { CheckCircle, CloseCircle } from './icons'
 export default function PackList () {
   return (
     <>
-      <p className='mb-5 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, nesciunt laboriosam obcaecati, eius iste ratione, esse similique ab autem quibusdam animi id quidem fugit ducimus repellat! Ullam fugit in deleniti.</p>
+      <p className='mb-10 max-w-[75ch]'>Aquí podrás encontrar los que tengo a disposición: <strong>iniciación, avanzado y profesional</strong></p>
       <div className='grid grid-cols-1 gap-5 2xl:grid-cols-3 2xl:items-center'>
         {PACK_LIST.map((pack, index) => (
           <Pack key={index + pack.title} pack={pack} />
@@ -41,7 +41,7 @@ function Pack ({pack}) {
             return (
               <div key={index + include} className='flex justify-start items-center gap-2.5'>
                 <span className='text-green-400 min-w-5'>
-                  <CheckCircle size={18}/>
+                  <CheckCircle size={20}/>
                 </span>
                 <p className='opacity-80'>{include}</p>
               </div>
@@ -54,9 +54,9 @@ function Pack ({pack}) {
               return (
                 <div key={index + notInclude} className='flex justify-start items-center gap-2.5'>
                   <span className='text-red-400 min-w-5'>
-                    <CloseCircle size={18}/>
+                    <CloseCircle size={20}/>
                   </span>
-                  <p className='opacity-20'>{notInclude}</p>
+                  <p className='opacity-40'>{notInclude}</p>
                 </div>
               )
             })}

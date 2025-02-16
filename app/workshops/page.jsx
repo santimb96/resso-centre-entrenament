@@ -19,7 +19,7 @@ async function WorkshopsList (){
 
 export default async function Workshops() {
   return (
-    <section className='w-full'>
+    <section className='w-full mt-32'>
       <h2 className='mb-5'>Workshops</h2>
       <Suspense fallback={<p>Loading...</p>}>
         <WorkshopsList />

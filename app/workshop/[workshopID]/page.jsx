@@ -25,7 +25,7 @@ export default async function WorkshopInfo(props) {
   }
   const { title, description, date, location, img } = workshop
   return (
-    <section className='w-full mt-24 flex flex-col justify-start items-center gap-5 xl:flex-row xl:items-start mb-5'>
+    <section className='w-full mt-32 flex flex-col justify-start items-center gap-5 lg:flex-row lg:items-start mb-5'>
       <picture className='relative w-full h-[40vh] block rounded-md'>
         <Image
           className='object-cover rounded-md'
@@ -38,8 +38,8 @@ export default async function WorkshopInfo(props) {
       <div className='w-full flex flex-col justify-start items-start gap-2.5'>
         <h2>{title}</h2>
         <div className='flex flex-row justify-center items-center gap-5'>
-          <h6 className='flex flex-row justify-center items-center gap-2.5 opacity-60'><Calendar size={20} />{date}</h6>
-          <h6 className='flex flex-row justify-center items-center gap-2.5 opacity-60'><Location size={22} />{location}</h6>
+          <p className='flex flex-row justify-center items-center gap-2.5 opacity-60 font-bold'><span className='min-w-6'><Calendar size={20} /></span>{date}</p>
+          <p className='flex flex-row justify-center items-center gap-2.5 opacity-60 font-bold'><span className='min-w-6'><Location size={20} /></span>{location}</p>
         </div>
         <p className='whitespace-pre-wrap'>{description}</p>
       </div>
