@@ -36,8 +36,8 @@ export default function HamburgerMenu () {
               <Image
                 src='/img/pfisicLogo.png'
                 alt='PfisicMario logo'
-                width={75}
-                height={75}
+                width={100}
+                height={100}
               />
             </picture>
             <Divider />
