@@ -1,37 +1,24 @@
-'use client'
-
 import { Calendar, Location } from '@/components/icons'
-import { promises as fs } from 'fs'
+import { WORKSHOPS } from '@/constants/vars'
 import Image from 'next/image'
 
-async function getWorkshopById(workshopID) {
-  // const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms))
-
-  const getData = async () => {
-    try {
-      // await delay(2000)
-      const res = await fs.readFile(process.cwd() + '/app/db/workshops.json')
-      const data = JSON.parse(res)
-      
-      // find the specific workshop by id
-      const workshop = data.find(workshop => workshop.id === parseInt(workshopID))
-      if (!workshop) {
-        throw new Error(`Workshop with id ${workshopID} not found`)
-      }
-
-      return { code: 200, error: null, data: workshop }
-    } catch (error) {
-      return { code: 500, error, data: null }
+function getWorkshopById(workshopID) {
+  const getData = () => {
+    const data = WORKSHOPS
+    const workshop = data.find(workshop => workshop.id === parseInt(workshopID))
+    if (!workshop) {
+      return { code: 500, error: `Workshop with id ${workshopID} not found` , data: null }
     }
+    return { code: 200, error: null, data: workshop }
   }
 
-  return await getData()
+  return getData()
 }
 
 export default async function WorkshopInfo(props) {
   const params = await props.params
   const { workshopID } = params
-  const data = await getWorkshopById(workshopID)
+  const data = getWorkshopById(workshopID)
   const { error, data: workshop } = data
   if (error !== null) {
     return <p className='text-red-500'>Error: {JSON.stringify(error)}</p>
