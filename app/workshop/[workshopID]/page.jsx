@@ -1,3 +1,5 @@
+'use client'
+
 import { Calendar, Location } from '@/components/icons'
 import { promises as fs } from 'fs'
 import Image from 'next/image'
