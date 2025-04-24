@@ -1,11 +1,9 @@
 import { Facebook, Instagram, Mail } from './icons'
-import JapanHeader from './japanHeader'
 
 export default function Contact () {
   return (
     <section id='contacto' className='scrollAppear w-full flex flex-col gap-5 scroll-m-24'>
       <div className='w-full'>
-        <JapanHeader text='接触' />
         <h2>Contacto</h2>
       </div>
       <p className='m-w-[75ch]'>¡No dudes en ponerte en contacto conmigo por la vía que prefieras!</p>

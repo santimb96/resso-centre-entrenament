@@ -1,11 +1,8 @@
 import InfiniteSlider from './infiniteSlider'
-import JapanHeader from './japanHeader'
-
 export default function Sponsors() {
   return (
     <section id='patrocinadores' className='scrollAppear flex flex-col gap-5 scroll-m-24'>
       <div className='w-full'>
-        <JapanHeader text='スポンサー' />
         <h2>Patrocinadores</h2>
       </div>
       <p className='max-w-[75ch]'>

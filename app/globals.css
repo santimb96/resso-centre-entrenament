@@ -97,9 +97,9 @@ img, video, svg {
 }
 /* CSS VARS */
 :root {
-  --color-primary: #FBFBFB;
-  --color-secondary: #3B3B3B;
-  --color-detail: #A29567;
+  --color-primary: #FFFFFF;
+  --color-secondary: #2B2B29;
+  --color-detail: #55B3B7;
 }
 
 /* TEXT STYLES */
