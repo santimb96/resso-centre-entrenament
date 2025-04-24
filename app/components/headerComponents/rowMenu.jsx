@@ -18,7 +18,7 @@ export default function RowMenu() {
           </Link>
         ))}
       </div>
-      <span className='ml-2.5 border border-black py-1 px-2.5 rounded-full min-w-max flex justify-center items-center pt-1.5'>#BERESSÒ</span>
+      <span className='ml-2.5 border border-black py-1 px-2.5 rounded-3xl min-w-max flex justify-center items-center pt-1.5 bg-primary text-secondary'>#BERESSÒ</span>
       {/* <div className='flex gap-2.5'>
         <Rrss />
       </div> */}
