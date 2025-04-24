@@ -237,18 +237,18 @@ footer {
 
 header {
 	min-width: 100%;
-	/* animation: header-animation 0.25s linear both;
+	animation: header-animation 1s linear both;
 	animation-timeline: scroll();
 	animation-range: 0 25px;
-	color: var(--color-secondary); */
+	color: var(--color-secondary);
 }
 @keyframes header-animation {
 	0% {
-		border-bottom: 1px solid transparent;
+    backdrop-filter: blur(0px);
 	}
 
 	100% {
-		border-bottom: 1px solid var(--color-secondary);
+    backdrop-filter: blur(10px);
 		box-shadow: 0 -10px 20px rgb(0, 0, 0); 
 	}
 } 
