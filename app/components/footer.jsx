@@ -9,15 +9,14 @@ export default function Footer() {
           <Link href='/'>
             <picture>
               <Image
-                className='bg-primary rounded-full'
-                src='/img/pfisicLogo.png'
-                alt='PfisicMario logo'
+                src='/img/logo-resso-sf-negro-azul.png'
+                alt='Ressò fn azul logo'
                 width={100}
                 height={100}
               />
             </picture>
           </Link>
-          <h6 className='text-pretty text-center opacity-80'>2025 - Mario Martín</h6>
+          <h6 className='text-pretty text-center opacity-80'>2025 | Ressò - Centre de entrenament</h6>
         </div>
         <div className='w-full xl:hidden'>
           <Divider />

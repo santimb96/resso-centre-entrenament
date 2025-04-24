@@ -6,6 +6,44 @@
 @tailwind components;
 @tailwind utilities;
 
+/* STATIC FONTS */
+@font-face {
+  font-family: 'GaretBook';
+  src:  url('/fonts/Garet-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GaretBook';
+  src:  url('/fonts/Garet-Heavy.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KickerTrial';
+  src:  url('/fonts/KickerTrial-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KickerTrial';
+  src:  url('/fonts/KickerTrial-BlackItallic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'KickerTrial';
+  src:  url('/fonts/KickerTrial-BlackSlanted.ttf') format('truetype');
+  font-weight: bold;
+  font-style: oblique;
+}
+@font-face {
+  font-family: 'KickerTrial';
+  src:  url('/fonts/KickerTrial-BlackUpright.ttf') format('truetype');
+  font-weight: bold;
+  font-style: upright;
+}
 
 /* CSS RESET by midudev (https://github.com/midudev) */
 html {
@@ -25,7 +63,10 @@ html {
 
 body {
   min-height: 100dvh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'KickerTrial', sans-serif;
+  /* font-family: 'GaretBook', sans-serif; */
+  font-weight: bold;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 input, button, textarea, select {
@@ -226,12 +267,11 @@ header {
 }
 
 .rowNav > div > a {
-  font-weight: 600;
+  font-size: 20px;
   padding: 0.25rem 0.5rem;
-  border-bottom: 2px solid transparent;
   transition: all 0.2s ease-in-out;
   &:hover {
-    border-bottom: 2px solid var(--color-secondary);
+    /* border-bottom: 2px solid var(--color-secondary); */
   }
 }
 .rowNav > div > a:has(span) {
@@ -330,9 +370,11 @@ header {
   }
 
   .rowNav {
+    font-size: 20px;
+    text-transform: uppercase;
     display: block;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     width: 100%;
   }
