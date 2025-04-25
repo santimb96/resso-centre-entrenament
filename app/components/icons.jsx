@@ -12,20 +12,20 @@ import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
 
 
 
-export function Hamburger () {
-  return <RxHamburgerMenu size={24} />
+export function Hamburger ({size = 24}) {
+  return <RxHamburgerMenu size={size} />
 }
 
-export function Close () {
-  return <IoCloseOutline size={30} />
+export function Close ({size = 24}) {
+  return <IoCloseOutline size={size} />
 }
 
-export function ArrowUp () {
-  return <FaArrowUp size={24} />
+export function ArrowUp ({size = 24}) {
+  return <FaArrowUp size={size} />
 }
 
-export function ArrowRightHamMenu () {
-  return <FaArrowRight size={16} />
+export function ArrowRightHamMenu ({size = 24}) {
+  return <FaArrowRight size={size} />
 }
 
 export function Location ({size = 24}) {

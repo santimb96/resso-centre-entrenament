@@ -1,12 +1,15 @@
+import TitleSection from './common/TitleSection'
 import PackList from './packList'
 
 export default function Plans() {
   return (
-    <section id='planes' className='scrollAppear flex flex-col gap-5 scroll-m-24'>
-      <div className='w-full'>
-        <h2>Planes</h2>
+    <section id='planes' className='scrollAppear flex flex-col justify-center items-center gap-5 scroll-m-24'>
+      <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw]'>
+        <TitleSection title='Planes' color='accent' />
+        <div className='mt-5'>
+          <PackList />
+        </div>
       </div>
-      <PackList />
     </section>
   )
 }

@@ -1,13 +1,14 @@
 import { PERSONAL_INFO } from '@/constants/vars'
+import TitleSection from './common/TitleSection'
 
 export default function WhoIAm() {
   return (
-    <section id='quien-soy' className='scrollAppear flex flex-col gap-5 scroll-m-24'>
-      <div className='w-full'>
-        <h2>¿Quién soy?</h2>
+    <section id='quien-soy' className='-z-50 scrollAppear flex flex-col justify-center items-center gap-5 scroll-m-24 bg-accent '>
+      <div className='w-full mt-40 md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw]'>
+        <TitleSection title='¿Quién soy?' />
       </div>
       <p 
-        className='m-w-[75ch] whitespace-pre-wrap'
+        className='text-primary text-[0.75rem] md:text-[1.75rem] m-w-[75ch] whitespace-pre-wrap md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] pb-10'
         dangerouslySetInnerHTML={{ __html: PERSONAL_INFO.description }}
       >
       </p>
