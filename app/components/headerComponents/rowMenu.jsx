@@ -7,7 +7,7 @@ export default function RowMenu() {
   const pathname = usePathname()
 
   return (
-    <nav className='rowNav'>
+    <nav className='rowNav pt-6'>
       <div className='flex flex-row justify-start items-end ml-5 gap-2.5'>
         {MENU.map((menuItem, index) => (
           <Link 
