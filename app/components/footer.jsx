@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import Link from 'next/link'
 import Divider from './divider'
@@ -16,7 +17,7 @@ export default function Footer() {
               />
             </picture>
           </Link>
-          <h6 className='text-pretty text-center opacity-80'>2025 | Ressò - Centre de entrenament</h6>
+          <h6 className='text-pretty text-center opacity-80'>2025 | Ressò - Centre d'entrenament</h6>
         </div>
         <div className='w-full xl:hidden'>
           <Divider />
