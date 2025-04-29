@@ -1,22 +1,24 @@
-import Image from 'next/image'
 import { CaretDown, Mouse } from './icons'
 export default function Presentation () {
   return (
-    <section className='min-h-[90vh] flex flex-col items-center justify-center gap-5'>
-      <div className='relative flex flex-col items-center justify-start gap-5 h-full'>
-        <picture>
-          <Image className='profileImg' src='/img/test.webp' alt='Mario Martín, preparador físico' width={400} height={400} />
-        </picture>
-        <picture className='absolute bottom-0 landscape:bottom-0 bg-primary rounded-full'>
-          <Image src='/img/pfisicLogo.png' alt='Logo' width={180} height={180} />
-        </picture>
+    <div className='headerContainer bg-secondary relative'>
+      <div className='w-full absolute top-[200px] md:top-[300px] flex flex-col justify-center items-center px-2.5'>
+        <h1 className='textShadow text-primary text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem] font-bold'>TRANSFORMA TU CUERPO.</h1>
+        <h1 className='textShadow text-accent text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem] font-bold mb-5'>SUPERA TUS LÍMITES.</h1>
+        <div className='w-full flex flex-col md:max-w-max md:!flex-row justify-center items-center gap-5 text-xl md:text-2xl lg:text-4xl'>
+          <button className='whitespace-nowrap w-full py-2.5 px-5 bg-primary rounded-full border text-secondary border-transparent hover:bg-accent hover:border-primary duration-150'>HAZTE MIEMBRO <i>#BERESSÒ</i></button>
+          <button className='whitespace-nowrap w-full py-2.5 px-5 rounded-full border border-primary text-primary hover:bg-accent duration-150'>DESCUBRE NUESTROS SERVICIOS</button>
+        </div>
       </div>
-      <div className='hidden md:flex flex-col items-center justify-center gap-1 mt-10'>
-        <Mouse />
-        <span className='animate-bounce'>
-          <CaretDown />
-        </span>
+      <div className='absolute -bottom-10 md:-bottom-36 w-full'>
+        <h2 className='text-primary text-[2.25rem] sm:text-[3rem] lg:text-[4rem] font-bold w-full text-center textShadow'>¿NO SABES POR DÓNDE EMPEZAR?</h2>
+        <div className='mt-8 hidden md:flex flex-col items-center justify-center text-primary'>
+          <Mouse size={40} />
+          <span className='animate-bounce'>
+            <CaretDown size={40} />
+          </span>
+        </div>
       </div>
-    </section>
+    </div>
   )
 }

@@ -5,8 +5,8 @@ const PERSONAL_INFO = {
 const MENU = [
   {
     id: 1,
-    name: '¿Quién soy?',
-    href: '#quien-soy'
+    name: '¿Qué es Ressò?',
+    href: '#que-es-resso'
   },
   {
     id: 2,
@@ -53,7 +53,8 @@ const PACK_LIST = [
     price: 49.99,
     link: 'https://academiajudo.com/plan-iniciacion',
     discount: false,
-    popular: false
+    popular: false,
+    premium: false
   },
   {
     id: 2,
@@ -77,12 +78,13 @@ const PACK_LIST = [
     price: 79.99,
     link: 'https://academiajudo.com/plan-intermedio',
     discount: false,
-    popular: true // Este es el plan popular
+    popular: true,
+    premium: false
   },
   {
     id: 3,
     title: 'Profesional',
-    description: 'Este plan está diseñado para competidores y expertos en judo que buscan llevar su rendimiento al máximo nivel.',
+    description: 'Este plan está diseñado para competidores de judo que buscan llevar su rendimiento al máximo nivel.',
     includes: [
       'Clases grupales 2 veces por semana',
       'Acceso a material didáctico básico',
@@ -100,7 +102,8 @@ const PACK_LIST = [
     price: 119.99,
     link: 'https://academiajudo.com/plan-avanzado',
     discount: false,
-    popular: false
+    popular: false,
+    premium: true
   }
 ]
 
