@@ -1,5 +1,6 @@
 
 import { PACK_LIST } from '@/constants/vars'
+import { workSans } from '../lib/fonts'
 import { CheckCircle, CloseCircle } from './icons'
 
 export default function PackList () {
@@ -20,12 +21,12 @@ function Pack ({pack}) {
   return (
     <div className={`${premium ? 'text-primary' : 'text-secondary'} rounded-xl h-full shadow-sm border border-secondary/50 min-h-content w-full flex flex-col gap-5 px-5 py-10 ${premium ? 'bg-secondary' : 'bg-primary'} ${popular && '2xl:scale-105 '}`}>
       <div className='flex justify-between items-center'>
-        <h3 className={`${popular && 'text-accent'} text-[2rem]`}>{title}</h3>
-        {popular && <div className='text-[1rem] pb-1 pt-1.5 px-5 rounded-full border border-accent text-accent bg-green-100/25 font-bold'>Popular</div>}
+        <h3 className={`${popular && 'text-accent'} ${workSans.className} font-extrabold text-[2rem]`}>{title}</h3>
+        {popular && <div className='text-[1rem] py-1.5 px-5 rounded-full border border-accent text-accent bg-green-100/25 font-bold'>Popular</div>}
       </div>
       <div className={`flex justify-start items-end gap-2.5 ${premium && '!text-primary'} ${popular ? 'text-accent' : 'text-secondary'}`}>
         <div className='flex justify-start items-start'>
-          <h2 className='text-6xl'>
+          <h2 className={`text-6xl ${workSans.className} font-extrabold`}>
             {price}
           </h2>
           <span className='text-xl font-bold'>€</span>
@@ -34,7 +35,7 @@ function Pack ({pack}) {
       </div>
       <p className='opacity-80'>{description}</p>
       {discount && <h6 className='line-through'>{price - price/2}</h6>}
-      <a href={link} target='_blank' className={`bg-primary ${popular ? 'hover:bg-accent hover:border-accent border border-accent text-accent' : 'hover:bg-accent hover:border-blue-900 border border-secondary'} ${premium && '!text-secondary'} text-xl font-bold hover:text-primary transition-all duration-200 ease-in-out border border-secondary py-2.5 rounded-full text-center w-full`}>¡APÚNTATE!</a>
+      <a href={link} target='_blank' className={`bg-primary ${popular ? 'hover:bg-accent hover:border-accent border border-accent text-accent' : 'hover:bg-accent hover:border-blue-900 border border-secondary'} ${premium && '!text-secondary'} ${workSans.className} text-xl font-extrabold hover:text-primary transition-all duration-200 ease-in-out border border-secondary py-2.5 rounded-full text-center w-full`}>¡APÚNTATE!</a>
       <div className='flex flex-col justify-start items-start gap-2.5'>
         <div className='flex flex-col justify-start items-start gap-2.5'>
           {includes.map((include, index) => {

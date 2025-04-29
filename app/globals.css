@@ -1,6 +1,4 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -78,10 +76,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   /* text-shadow: #2B2B29 0px 0px 0px;   */
-  line-height:normal;
-  font-family: 'Cal Sans', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
+  line-height: normal;
   text-wrap: balance;
 }
 

@@ -2,6 +2,7 @@
 import { MENU } from '@/constants/vars'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { workSans } from '../../lib/fonts'
 
 export default function RowMenu() {
   const pathname = usePathname()
@@ -18,7 +19,7 @@ export default function RowMenu() {
           </Link>
         ))}
       </div>
-      <span className='clipPathHashtag py-1.5 px-10 min-w-max flex justify-center items-center bg-primary text-secondary'>#BERESSÒ</span>
+      <span className={`${workSans.className} font-extrabold italic clipPathHashtag py-1.5 px-10 min-w-max flex justify-center items-center bg-primary text-secondary`}>#BERESSÒ</span>
       {/* <div className='flex gap-2.5'>
         <Rrss />
       </div> */}
