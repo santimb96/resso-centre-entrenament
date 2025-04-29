@@ -10,14 +10,14 @@ export default function Footer() {
           <Link href='/'>
             <picture>
               <Image
-                src='/img/logo-resso-sf-negro-azul.png'
+                src='/img/logo-resso-fn-azul-blanco-resized.png'
                 alt='Ressò fn azul logo'
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
             </picture>
           </Link>
-          <h6 className='text-pretty text-center opacity-80'>2025 | Ressò - Centre d'entrenament</h6>
+          <p className='text-pretty text-center opacity-80'>2025 | Ressò - Centre d'entrenament</p>
         </div>
         <div className='w-full xl:hidden'>
           <Divider />

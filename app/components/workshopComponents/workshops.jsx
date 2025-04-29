@@ -26,7 +26,7 @@ async function WorkshopsList (){
           <Workshop key={index} {...workshop} />
         ))}
       </div>
-      <Link href='/workshops' className='flex justify-center items-center gap-2.5 text-[2rem] bg-primary font-semibold flex justify-center gap-2.5 px-5 pb-2.5 pt-3.5 border border-primary rounded-md hover:bg-accent text-secondary hover:text-primary transition-all duration-150 ease-in-out'><ArrowRightHamMenu size={32} /> Ver todos los workshops</Link>
+      <Link href='/workshops' className='font-bold flex justify-center items-center gap-2.5 text-[1.25rem] md:text-[1.75rem] lg:text-[2rem] bg-primary flex justify-center gap-2.5 px-5 py-2.5 border border-primary rounded-md hover:bg-secondary text-secondary hover:text-primary transition-all duration-150 ease-in-out border border-secondary'><span className='min-w-6'><ArrowRightHamMenu size={24} /></span> Ver todos los workshops</Link>
     </div>
   )
 }

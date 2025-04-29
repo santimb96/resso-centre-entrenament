@@ -111,27 +111,30 @@ const WORKSHOPS =
   [
     {
       id: 1,
-      title: 'Taller de Judo Infantil',
-      description: 'Únete a nuestro taller especial de judo para niños entre 6 y 12 años. Durante esta jornada intensiva, los pequeños aprenderán las técnicas básicas del judo de una manera divertida y segura, siempre bajo la supervisión de instructores certificados.\n\nDesarrollaremos actividades específicas para mejorar el equilibrio, la coordinación y la disciplina. Los participantes aprenderán sobre los valores fundamentales del judo como el respeto, la cortesía y el autocontrol.\n\nSe realizarán ejercicios de calentamiento específicos, juegos adaptados al judo y prácticas de caídas seguras. También introduciremos las primeras técnicas de proyección y control adaptadas al nivel infantil.\n\nAl finalizar el taller, todos los participantes recibirán un diploma de participación y una clase gratuita en nuestro dojo.',
+      title: 'Trabaja con tu cuerpo: fundamentos del trabajo físico',
+      description: 'Taller práctico de calistenia y movilidad. Aprenderemos a trabajar con nuestro propio cuerpo, utilizando ejercicios de calistenia y movilidad para mejorar la fuerza, flexibilidad y control corporal.\n\nEl taller incluirá una introducción a los principios de la calistenia, ejercicios básicos y progresiones para cada nivel. Se trabajará en la mejora de la movilidad articular y la activación muscular.\n\nLos participantes recibirán un plan de entrenamiento personalizado para continuar su práctica en casa. Ideal para aquellos que buscan mejorar su condición física sin necesidad de equipamiento adicional.',
       date: '15/02/2024',
-      location: 'Dojo Central Barcelona',
-      img: '/img/judoWorkshop.jpg'
+      location: '#somosRaw',
+      img: '/img/workshops/calistenia.JPG',
+      coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9'
     },
     {
       id: 2,
-      title: 'Masterclass de Técnicas Avanzadas',
-      description: 'Masterclass exclusiva dirigida a judokas de cinturón marrón y negro. En esta sesión intensiva profundizaremos en técnicas avanzadas de competición y sus variantes más efectivas.\n\nNuestro maestro 6º Dan compartirá secretos técnicos y tácticos basados en su experiencia en competiciones internacionales. Se analizarán secuencias de combate y se trabajará en la mejora de los timings de ataque.\n\nDedicaremos un espacio especial al trabajo de transiciones entre técnicas de pie y suelo, perfeccionando las combinaciones más efectivas en competición actual.\n\nConcluiremos con un análisis detallado de videos de competición y una sesión de preguntas y respuestas con el maestro.',
+      title: 'Judo para principiantes: fundamentos del judo',
+      description: 'Taller práctico de judo. Aprenderemos los fundamentos básicos del judo, incluyendo técnicas de takedown, guard, ataque y defensa. El taller incluirá una introducción a las reglas del judo y la importancia de la disciplina y el respeto en el deporte.\n\nLos participantes recibirán una guía de entrenamiento personalizado para continuar su práctica en casa. Ideal para aquellos que desean aprender el deporte de manera segura y respetuosa.',
       date: '20/03/2024',
-      location: 'Centro Deportivo Olympic, Madrid',
-      img: '/img/judoWorkshop.jpg'
+      location: '#BeRessò',
+      img: '/img/workshops/judoPrincipiantes.JPG',
+      coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9'
     },
     {
       id: 3,
-      title: 'Seminario de Kata Tradicional',
-      description: 'Seminario especializado en el estudio y perfeccionamiento del Nage-no-kata y Katame-no-kata. Una oportunidad única para profundizar en los aspectos más tradicionales y fundamentales del judo.\n\nBajo la dirección de expertos en kata, trabajaremos la precisión técnica y los principios fundamentales que sustentan cada movimiento. Se explicará el significado histórico y técnico de cada secuencia.\n\nLos participantes recibirán correcciones personalizadas y material didáctico específico para continuar su estudio. Se grabará una demostración individual para posterior análisis.\n\nIdeal para aquellos que se preparan para exámenes de grado o competiciones de kata.',
+      title: 'Acondicionamiento físico para el judo',
+      description: 'Taller práctico de acondicionamiento físico específico para el judo. Aprenderemos ejercicios y rutinas de entrenamiento adaptadas a las necesidades del judoka, incluyendo fuerza, resistencia y flexibilidad.\n\nEl taller incluirá una introducción a la planificación del entrenamiento y la importancia de la prevención de lesiones. Se trabajará en la mejora de la movilidad articular y la activación muscular.\n\nLos participantes recibirán un plan de entrenamiento personalizado para continuar su práctica en casa. Ideal para aquellos que buscan mejorar su rendimiento en el judo.',
       date: '05/04/2024',
-      location: 'Pabellón Municipal de Deportes, Valencia',
-      img: '/img/judoWorkshop.jpg'
+      location: '#BeRessò',
+      img: '/img/workshops/rack.JPG',
+      coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9'
     },
     {
       id: 4,
@@ -139,7 +142,8 @@ const WORKSHOPS =
       description: 'Taller especializado en la preparación física adaptada a las necesidades específicas del judoka. Dirigido tanto a competidores como a practicantes recreativos que deseen mejorar su condición física.\n\nAprenderemos ejercicios específicos para desarrollar la fuerza, resistencia y potencia necesarias en judo. Se incluirán circuitos de entrenamiento funcional y trabajo con pesas adaptado.\n\nTrabajo específico de prevención de lesiones y recuperación activa. Introducción a técnicas de respiración y control corporal para optimizar el rendimiento.\n\nCada participante recibirá un plan de entrenamiento personalizado para continuar su preparación de forma autónoma.',
       date: '10/05/2024',
       location: 'Centro de Alto Rendimiento, Sevilla',
-      img: '/img/judoWorkshop.jpg'
+      img: '/img/judoWorkshop.jpg',
+      coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9'
     },
     {
       id: 5,
@@ -147,7 +151,8 @@ const WORKSHOPS =
       description: 'Taller práctico donde exploraremos las aplicaciones del judo en situaciones de defensa personal. Aprenderemos a adaptar las técnicas tradicionales a escenarios realistas de autoprotección.\n\nSe trabajarán situaciones comunes de defensa contra diferentes tipos de agresiones, siempre desde la perspectiva de la seguridad y la proporcionalidad en la respuesta.\n\nIncluiremos técnicas de control y neutralización, así como estrategias de prevención y evaluación de riesgos. Especial énfasis en la parte legal y ética de la defensa personal.\n\nPrácticas con diferentes escenarios y situaciones simuladas para integrar lo aprendido de forma segura y efectiva.',
       date: '15/06/2024',
       location: 'Academia de Seguridad, Zaragoza',
-      img: '/img/judoWorkshop.jpg'
+      img: '/img/judoWorkshop.jpg',
+      coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9'
     }
   ]
 
