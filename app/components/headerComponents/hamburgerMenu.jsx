@@ -6,6 +6,7 @@ import { MENU } from '@/constants/vars'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { workSans } from '../../lib/fonts'
 import Divider from '../divider'
 import Rrss from '../rrss'
 
@@ -49,7 +50,7 @@ export default function HamburgerMenu () {
             ))}
           </nav>
           <Divider />
-          <h4 className='text-center my-2.5 text-[2rem] text-accent'>Sígueme en redes!</h4>
+          <h4 className={`${workSans.className} text-center my-2.5 text-[2rem] text-accent`}>¡Sígueme en redes!</h4>
           <div className='flex justify-center items-center gap-5 my-2.5'>
             <Rrss />
           </div>
