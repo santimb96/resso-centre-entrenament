@@ -1,16 +1,10 @@
-import { FaInstagram } from 'react-icons/fa'
+import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuMouse } from 'react-icons/lu'
 import { MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
-
-
-
-
-
-
 
 export function Hamburger ({size = 24}) {
   return <RxHamburgerMenu size={size} />
@@ -62,4 +56,12 @@ export function Facebook ({size = 24}) {
 
 export function Mail ({size = 24}) {
   return <MdOutlineEmail size={size} />
+}
+
+export function Youtube ({size = 24}) {
+  return <FaYoutube size={size} />
+}
+
+export function Tiktok ({size = 24}) {
+  return <FaTiktok size={size} />
 }

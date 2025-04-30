@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+ 
+import { Facebook, Instagram, Location, Mail, Tiktok, Youtube } from '@/components/icons'
 import Image from 'next/image'
 import Link from 'next/link'
-import Divider from './divider'
+import { workSans } from '../lib/fonts'
 export default function Footer() {
   return (
     <footer className='w-full flex flex-col items-center mt-auto'>
-      <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 xl:flex-row xl:justify-between'>
+      <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 lg:!flex-row lg:justify-between lg:items-start'>
         <div className='flex flex-col justify-center items-center gap-2.5'>
           <Link href='/'>
             <picture>
@@ -17,13 +19,34 @@ export default function Footer() {
               />
             </picture>
           </Link>
-          <p className='text-pretty text-center opacity-80'>2025 | Ressò - Centre d'entrenament</p>
+          <div className='flex flex-col items-center lg:items-start gap-2.5 font-thin mt-5'>
+            <a className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out text-[0.75rem] lg:text-[1rem]' href='' target='_blank'>
+              <span className='max-w-4 lg:min-w-6'><Location /></span>
+              Calle de Sant Fiol 21, Marratxí, Islas Baleares, España
+            </a>
+            <a className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out text-[0.75rem] lg:text-[1rem]' href='mailto:info@resso.fn.es'>
+              <span className='max-w-4 lg:min-w-6'><Mail /></span>
+              info@resso.fn.es
+            </a>
+            <div className='w-full flex justify-center items-center gap-2.5 mt-5'>
+              <a className='hover:text-accent duration-150 ease-in-out' href='' title='Instagram' target='_blank'><span className='max-w-4 lg:min-w-9'><Instagram size={32} /></span></a>
+              <a className='hover:text-accent duration-150 ease-in-out' href='' title='Facebook' target='_blank'><span className='max-w-4 lg:min-w-9'><Facebook size={32} /></span></a>
+              <a className='hover:text-accent duration-150 ease-in-out' href='' title='TikTok' target='_blank'><span className='max-w-4 lg:min-w-9'><Tiktok size={28} /></span></a>
+              <a className='hover:text-accent duration-150 ease-in-out' href='' title='YouTube' target='_blank'><span className='max-w-4 lg:min-w-9'><Youtube size={32} /></span></a>
+            </div>
+          </div>
         </div>
-        <div className='w-full xl:hidden'>
-          <Divider />
-        </div>
-        <small className='text-pretty text-center opacity-80 text-[12px] lg:text-[14px]'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-100 text-[12px] lg:text-[14px] hover:brightness-125' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
+        <div className={`${workSans.className} flex flex-col justify-center items-center lg:items-start gap-2.5 mt-5`}>
+          <h4 className='text-accent text-[1.5rem]'>Secciones</h4>
+          <Link className='hover:text-accent duration-150 ease-in-out' href='/#que-es-resso'>¿Qué es Ressò?</Link>
+          <Link className='hover:text-accent duration-150 ease-in-out' href='/#planes'>Planes</Link>
+          <Link className='hover:text-accent duration-150 ease-in-out' href='/#workshops'>Workshops</Link>
+          <Link className='hover:text-accent duration-150 ease-in-out' href='/#patrocinadores'>Patrocinadores</Link>
+          <Link className='hover:text-accent duration-150 ease-in-out' href='/#contacto'>Contacto</Link>
+        </div>  
       </div>
+      <p className='text-pretty text-center font-bold my-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d'entrenament</p>
+      <small className='text-pretty text-center font-thin text-[0.75rem] lg:text-[1rem] mb-5'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-150' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
     </footer>  
   )
 }
