@@ -1,5 +1,6 @@
 import { getWorkshops } from '@/services/getData'
 import { Suspense } from 'react'
+import TitleSection from '../components/common/TitleSection'
 import WorkshopCard from './workshopCard'
 
 async function WorkshopsList (){
@@ -7,7 +8,7 @@ async function WorkshopsList (){
   const data = fullData.data
 
   return (
-    <div className='w-full grid grid-cols-1 place-items-start md:grid-cols-2 gap-5'>
+    <div className='w-full grid grid-cols-1 place-items-start md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5'>
       {
         data.map(workshop => (
           <WorkshopCard key={workshop.id} workshop={workshop} />
@@ -19,8 +20,8 @@ async function WorkshopsList (){
 
 export default async function Workshops() {
   return (
-    <section className='w-full mt-32'>
-      <h2 className='mb-5'>Workshops</h2>
+    <section className='w-full mt-32 px-2.5'>
+      <TitleSection title='Workshops' color='accent' />
       <Suspense fallback={<p>Loading...</p>}>
         <WorkshopsList />
       </Suspense>

@@ -16,14 +16,14 @@ export default function WorkshopCard({workshop}){
           sizes="500px"
         />
       </picture>
-      <div className='w-full flex flex-col justify-start items-start gap-2.5 p-2.5 '>
-        <h4 className='w-full'>{title}</h4>
-        <div className='w-full flex flex-col items-center justify-start gap-2.5 opacity-80 overflow-hidden'>
-          <p className='font-bold opacity-60 flex flex-row justify-start items-center gap-1 whitespace-nowrap'><span className='min-w-6'><Calendar size={24} /></span>{date}</p>
-          <p className='font-bold opacity-60 flex flex-row justify-start items-center gap-1 overflow-hidden'><span className='min-w-6'><Location size={24} /></span><span className='font-bold whitespace-nowrap text-ellipsis overflow-hidden'>{location}</span></p>
+      <div className='w-full flex flex-col justify-start items-start gap-2.5 p-5 bg-primary'>
+        <h4 className='w-full text-[1.25rem] md:text-[1.5rem] font-bold'>{title}</h4>
+        <div className='w-full flex flex-col items-start justify-start gap-2.5 overflow-hidden'>
+          <p className='font-bold flex flex-row justify-start items-center gap-1 whitespace-nowrap'><span className='min-w-6'><Calendar size={24} /></span>{date}</p>
+          <a href='' className='font-bold flex flex-row justify-start items-center gap-1 overflow-hidden hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={24} /></span><span className='font-bold whitespace-nowrap text-ellipsis overflow-hidden'>{location}</span></a>
         </div>
         <p className='line-clamp-3'>{description}</p>
-        <Link href={`/workshop/${id}`} className='font-bold flex flex-row justify-center items-center gap-2.5 py-2.5 px-5 border border-[var(--color-secondary)] rounded-md hover:bg-blue-900 hover:text-primary hover:border-blue-900 transition-all duration-200 ease-in-out'><ArrowRightHamMenu />Más información</Link>
+        <Link href={`/workshop/${id}`} className='font-bold flex flex-row justify-center items-center gap-2.5 py-2.5 px-5 border border-[var(--color-secondary)] rounded-md hover:bg-accent hover:text-primary hover:border-blue-900 transition-all duration-200 ease-in-out'><ArrowRightHamMenu />Más información</Link>
       </div>
     </aside>
   )

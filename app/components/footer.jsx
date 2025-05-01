@@ -3,6 +3,7 @@
 import { Facebook, Instagram, Location, Mail, Tiktok, Youtube } from '@/components/icons'
 import Image from 'next/image'
 import Link from 'next/link'
+import { MENU } from '../constants/vars'
 import { workSans } from '../lib/fonts'
 export default function Footer() {
   return (
@@ -38,11 +39,12 @@ export default function Footer() {
         </div>
         <div className={`${workSans.className} flex flex-col justify-center items-center lg:items-start gap-2.5 mt-5`}>
           <h4 className='text-accent text-[1.5rem]'>Secciones</h4>
-          <Link className='hover:text-accent duration-150 ease-in-out' href='/#que-es-resso'>¿Qué es Ressò?</Link>
-          <Link className='hover:text-accent duration-150 ease-in-out' href='/#planes'>Planes</Link>
-          <Link className='hover:text-accent duration-150 ease-in-out' href='/#workshops'>Workshops</Link>
-          <Link className='hover:text-accent duration-150 ease-in-out' href='/#patrocinadores'>Patrocinadores</Link>
-          <Link className='hover:text-accent duration-150 ease-in-out' href='/#contacto'>Contacto</Link>
+          {MENU.map((menuItem, index) => (
+            <Link className='hover:text-accent duration-150 ease-in-out' key={index + menuItem.name} href={`/${menuItem.href}`}>
+              <span>{menuItem.name}</span>
+            </Link>
+          ))}
+         
         </div>  
       </div>
       <p className='text-pretty text-center font-bold my-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d'entrenament</p>
