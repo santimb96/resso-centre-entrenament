@@ -33,30 +33,30 @@ export default async function WorkshopInfo(props) {
   const { profileImg, fullname, occupation, resume, rrss } = teacher
   
   return (
-    <section className='w-full flex flex-col justify-center items-center gap-5 scroll-m-24 mt-20 py-10'>
-      <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex justify-start items-center gap-2.5 lg:my-5 text-[1rem] font-thin px-2.5 md:px-0'>
+    <section className='w-full flex flex-col justify-center items-center gap-5 scroll-m-24 mt-20 py-10 bg-accent'>
+      <div className='w-full m text-primary d:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex justify-start items-center gap-2.5 lg:my-5 text-[1rem] font-thin px-2.5 md:px-0'>
         <Link href='/' className='hover:underline duration-150 ease-in-out'>Inicio</Link>
         /
         <Link href='/workshops' className='hover:underline duration-150 ease-in-out'>Workshops</Link>
         /
-        <p title={title} className='font-bold text-accent cursor-not-allowed line-clamp-1'>{title}</p>
+        <p title={title} className='font-bold cursor-not-allowed line-clamp-1'>{title}</p>
       </div>
       <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] grid grid-cols-1 lg:place-items-start px-2.5 md:px-0 lg:grid-cols-3 lg:grid-rows-1 gap-5'>
-        <div className='lg:col-span-2 lg:row-span-2 flex flex-col justify-start items-start gap-2.5 w-full'>
+        <div className='lg:col-span-2 lg:row-span-2 flex flex-col justify-start items-start gap-2.5 w-full text-primary'>
           <picture className='relative w-full h-[40vh] lg:h-[60vh] block'>
             <Image
-              className='object-cover rounded-3xl'
+              className='object-cover rounded-3xl shadow-md'
               src={img}
               alt={title}
               fill
               sizes="500px"
             />
           </picture>
-          <h3 className={`${workSans.className} text-accent text-[1.75rem] lg:text-[2.25rem] my-5 font-extrabolds`}>{title}</h3>
+          <h3 className={`${workSans.className} text-[1.75rem] lg:text-[2.25rem] my-5 font-extrabolds`}>{title}</h3>
           <p className='text-[1rem] lg:text-[1.25rem] font-medium'>{description}</p>
         </div>
         <div className='lg:col-span-1 lg:row-span-1 flex flex-col justify-start items-start gap-2.5'>
-          <div className='rounded-xl p-5 bg-primary flex flex-col justify-start items-start gap-2.5 border border-secondary/20 w-full shadow-sm'>
+          <div className='rounded-xl p-5 bg-primary flex flex-col justify-start items-start gap-2.5 border border-secondary/20 w-full shadow-md'>
             <h4 className='text-[1rem] lg:text-[1.25rem] font-bold'>Información del taller</h4>
             <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Calendar size={22} /></span>{date}</div>
             <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Clock size={22} /></span>{startTime}</div>
