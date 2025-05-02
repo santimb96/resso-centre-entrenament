@@ -205,7 +205,6 @@ header {
 	animation: header-animation 1s linear both;
 	animation-timeline: scroll();
 	animation-range: 0 25px;
-	color: var(--color-secondary);
 }
 @keyframes header-animation {
 	0% {

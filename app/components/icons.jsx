@@ -1,4 +1,4 @@
-import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaRegClock, FaTiktok, FaYoutube } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
@@ -64,4 +64,8 @@ export function Youtube ({size = 24}) {
 
 export function Tiktok ({size = 24}) {
   return <FaTiktok size={size} />
+}
+
+export function Clock ({size = 24}) {
+  return <FaRegClock size={size} />
 }

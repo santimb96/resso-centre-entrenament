@@ -1,4 +1,5 @@
 import { getWorkshops } from '@/services/getData'
+import Link from 'next/link'
 import { Suspense } from 'react'
 import TitleSection from '../components/common/TitleSection'
 import WorkshopCard from './workshopCard'
@@ -21,6 +22,11 @@ async function WorkshopsList (){
 export default async function Workshops() {
   return (
     <section className='w-full mt-32 px-2.5'>
+      <div className='w-full flex justify-start items-center gap-2.5 my-5 text-[1rem] font-thin'>
+        <Link href='/' className='hover:underline duration-150 ease-in-out'>Inicio</Link>
+        /
+        <p className='font-bold text-accent cursor-not-allowed'>Workshops</p>
+      </div>
       <TitleSection title='Workshops' color='accent' />
       <Suspense fallback={<p>Loading...</p>}>
         <WorkshopsList />
