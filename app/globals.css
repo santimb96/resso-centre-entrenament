@@ -245,21 +245,9 @@ header {
   display: none;
 }
 
-.rowNav > div > a {
-  font-size: 1.25rem;
-  padding: 0.25rem 0.5rem;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    color: var(--color-detail);
-    /* border-bottom: 2px solid var(--color-secondary); */
-  }
-}
-.rowNav > div > a:has(span) {
-  border: none !important;
-}
 /* SLIDER */
 .keen-slider {
-  width: 90vw !important;
+  width: 100% !important;
   border-radius: 20px;
 }
 .sliderWrapper {

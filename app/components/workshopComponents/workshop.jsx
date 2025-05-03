@@ -4,15 +4,15 @@ import { ArrowRightHamMenu, Calendar, Location } from '../icons'
 
 export default function Workshop ({ id, title, date, location, img, coordinates}) {
   return (
-    <picture className='relative w-[100%] h-[450px] lg:h-[500px] block keen-slider__slide lg:rounded-xl lg:hover:brightness-150 lg:transition-all lg:duration-200 lg:ease-in-out'>
+    <picture className='relative w-full h-[400px] lg:h-[500px] block keen-slider__slide lg:rounded-2xl lg:hover:brightness-150 lg:transition-all lg:duration-150 lg:ease-in-out'>
       <Image
-        className='object-cover md:rounded-xl'
+        className='object-cover md:rounded-2xl'
         src={img}
         alt={title}
+        sizes='500px'
         fill
-        sizes="600px"
       />
-      <div className="md:rounded-xl absolute inset-0 bg-gradient-to-b from-transparent to-black" />
+      <div className="md:rounded-2xl absolute inset-0 bg-gradient-to-b from-transparent to-black" />
       <div className='pr-5 pl-5 w-full absolute flex flex-col justify-start items-start gap-2.5 bottom-5 text-primary'>
         <h4 className='drop-shadow-md text-[1.5rem] mb-2.5 textShadow'>{title}</h4>
         <div className='flex flex-col items-start justify-start gap-2.5'>

@@ -9,7 +9,7 @@ async function WorkshopsList (){
   const data = fullData.data
 
   return (
-    <div className='w-full grid grid-cols-1 place-items-start md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5'>
+    <div className='w-full grid grid-cols-1 place-items-start md:grid-cols-2 2xl:grid-cols-3 gap-10 mt-5'>
       {
         data.map(workshop => (
           <WorkshopCard key={workshop.id} workshop={workshop} />
@@ -21,16 +21,18 @@ async function WorkshopsList (){
 
 export default async function Workshops() {
   return (
-    <section className='w-full mt-32 px-2.5'>
-      <div className='w-full flex justify-start items-center gap-2.5 my-5 text-[1rem] font-thin'>
-        <Link href='/' className='hover:underline duration-150 ease-in-out'>Inicio</Link>
+    <section className='w-full flex justify-center items-center mt-32 px-2.5 mb-10'>
+      <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex flex-col justify-start items-start gap-2.5'>
+        <div className='w-full flex justify-start items-center gap-2.5 text-[1rem] font-thin mb-5'>
+          <Link href='/' className='hover:underline duration-150 ease-in-out'>Inicio</Link>
         /
-        <p className='font-bold text-accent cursor-not-allowed'>Workshops</p>
+          <p className='font-bold text-accent cursor-not-allowed'>Workshops</p>
+        </div>
+        <TitleSection title='Workshops' color='accent' />
+        <Suspense fallback={<p>Loading...</p>}>
+          <WorkshopsList />
+        </Suspense>
       </div>
-      <TitleSection title='Workshops' color='accent' />
-      <Suspense fallback={<p>Loading...</p>}>
-        <WorkshopsList />
-      </Suspense>
     </section>
   )
 }

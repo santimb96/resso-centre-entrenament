@@ -34,12 +34,12 @@ export default async function WorkshopInfo(props) {
   
   return (
     <section className='w-full flex flex-col justify-center items-center gap-5 scroll-m-24 mt-20 py-10 bg-accent'>
-      <div className='w-full m text-primary d:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex justify-start items-center gap-2.5 lg:my-5 text-[1rem] font-thin px-2.5 md:px-0'>
+      <div className='w-full text-primary d:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex justify-start items-center gap-2.5 text-[1rem] font-thin px-2.5 md:px-0'>
         <Link href='/' className='hover:underline duration-150 ease-in-out'>Inicio</Link>
         /
         <Link href='/workshops' className='hover:underline duration-150 ease-in-out'>Workshops</Link>
         /
-        <p title={title} className='font-bold cursor-not-allowed line-clamp-1'>{title}</p>
+        <p title={title} className='font-bold cursor-not-allowed line-clamp-1 italic'>{title}</p>
       </div>
       <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] grid grid-cols-1 lg:place-items-start px-2.5 md:px-0 lg:grid-cols-3 lg:grid-rows-1 gap-5'>
         <div className='lg:col-span-2 lg:row-span-2 flex flex-col justify-start items-start gap-2.5 w-full text-primary'>
