@@ -1,10 +1,11 @@
+import { WIDTH_LAYOUT } from '@/constants/vars'
 import TitleSection from './common/TitleSection'
 import { Facebook, Instagram, Mail } from './icons'
 
 export default function Contact () {
   return (
     <section id='contacto' className='scrollAppear w-full flex flex-col justify-center items-center gap-5 scroll-m-24 bg-accent py-10'>
-      <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw]'>
+      <div className={WIDTH_LAYOUT}>
         <TitleSection title='Contacto' />
         <p className='text-primary text-[0.75rem] md:text-[1.75rem] m-w-[75ch] my-10'>¡No dudes en ponerte en contacto conmigo por la vía que prefieras!</p>
         <div className='w-full flex flex-row max-sm:flex-wrap gap-5'>

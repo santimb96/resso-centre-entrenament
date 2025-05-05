@@ -23,20 +23,17 @@ export default function Slider ({ children }) {
   })
 
   return (
-    <div className='relative w-full flex-col justify-center items-center gap-2.5'>
+    <div className='w-full flex-col justify-center items-center gap-2.5'>
       <div ref={sliderRef} className="keen-slider">
         {children}
       </div>
       {loaded && instanceRef.current && (
-        <>
-          <div className='flex justify-center gap-2.5 mt-14'>
-            <Arrow
-              left
-              onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()} />
+        
+        <div className='mt-5 flex justify-center items-center h-min gap-10'>
+          <Arrow
+            left
+            onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()} />
 
-            <Arrow
-              onClick={(e) => e.stopPropagation() || instanceRef.current?.next()} />
-          </div>
           <div className="dots">
             {[
               ...Array(instanceRef.current.track.details.slides.length).keys(),
@@ -51,14 +48,17 @@ export default function Slider ({ children }) {
                 ></button>
               )
             })}
-          </div></>
+          </div>
+          <Arrow
+            onClick={(e) => e.stopPropagation() || instanceRef.current?.next()} />
+        </div>  
       )
       }
     </div>
   )
 }
 
-function Arrow(props) {
+function Arrow (props) {
   const disabled = props.disabled ? ' arrow--disabled' : ''
   return (
     <svg

@@ -98,7 +98,7 @@ img, video, svg {
 :root {
   --color-primary: #FFFFFF;
   --color-secondary: #2B2B29;
-  --color-detail: #55B3B7;
+  --color-accent: #55B3B7;
 }
 
 /* TEXT STYLES */
@@ -247,24 +247,12 @@ header {
 
 /* SLIDER */
 .arrow {
-  padding: 10px;
-  background: var(--color-primary);
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  fill: var(--color-detail);
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary);
   cursor: pointer;
-}
-
-.arrow--left {
-  left: 10px;
-}
-
-.arrow--right {
-  left: auto;
-  right: 10px;
 }
 
 .arrow--disabled {
@@ -283,6 +271,7 @@ header {
   width: 10px;
   height: 10px;
   background: var(--color-primary);
+  opacity: 0.5;
   border-radius: 50%;
   margin: 0 5px;
   padding: 5px;
@@ -294,7 +283,8 @@ header {
 }
 
 .dot.active {
-  background: var(--color-secondary);
+  background: var(--color-primary);
+  opacity: 1;
 }
 
 .keen-slider {

@@ -1,7 +1,8 @@
+import TitleSection from '@/components/common/TitleSection'
+import { WIDTH_LAYOUT } from '@/constants/vars'
 import { getWorkshops } from '@/services/getData'
 import Link from 'next/link'
 import { Suspense } from 'react'
-import TitleSection from '../components/common/TitleSection'
 import WorkshopCard from './workshopCard'
 
 async function WorkshopsList (){
@@ -22,7 +23,7 @@ async function WorkshopsList (){
 export default async function Workshops() {
   return (
     <section className='w-full flex justify-center items-center mt-32 px-2.5 mb-10'>
-      <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex flex-col justify-start items-start gap-2.5'>
+      <div className={`${WIDTH_LAYOUT} flex flex-col justify-start items-start gap-2.5`}>
         <div className='w-full flex justify-start items-center gap-2.5 text-[1rem] font-thin mb-5'>
           <Link href='/' className='hover:underline duration-150 ease-in-out'>Inicio</Link>
         /

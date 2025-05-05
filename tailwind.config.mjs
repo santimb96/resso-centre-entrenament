@@ -11,12 +11,12 @@ export default {
       colors: {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
-        accent: 'var(--color-detail)',
+        accent: 'var(--color-accent)',
         instagramStart: '#FDDC5C',
         instagramEnd: '#EA2F85',
         facebook: '#1877F2' 
-      },
-    },
+      }
+    }
   },
   plugins: [
     require('tailwindcss-animated')
