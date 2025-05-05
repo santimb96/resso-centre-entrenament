@@ -1,12 +1,13 @@
 
 import { PACK_LIST } from '@/constants/vars'
 import { workSans } from '../lib/fonts'
+import TextComponent from './common/TextComponent'
 import { CheckCircle, CloseCircle } from './icons'
 
 export default function PackList () {
   return (
     <>
-      <p className='text-accent text-[1.25rem] md:text-[1.75rem] m-w-[75ch] mb-20'>Aquí podrás encontrar los que tengo a disposición: <i className='underline'>iniciación, avanzado y profesional</i></p>
+      <TextComponent text={'Aquí podrás encontrar los que tengo a disposición: <i className="underline">iniciación, avanzado y profesional</i>'} textColor='accent' />
       <div className='grid grid-cols-1 gap-5 lg:grid-cols-3 lg:items-center'>
         {PACK_LIST.map((pack, index) => (
           <Pack key={index + pack.title} pack={pack} />
