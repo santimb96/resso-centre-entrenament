@@ -1,4 +1,5 @@
-import { FaInstagram, FaRegClock, FaTiktok, FaYoutube } from 'react-icons/fa'
+import { BsTelephone } from 'react-icons/bs'
+import { FaInstagram, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
@@ -68,4 +69,12 @@ export function Tiktok ({size = 24}) {
 
 export function Clock ({size = 24}) {
   return <FaRegClock size={size} />
+}
+
+export function Tlf ({size = 24}) {
+  return <BsTelephone size={size} />
+}
+
+export function Whatsapp ({size = 24}) {
+  return <FaWhatsapp size={size} />
 }
