@@ -34,7 +34,6 @@ function Pack ({pack}) {
         </div>
         <span className='text-[0.75rem] mb-1.5 opacity-50'>*Pago mensual</span>
       </div>
-      <p className='opacity-80'>{description}</p>
       {discount && <h6 className='line-through'>{price - price/2}</h6>}
       <a href={link} target='_blank' className={`bg-primary ${popular ? 'hover:bg-accent hover:border-accent border border-accent text-accent' : 'hover:bg-accent hover:border-blue-900 border border-secondary'} ${premium && '!text-secondary'} ${workSans.className} text-xl font-extrabold hover:text-primary transition-all duration-200 ease-in-out border border-secondary py-2.5 rounded-full text-center w-full`}>¡APÚNTATE!</a>
       <div className='flex flex-col justify-start items-start gap-2.5'>

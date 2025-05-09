@@ -52,7 +52,7 @@ const PACK_LIST = [
       'Acceso a seminarios especializados',
       'Seguimiento nutricional'
     ],
-    price: 49.99,
+    price: 80,
     link: 'https://academiajudo.com/plan-iniciacion',
     discount: false,
     popular: false,
@@ -77,7 +77,7 @@ const PACK_LIST = [
       'Acceso a seminarios especializados',
       'Seguimiento nutricional'
     ],
-    price: 79.99,
+    price: 90,
     link: 'https://academiajudo.com/plan-intermedio',
     discount: false,
     popular: true,
@@ -101,7 +101,7 @@ const PACK_LIST = [
       'Seguimiento nutricional'
     ],
     notIncludes: [],
-    price: 119.99,
+    price: 120,
     link: 'https://academiajudo.com/plan-avanzado',
     discount: false,
     popular: false,
