@@ -1,6 +1,6 @@
 import { ArrowRightHamMenu, Calendar, Location } from '@/components/icons'
-import { Link } from 'next-view-transitions'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function WorkshopCard({workshop}){
   const {id, title, description, location, date, img} = workshop

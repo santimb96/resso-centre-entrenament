@@ -1,5 +1,5 @@
-import { Link } from 'next-view-transitions'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowRightHamMenu, Calendar, Location } from '../icons'
 
 export default function Workshop ({ id, title, date, location, img, coordinates}) {
