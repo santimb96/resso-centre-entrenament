@@ -5,6 +5,7 @@ import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuMouse } from 'react-icons/lu'
 import { MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
+import { RiPriceTag3Line } from 'react-icons/ri'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
 
 export function Hamburger ({size = 24}) {
@@ -77,4 +78,8 @@ export function Tlf ({size = 24}) {
 
 export function Whatsapp ({size = 24}) {
   return <FaWhatsapp size={size} />
+}
+
+export function PriceTag ({size = 24}) {
+  return <RiPriceTag3Line size={size} />
 }
