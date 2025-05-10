@@ -3,10 +3,14 @@ import { FaInstagram, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-
 import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
-import { LuMouse } from 'react-icons/lu'
+import { LuCircleCheckBig, LuGoal, LuMouse } from 'react-icons/lu'
 import { MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
-import { RiPriceTag3Line } from 'react-icons/ri'
+import { PiUsersFour } from 'react-icons/pi'
+import { RiPriceTag3Line, RiServiceLine } from 'react-icons/ri'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
+
+
+
 
 export function Hamburger ({size = 24}) {
   return <RxHamburgerMenu size={size} />
@@ -83,3 +87,20 @@ export function Whatsapp ({size = 24}) {
 export function PriceTag ({size = 24}) {
   return <RiPriceTag3Line size={size} />
 }
+
+export function Users ({size = 24}) {
+  return <PiUsersFour size={size} />
+}
+
+export function HealthCheck ({size = 24}) {
+  return <LuCircleCheckBig size={size} />
+}
+
+export function Services ({size = 24}) {
+  return <RiServiceLine size={size} />
+}
+
+export function Goal ({size = 24}) {
+  return <LuGoal size={size} />
+}
+

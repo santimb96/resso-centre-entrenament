@@ -32,6 +32,33 @@ const MENU = [
   }
 ]
 
+const SERVICES = [
+  {
+    id: 1,
+    title: 'Grupos de 4 personas',
+    description: 'Podrás disfrutar de una atención personalizada y un enfoque individualizado en cada sesión, ya sea que estés buscando mejorar tu condición física, aprender nuevas habilidades o simplemente disfrutar de una actividad en grupo.',
+    icon: 'Users'
+  },
+  {
+    id: 2,
+    title: 'Evaluación inicial',
+    description: 'Podrás solicitar una evaluación inicial para determinar tu nivel de condición física y establecer objetivos claros y alcanzables. Esta evaluación te permitirá conocer tus fortalezas y áreas de mejora, y te ayudará a diseñar un plan de entrenamiento adaptado a tus necesidades.',
+    icon: 'HealthCheck'
+  },
+  {
+    id: 3,
+    title: 'Servicios complementarios',
+    description: 'Disponemos de servicios complementarios como sesiones de recuperación física y seguimiento nutricional. Estos servicios están diseñados para ayudarte a optimizar tu rendimiento y bienestar general.',
+    icon: 'Services'
+  },
+  {
+    id: 4,
+    title: 'Preparados para tus objetivos',
+    description: 'Ofrecemos entrenamiento personalizado para aquellos que desean un enfoque más específico y personalizado en su entrenamiento. Nuestros entrenadores especializados trabajarán contigo para diseñar un plan de entrenamiento personalizado que se adapte a tus necesidades y objetivos específicos.',
+    icon: 'Goal'
+  }
+]
+
 const PACK_LIST = [
   {
     id: 1,
@@ -226,5 +253,5 @@ const TEACHERS = [
   }
 ]
 
-export { MENU, PACK_LIST, PERSONAL_INFO, TEACHERS, WIDTH_LAYOUT, WORKSHOPS }
+export { MENU, PACK_LIST, PERSONAL_INFO, SERVICES, TEACHERS, WIDTH_LAYOUT, WORKSHOPS }
 
