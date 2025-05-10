@@ -18,7 +18,7 @@ export default function PackList () {
 }
 
 function Pack ({pack}) {
-  const { title, description, includes, notIncludes, price, link, discount, popular, premium } = pack
+  const { title, includes, notIncludes, price, link, discount, popular, premium } = pack
   return (
     <div className={`${premium ? 'text-primary' : 'text-secondary'} rounded-xl h-full shadow-sm border border-secondary/50 min-h-content w-full flex flex-col gap-5 px-5 py-10 ${premium ? 'bg-secondary' : 'bg-primary'} ${popular && '2xl:scale-105 '}`}>
       <div className='flex justify-between items-center'>

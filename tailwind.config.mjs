@@ -15,7 +15,10 @@ export default {
         instagramStart: '#FDDC5C',
         instagramEnd: '#EA2F85',
         facebook: '#1877F2' 
-      }
+      },
+      boxShadow: {
+        custom: '0 -4px 8px -2px rgba(0, 0, 0, 0.1), 0 8px 12px -2px rgba(0, 0, 0, 0.2)',
+      },
     }
   },
   plugins: [
