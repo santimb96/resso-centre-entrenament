@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { workSans } from '../lib/fonts'
 import { CaretDown, Mouse } from './icons'
 export default function Presentation () {
@@ -7,8 +8,8 @@ export default function Presentation () {
         <h1 className='textShadow text-primary text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem]'>TRANSFORMA TU CUERPO.</h1>
         <h1 className='textShadow text-accent text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem] mb-5'>SUPERA TUS LÍMITES.</h1>
         <div className='w-full flex flex-col md:max-w-max md:!flex-row justify-center items-center gap-5 text-xl md:text-2xl lg:text-4xl'>
-          <button className='whitespace-nowrap w-full py-2.5 px-5 bg-primary rounded-full border text-secondary border-transparent hover:bg-accent hover:border-primary duration-150'>HAZTE MIEMBRO <i>#BERESSÒ</i></button>
-          <button className='whitespace-nowrap w-full py-2.5 px-5 rounded-full border border-primary text-primary hover:bg-accent duration-150 textShadow'>DESCUBRE NUESTROS SERVICIOS</button>
+          <Link href='/aboutUs'  className='whitespace-nowrap w-full py-2.5 px-5 bg-primary rounded-full border text-secondary border-transparent hover:bg-accent hover:border-primary duration-150'>DESCUBRE NUESTRA HISTORIA</Link>
+          {/* <button className='whitespace-nowrap w-full py-2.5 px-5 rounded-full border border-primary text-primary hover:bg-accent duration-150 textShadow'>DESCUBRE NUESTROS SERVICIOS</button> */}
         </div>
       </div>
       <div className='absolute -bottom-10 md:-bottom-36 w-full'>

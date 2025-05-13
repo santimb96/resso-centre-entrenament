@@ -7,8 +7,8 @@ const PERSONAL_INFO = {
 const MENU = [
   {
     id: 1,
-    name: '¿Qué es Ressò?',
-    href: '#que-es-resso'
+    name: 'Servicios',
+    href: '#servicios'
   },
   {
     id: 2,
