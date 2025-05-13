@@ -241,6 +241,9 @@ header {
 .scrollToTopActive {
 	opacity: 1 !important;
 }
+.goToPlansVisible {
+	opacity: 1 !important;
+}
 
 .rowNav {
   display: none;
