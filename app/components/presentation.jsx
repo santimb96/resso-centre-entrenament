@@ -15,7 +15,7 @@ export default function Presentation () {
         <h2 className='text-primary text-[2.25rem] sm:text-[3rem] lg:text-[4rem] w-full text-center textShadow'>¿NO SABES POR DÓNDE EMPEZAR?</h2>
         <div className='mt-8 hidden md:flex flex-col items-center justify-center text-primary'>
           <Mouse size={40} />
-          <span className='animate-bounce'>
+          <span className='animate-bouncing animate-infinite duration-150 ease-in-out'>
             <CaretDown size={40} />
           </span>
         </div>

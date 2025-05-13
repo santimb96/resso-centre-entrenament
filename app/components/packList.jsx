@@ -20,7 +20,7 @@ export default function PackList () {
 function Pack ({pack}) {
   const { title, includes, notIncludes, price, link, discount, popular, premium } = pack
   return (
-    <div className={`${premium ? 'text-primary' : 'text-secondary'} rounded-xl h-full shadow-sm border border-secondary/50 min-h-content w-full flex flex-col gap-5 px-5 py-10 ${premium ? 'bg-secondary' : 'bg-primary'}`}>
+    <div className={`${premium ? 'text-primary' : 'text-secondary'} rounded-xl h-full shadow-custom min-h-content w-full flex flex-col gap-5 px-5 py-10 ${premium ? 'bg-secondary' : 'bg-primary'}`}>
       <div className='flex justify-between items-center'>
         <h3 className={`${popular && 'text-accent'} ${workSans.className} font-extrabold text-[2rem]`}>{title}</h3>
         {popular && <div className='text-[1rem] py-1.5 px-5 rounded-full border border-accent text-accent bg-green-100/25 font-bold'>Popular</div>}

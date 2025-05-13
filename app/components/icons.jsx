@@ -2,12 +2,13 @@ import { BsTelephone } from 'react-icons/bs'
 import { FaInstagram, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
-import { IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
+import { IoBagCheckOutline, IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuCircleCheckBig, LuGoal, LuMouse } from 'react-icons/lu'
 import { MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
 import { PiUsersFour } from 'react-icons/pi'
 import { RiPriceTag3Line, RiServiceLine } from 'react-icons/ri'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
+
 
 
 
@@ -104,3 +105,6 @@ export function Goal ({size = 24}) {
   return <LuGoal size={size} />
 }
 
+export function CheckBag ({size = 24}) {
+  return <IoBagCheckOutline size={size} />
+}

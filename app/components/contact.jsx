@@ -3,6 +3,7 @@ import { WIDTH_LAYOUT } from '@/constants/vars'
 import TextComponent from './common/TextComponent'
 import TitleSection from './common/TitleSection'
 import { Instagram, Mail, Whatsapp } from './icons'
+import PlaceMap from './placeMap'
 
 export default function Contact () {
   return (
@@ -34,6 +35,7 @@ export default function Contact () {
             </a>
           </div>
         </div>
+        <PlaceMap />
       </div>
     </section>
   )

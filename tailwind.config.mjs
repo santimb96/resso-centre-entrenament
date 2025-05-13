@@ -1,4 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
+import animations from '@midudev/tailwind-animations'
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -22,6 +23,7 @@ export default {
     }
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    animations
   ],
 }

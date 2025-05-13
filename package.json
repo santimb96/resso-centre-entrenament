@@ -11,6 +11,7 @@
   "dependencies": {
     "@devnomic/marquee": "^1.0.3",
     "@midudev/tailwind-animations": "^0.2.0",
+    "@vis.gl/react-google-maps": "^1.5.2",
     "keen-slider": "^6.8.6",
     "next": "^15.1.7",
     "react": "^19.0.0",
