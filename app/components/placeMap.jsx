@@ -31,6 +31,8 @@ export default function PlaceMap() {
           <Marker
             position={position}
             title="Ressò - Centre d'entrenament"
+            onClick={() => window.open('https://maps.app.goo.gl/XFQZdjuTjio2sp7r8', '_blank')}
+            animation={2}
             icon={{
               url: '/img/logo-resso-fn-azul-blanco-resized.png',
               scaledSize: { width: 100, height: 50 }
