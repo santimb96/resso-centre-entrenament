@@ -8,7 +8,7 @@ export default function PackList () {
   return (
     <>
       <TextComponent text={'Aquí podrás encontrar los que tengo a disposición: <i className="underline">iniciación, avanzado y profesional</i>'} textColor='accent' />
-      <div className='grid grid-cols-1 gap-5 lg:grid-cols-3 lg:items-center'>
+      <div className='mt-10 grid grid-cols-1 gap-5 lg:grid-cols-3 lg:items-center'>
         {PACK_LIST.map((pack, index) => (
           <Pack key={index + pack.title} pack={pack} />
         ))}

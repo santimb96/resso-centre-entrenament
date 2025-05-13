@@ -6,7 +6,7 @@ export default function PlaceMap() {
   const position = { lat: 39.574979872981274, lng: 2.6579112512360803 }
 
   return (
-    <div className='w-[95vw] sm:w-[75vw] lg:w-[60vw] h-[50vh] md:h-[60vh] lg:h-[70vh] flex justify-center items-center'>
+    <div className='w-[95vw] sm:w-[75vw] lg:w-[60vw] h-[50vh] md:h-[60vh] lg:h-[70vh] flex justify-center items-center lg:justify-start lg:items-start'>
       <APIProvider
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
         language='es'
@@ -25,7 +25,10 @@ export default function PlaceMap() {
           }}
           style={{
             width: '100%',
-            height: '100%'
+            height: '75%',
+            boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+            borderRadius: '10px',
+            overflow: 'hidden',
           }}
         >
           <Marker
