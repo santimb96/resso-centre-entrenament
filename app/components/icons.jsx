@@ -1,5 +1,5 @@
 import { BsTelephone } from 'react-icons/bs'
-import { FaInstagram, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaRegBell, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoBagCheckOutline, IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
@@ -8,6 +8,7 @@ import { MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
 import { PiUsersFour } from 'react-icons/pi'
 import { RiPriceTag3Line, RiServiceLine } from 'react-icons/ri'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
+import { TbExternalLink } from 'react-icons/tb'
 
 
 
@@ -107,4 +108,12 @@ export function Goal ({size = 24}) {
 
 export function CheckBag ({size = 24}) {
   return <IoBagCheckOutline size={size} />
+}
+
+export function Bell ({size = 24}) {
+  return <FaRegBell size={size} />
+}
+
+export function ExternalLink ({size = 24}) {
+  return <TbExternalLink size={size} />
 }

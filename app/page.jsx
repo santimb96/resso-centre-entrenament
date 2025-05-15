@@ -1,4 +1,3 @@
-import Contact from '@/components/contact'
 import Plans from '@/components/plans'
 import Presentation from '@/components/presentation'
 import Sponsors from '@/components/sponsors'
@@ -13,7 +12,6 @@ export default function Home() {
       <Plans />
       <WorkshopsSection />
       <Sponsors />
-      <Contact />
       <GoToPlans />
     </section>
   )
