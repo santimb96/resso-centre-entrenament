@@ -12,6 +12,7 @@ export default function Header () {
 
   useEffect(() => {
     setPath(pathname)
+    console.log(pathname, path)
   }, [pathname])
 
   return (
