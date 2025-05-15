@@ -225,6 +225,7 @@ header {
 }
 
 #scrollToTop {
+  z-index: 9999;
 	background-color: var(--color-primary);
 	color: var(--color-secondary);
 	border-radius: 10px;
