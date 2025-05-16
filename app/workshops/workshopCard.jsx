@@ -1,6 +1,7 @@
-import { ArrowRightHamMenu, Calendar, Location } from '@/components/icons'
+import { Location } from '@/components/icons'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Calendar, ExternalLink } from '../components/icons'
 
 export default function WorkshopCard({workshop}){
   const {id, title, description, location, date, img} = workshop
@@ -19,11 +20,11 @@ export default function WorkshopCard({workshop}){
       <div className='w-full flex flex-col justify-start items-start gap-2.5 px-5 pb-5 pt-2.5 bg-primary'>
         <h4 title={title} className='w-full text-[1.25rem] md:text-[1.5rem] font-bold h-[70px] line-clamp-2'>{title}</h4>
         <div className='w-full flex flex-col items-start justify-start gap-2.5 overflow-hidden'>
-          <p className='font-bold flex flex-row justify-start items-center gap-1 whitespace-nowrap'><span className='min-w-6'><Calendar size={24} /></span>Fecha: {date}</p>
-          <a href='' className='w-full font-bold flex flex-row justify-start items-center gap-1 overflow-hidden hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={24} /></span><span className='font-bold whitespace-nowrap text-ellipsis overflow-hidden'>Lugar: {location}</span></a>
+          <p className='flex flex-row justify-start items-center gap-1.5 whitespace-nowrap'><span className='min-w-6'><Calendar size={24} /></span><span className='font-bold'>Fecha: </span><span className='font-normal'>{date}</span></p>
+          <a href='' className='w-full flex flex-row justify-start items-center gap-1.5 overflow-hidden hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={24} /></span><span className='whitespace-nowrap text-ellipsis overflow-hidden'><span className='font-bold'>Lugar: </span><span className='font-normal'>{location}</span></span></a>
         </div>
-        <p className='line-clamp-2'>{description}</p>
-        <Link href={`/workshops/workshop/${id}`} className='font-bold flex flex-row justify-center items-center gap-2.5 py-2.5 px-5 border border-[var(--color-secondary)] rounded-md hover:bg-accent hover:text-primary hover:border-accent duration-150 ease-in-out'><ArrowRightHamMenu />Más información</Link>
+        <p className='line-clamp-2 font-normal'>{description}</p>
+        <Link href={`/workshops/workshop/${id}`} className='font-semibold flex flex-row justify-center items-center gap-2.5 py-2.5 px-5 border border-secondary rounded-md hover:bg-slate-100 duration-150 ease-in-out'>Más información<ExternalLink /></Link>
       </div>
     </aside>
   )

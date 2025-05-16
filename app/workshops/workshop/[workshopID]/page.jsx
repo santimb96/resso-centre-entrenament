@@ -33,8 +33,8 @@ export default async function WorkshopInfo(props) {
   const { profileImg, fullname, occupation, resume, rrss } = teacher
 
   return (
-    <section className='w-full flex flex-col justify-center items-center gap-5 scroll-m-24 mt-20 py-10 bg-accent'>
-      <div className='w-full text-primary d:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex justify-start items-center gap-2.5 text-[1rem] font-thin px-2.5 md:px-0'>
+    <section className='w-full flex flex-col justify-center items-center gap-5 scroll-m-24 pb-10 bg-accent'>
+      <div className='w-full pt-28 text-primary d:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex justify-start items-center gap-2.5 text-[1rem] font-thin px-2.5 md:px-0'>
         <Link href='/' className='hover:underline duration-150 ease-in-out'>Inicio</Link>
         /
         <Link href='/workshops' className='hover:underline duration-150 ease-in-out'>Workshops</Link>
