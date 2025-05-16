@@ -2,8 +2,8 @@ import { Calendar, Clock, Facebook, Instagram, Location, Tiktok, Youtube } from 
 import { WORKSHOPS } from '@/constants/vars'
 import Image from 'next/image'
 import Link from 'next/link'
-import { TEACHERS } from '../../constants/vars'
-import { workSans } from '../../lib/fonts'
+import { TEACHERS } from '../../../constants/vars'
+import { workSans } from '../../../lib/fonts'
 
 function getWorkshopById(workshopID) {
   const getData = () => {
@@ -31,7 +31,7 @@ export default async function WorkshopInfo(props) {
   const teacher = TEACHERS.find(teacher => teacher.id === teacherId)
 
   const { profileImg, fullname, occupation, resume, rrss } = teacher
-  
+
   return (
     <section className='w-full flex flex-col justify-center items-center gap-5 scroll-m-24 mt-20 py-10 bg-accent'>
       <div className='w-full text-primary d:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] flex justify-start items-center gap-2.5 text-[1rem] font-thin px-2.5 md:px-0'>
@@ -58,9 +58,9 @@ export default async function WorkshopInfo(props) {
         <div className='lg:col-span-1 lg:row-span-1 flex flex-col justify-start items-start gap-2.5'>
           <div className='rounded-xl p-5 bg-primary flex flex-col justify-start items-start gap-2.5 border border-secondary/20 w-full shadow-md'>
             <h4 className='text-[1rem] lg:text-[1.25rem] font-bold'>Información del taller</h4>
-            <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Calendar size={22} /></span>{date}</div>
-            <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Clock size={22} /></span>{startTime}</div>
-            <a href={coordinates} className='font-bold flex flex-row justify-start items-center gap-2.5 overflow-hidden hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={24} /></span><span className='font-bold whitespace-nowrap text-ellipsis overflow-hidden'>{location}</span></a>
+            <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Calendar size={22} /></span>Fecha: <span className='font-normal'>{date}</span></div>
+            <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Clock size={22} /></span>Hora: <span className='font-normal'>{startTime}</span></div>
+            <Link href={coordinates} className='font-bold flex flex-row justify-start items-center gap-2.5 overflow-hidden hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={24} /></span><span className='font-bold whitespace-nowrap text-ellipsis overflow-hidden'>Lugar: <span className='font-normal'>{location}</span></span></Link>
             <h6 className='my-2.5 text-[1rem] lg:text-[1.25rem] font-bold'>Ponente</h6>
             <div className='flex justify-start items-center gap-2.5'>
               <Image
@@ -70,12 +70,12 @@ export default async function WorkshopInfo(props) {
                 width={75}
                 height={75}
               />
-              <div className='flex flex-col justify-center items-start'> 
+              <div className='flex flex-col justify-center items-start'>
                 <span className='text-[1rem] text-accent'>{fullname}</span>
-                <span className='text-[0.9rem]'>{occupation}</span>
+                <span className='text-[1rem] font-medium'>{occupation}</span>
               </div>
             </div>
-            <p className='font-medium'>{resume}</p>
+            <p className='font-normal'>{resume}</p>
             <div className='flex items-center gap-2.5 w-full'>
               {rrss.map((socialProfile, index) => {
                 const { name, link } = socialProfile

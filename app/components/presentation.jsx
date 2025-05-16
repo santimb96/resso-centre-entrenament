@@ -3,12 +3,12 @@ import { workSans } from '../lib/fonts'
 import { CaretDown, Mouse } from './icons'
 export default function Presentation () {
   return (
-    <div className={`${workSans.className} font-[900] headerContainer bg-secondary relative`}>
+    <div className={`${workSans.className} font-[900] w-full h-[600px] md:h-[750px] headerContainer bg-secondary relative`}>
       <div className='w-full absolute top-[200px] md:top-[300px] flex flex-col justify-center items-center px-2.5'>
         <h1 className='textShadow text-primary text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem]'>TRANSFORMA TU CUERPO.</h1>
         <h1 className='textShadow text-accent text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem] mb-5'>SUPERA TUS LÍMITES.</h1>
         <div className='w-full flex flex-col md:max-w-max md:!flex-row justify-center items-center gap-5 text-xl md:text-2xl lg:text-4xl'>
-          <Link href='/aboutUs'  className='whitespace-nowrap w-full py-2.5 px-5 bg-primary rounded-full border text-secondary border-transparent hover:bg-accent hover:border-primary duration-150'>DESCUBRE NUESTRA HISTORIA</Link>
+          <Link href='/aboutUs'  className='whitespace-nowrap w-full py-2.5 px-5 bg-primary rounded-full border text-secondary border-transparent hover:text-primary hover:bg-accent hover:border-primary duration-150 text-center'>DESCUBRE NUESTRA HISTORIA</Link>
           {/* <button className='whitespace-nowrap w-full py-2.5 px-5 rounded-full border border-primary text-primary hover:bg-accent duration-150 textShadow'>DESCUBRE NUESTROS SERVICIOS</button> */}
         </div>
       </div>

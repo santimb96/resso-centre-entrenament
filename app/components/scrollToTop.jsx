@@ -15,7 +15,7 @@ export default function ScrollToTop () {
     })
   }, [])
   return (
-    <div id='scrollToTop' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+    <div id='scrollToTop' className='hover:scale-110' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
       <ArrowUp size={30} />
     </div>
   )

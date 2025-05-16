@@ -15,12 +15,26 @@ export default {
         accent: 'var(--color-accent)',
         instagramStart: '#FDDC5C',
         instagramEnd: '#EA2F85',
-        facebook: '#1877F2' 
+        facebook: '#1877F2'
       },
       boxShadow: {
         custom: '0 -4px 8px -2px rgba(0, 0, 0, 0.1), 0 8px 12px -2px rgba(0, 0, 0, 0.2)',
       },
-    }
+      animation: {
+        marquee: 'marquee 25s linear infinite',
+        marqueeReverse: 'marqueeReverse 25s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marqueeReverse: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
+    },
   },
   plugins: [
     require('tailwindcss-animated'),

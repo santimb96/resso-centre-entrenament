@@ -136,7 +136,7 @@ const PACK_LIST = [
   }
 ]
 
-const WORKSHOPS = 
+const WORKSHOPS =
   [
     {
       id: 1,
@@ -254,4 +254,3 @@ const TEACHERS = [
 ]
 
 export { MENU, PACK_LIST, PERSONAL_INFO, SERVICES, TEACHERS, WIDTH_LAYOUT, WORKSHOPS }
-

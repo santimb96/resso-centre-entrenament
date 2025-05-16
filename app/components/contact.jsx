@@ -1,4 +1,4 @@
- 
+
 import { WIDTH_LAYOUT } from '@/constants/vars'
 import TextComponent from './common/TextComponent'
 import TitleSection from './common/TitleSection'
@@ -16,17 +16,17 @@ export default function Contact () {
               <TextComponent text='Pregúntanos lo que quieras sin compromiso' textColor='primary' margin='mb-5' />
             </div>
             <div className='w-full flex flex-row justify-center items-center gap-10'>
-              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:text-instagramEnd hover:brightness-150 text-primary duration-150 ease-in-out'>
+              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Instagram size={40} />
                 </span>
               </a>
-              <a href='https://wa.me/673467364' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:text-green-600 hover:brightness-150 text-primary duration-150 ease-in-out'>
+              <a href='https://wa.me/673467364' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Whatsapp size={40} />
                 </span>
               </a>
-              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:text-blue-400 hover:brightness-150 text-primary duration-150 ease-in-out'>
+              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:scale-`110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Mail size={40} />
                 </span>

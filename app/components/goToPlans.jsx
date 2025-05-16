@@ -40,9 +40,10 @@ export default function GoToPlans () {
     })
   }, [])
   return (
-    <a href='#planes' id='goToPlans' className='z-10 opacity-0 duration-300 ease-in-out fixed bottom-5 bg-primary text-secondary py-2.5 px-5 rounded-lg left-5 flex justify-center items-center gap-2.5 group border border-secondary hover:scale-105'>
-      ¿Aún no has visto nuestros planes?
+    <a href='#planes' id='goToPlans' className='z-10 opacity-0 duration-300 ease-in-out fixed bottom-5 bg-primary text-secondary py-2.5 px-5 rounded-lg left-5 flex justify-center items-center gap-2.5 group border border-secondary hover:scale-105 shadow-custom'>
       <span className='min-w-6 animate-swing group-hover:animate-stop group-hover:!scale-125 duration-500 ease-in-out group-hover:text-accent animate-infinite animate-duration-700 animate-ease-in-out'><ExternalLink /></span>
+      <span className='hidden md:block'>¿Aún no has visto nuestros planes?</span>
+      <span className='block md:hidden'>Ver planes</span>
     </a>
   )
 }

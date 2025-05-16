@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
- 
+
 import { Facebook, Instagram, Location, Mail, Tiktok, Youtube } from '@/components/icons'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -44,11 +44,11 @@ export default function Footer() {
               <span>{menuItem.name}</span>
             </Link>
           ))}
-         
-        </div>  
+
+        </div>
       </div>
       <p className='text-pretty text-center font-bold my-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d'entrenament</p>
       <small className='text-pretty text-center font-thin text-[0.75rem] lg:text-[1rem] mb-5'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-150' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
-    </footer>  
+    </footer>
   )
 }

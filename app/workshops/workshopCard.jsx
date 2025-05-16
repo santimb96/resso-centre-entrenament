@@ -23,7 +23,7 @@ export default function WorkshopCard({workshop}){
           <a href='' className='w-full font-bold flex flex-row justify-start items-center gap-1 overflow-hidden hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={24} /></span><span className='font-bold whitespace-nowrap text-ellipsis overflow-hidden'>Lugar: {location}</span></a>
         </div>
         <p className='line-clamp-2'>{description}</p>
-        <Link href={`/workshop/${id}`} className='font-bold flex flex-row justify-center items-center gap-2.5 py-2.5 px-5 border border-[var(--color-secondary)] rounded-md hover:bg-accent hover:text-primary hover:border-accent duration-150 ease-in-out'><ArrowRightHamMenu />Más información</Link>
+        <Link href={`/workshops/workshop/${id}`} className='font-bold flex flex-row justify-center items-center gap-2.5 py-2.5 px-5 border border-[var(--color-secondary)] rounded-md hover:bg-accent hover:text-primary hover:border-accent duration-150 ease-in-out'><ArrowRightHamMenu />Más información</Link>
       </div>
     </aside>
   )
