@@ -47,7 +47,8 @@ export default function Footer() {
 
         </div>
       </div>
-      <p className='text-pretty text-center font-bold my-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d'entrenament</p>
+      <p className='text-pretty text-center font-normal my-2.5 text-[0.75rem] lg:text-[1rem]'>Accede a nuestra <Link href='/cookies-policy' target='_blank' className='text-sky-500 hover:text-sky-400 duration-150 ease-in-out hover:underline'>política de cookies</Link></p>
+      <p className='text-pretty text-center font-bold mb-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d'entrenament</p>
       <small className='text-pretty text-center font-thin text-[0.75rem] lg:text-[1rem] mb-5'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-150' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
     </footer>
   )

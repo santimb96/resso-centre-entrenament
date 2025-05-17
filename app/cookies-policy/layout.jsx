@@ -5,7 +5,7 @@ import { notoSans } from '../lib/fonts'
 export default function CookiesLayout({ children }) {
   console.log('cookies')
   return (
-    <div className={`${notoSans.className} flex flex-col items-center justify-start relative bg-red-500`}>
+    <div className={`${notoSans.className} w-full flex flex-col items-center justify-start relative`}>
       <section className='w-full flex flex-col items-start gap-5 md:px-0'>
         {children}
       </section>
