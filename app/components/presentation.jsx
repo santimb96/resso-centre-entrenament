@@ -8,7 +8,7 @@ export default function Presentation () {
         <h1 className='textShadow text-primary text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem]'>TRANSFORMA TU CUERPO.</h1>
         <h1 className='textShadow text-accent text-[3rem] sm:text-[4.25rem] lg:text-[5.75rem] mb-5'>SUPERA TUS LÍMITES.</h1>
         <div className='w-full flex flex-col md:max-w-max md:!flex-row justify-center items-center gap-5 text-xl md:text-2xl lg:text-4xl'>
-          <Link href='/aboutUs'  className='whitespace-nowrap w-full py-2.5 px-5 bg-primary rounded-full border text-secondary border-transparent hover:text-primary hover:bg-accent hover:border-primary duration-150 text-center'>DESCUBRE NUESTRA HISTORIA</Link>
+          <Link href='/about-us'  className='whitespace-nowrap w-full py-2.5 px-5 bg-primary rounded-full border text-secondary border-transparent hover:text-primary hover:bg-accent hover:border-primary duration-150 text-center'>DESCUBRE NUESTRA HISTORIA</Link>
           {/* <button className='whitespace-nowrap w-full py-2.5 px-5 rounded-full border border-primary text-primary hover:bg-accent duration-150 textShadow'>DESCUBRE NUESTROS SERVICIOS</button> */}
         </div>
       </div>

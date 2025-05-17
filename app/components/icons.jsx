@@ -4,15 +4,11 @@ import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoBagCheckOutline, IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuCircleCheckBig, LuGoal, LuMouse } from 'react-icons/lu'
-import { MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
+import { MdOutlineCookie, MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
 import { PiUsersFour } from 'react-icons/pi'
 import { RiPriceTag3Line, RiServiceLine } from 'react-icons/ri'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
 import { TbExternalLink } from 'react-icons/tb'
-
-
-
-
 
 export function Hamburger ({size = 24}) {
   return <RxHamburgerMenu size={size} />
@@ -116,4 +112,8 @@ export function Bell ({size = 24}) {
 
 export function ExternalLink ({size = 24}) {
   return <TbExternalLink size={size} />
+}
+
+export function Cookie ({size = 24}) {
+  return <MdOutlineCookie size={size} />
 }

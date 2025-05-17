@@ -16,17 +16,17 @@ export default function Contact () {
               <TextComponent text='Pregúntanos lo que quieras sin compromiso' textColor='primary' margin='mb-5' />
             </div>
             <div className='w-full flex flex-row justify-center items-center gap-10'>
-              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Instagram size={40} />
                 </span>
               </a>
-              <a href='https://wa.me/673467364' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              <a href='https://wa.me/673467364' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Whatsapp size={40} />
                 </span>
               </a>
-              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='text-[1rem] md:text-[1.25rem] font-bold hover:scale-`110 text-primary duration-150 ease-in-out'>
+              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Mail size={40} />
                 </span>
@@ -35,10 +35,10 @@ export default function Contact () {
             <div className='bg-primary rounded-lg w-full px-5 lg:px-10 py-5 flex flex-row justify-start items-center gap-2.5 mt-5 text-accent shadow-custom'>
               <span className='min-w-20'><Clock size={80} /></span>
               <div className='flex flex-col justify-center items-start ml-5'>
-                <h5 className='text-[1.25rem] mb-1'>Horarios</h5>
-                <p className='font-normal'><span className='font-bold'>Lunes a viernes:</span> 8h - 20h</p>
-                <p className='font-normal'><span className='font-bold'>Sábados:</span> 9h - 13h</p>
-                <p className='font-normal'><span className='font-bold'>Domingos:</span> Cerrado</p>
+                <h5 className='text-[1.25rem] md:text-[1.5rem] mb-1'>Horarios</h5>
+                <p className='font-normal'><span className='font-bold mr-2.5'>Lunes a viernes:</span>8h - 20h</p>
+                <p className='font-normal'><span className='font-bold mr-2.5'>Sábados:</span>9h - 13h</p>
+                <p className='font-normal'><span className='font-bold mr-2.5'>Domingos:</span>Cerrado</p>
               </div>
             </div>
           </div>

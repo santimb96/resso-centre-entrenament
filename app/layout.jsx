@@ -1,6 +1,7 @@
 import Footer from '@/components/footer'
 import Header from '@/components/headerComponents/header'
 import Contact from './components/contact'
+import CookiesMessage from './components/cookiesMessage'
 import ScrollToTop from './components/scrollToTop'
 import './globals.css'
 import { notoSans } from './lib/fonts'
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
           {children}
         </section>
         <ScrollToTop />
+        <CookiesMessage />
         <Contact />
         <Footer />
       </body>

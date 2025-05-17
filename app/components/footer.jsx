@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import { Facebook, Instagram, Location, Mail, Tiktok, Youtube } from '@/components/icons'
 import Image from 'next/image'
 import Link from 'next/link'
 import { MENU } from '../constants/vars'
 import { workSans } from '../lib/fonts'
+
 export default function Footer() {
   return (
     <footer className='w-full flex flex-col items-center mt-auto'>

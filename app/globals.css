@@ -338,9 +338,9 @@ header {
 }
 /* MEDIA QUERY SLIDER */
 @media (min-width: 768px) {
-  #scrollToTop {
-    right: 20px; /* For mobile screens */
-  }
+  /* #scrollToTop {
+    right: 20px;
+  } */
 }
 @media (min-width: 1024px) {
   .colNav {
@@ -357,14 +357,14 @@ header {
     width: 100%;
   }
 
-  #scrollToTop {
-    right: calc((100vw - 75vw) / 2 + 20px); /* For medium screens */
-  }
+  /* #scrollToTop {
+    right: calc((100vw - 75vw) / 2 + 20px);
+  } */
 }
 @media (min-width: 1280px) {
-  #scrollToTop {
-    right: calc((100vw - 80vw) / 2 + 20px); /* For large screens */
-  }
+  /* #scrollToTop {
+    right: calc((100vw - 80vw) / 2 + 20px);
+  } */
 }
 @media (min-width: 1536px) {
 }
