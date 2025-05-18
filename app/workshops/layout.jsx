@@ -7,7 +7,7 @@ import { notoSans } from '../lib/fonts'
 export default function WorkshopLayout({ children }) {
   return (
     <div className={`${notoSans.className} w-full flex flex-col items-center justify-start relative`}>
-      <Header />
+      <Header isMain={false} />
       <section className='w-full flex flex-col items-start gap-5 md:px-0'>
         {children}
       </section>

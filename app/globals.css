@@ -227,6 +227,36 @@ header {
   background-color: var(--color-secondary);
 }
 
+.headerAppear {
+  animation: appear .3s both ease-in-out;
+}
+
+.headerDissapear {
+  animation: disappear .3s both ease-in-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
 /* #scrollToTop {
   z-index: 9999;
 	background-color: var(--color-primary);
@@ -350,7 +380,6 @@ header {
   .rowNav {
     font-size: 20px;
     text-transform: uppercase;
-    display: block;
     display: flex;
     justify-content: end;
     align-items: center;
