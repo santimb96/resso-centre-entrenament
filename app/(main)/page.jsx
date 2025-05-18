@@ -1,9 +1,9 @@
+import GoToPlans from '@/components/goToPlans'
 import Plans from '@/components/plans'
 import Presentation from '@/components/presentation'
+import Services from '@/components/servicesComponents/services'
 import Sponsors from '@/components/sponsors'
 import WorkshopsSection from '@/components/workshopComponents/workshopsSection'
-import GoToPlans from '../components/goToPlans'
-import Services from '../components/servicesComponents/services'
 
 export default function Home() {
   return (
