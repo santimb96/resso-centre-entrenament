@@ -6,9 +6,11 @@ import HamburgerMenu from './hamburgerMenu'
 import RowMenu from './rowMenu'
 
 export default function Header ({ isMain = true }) {
-  let prevScrollPos = window.pageYOffset
+  let prevScrollPos = 0
   
   const handleHeaderScroll = () => {
+    if (window === undefined) return
+
     const header = document.getElementById('headerId')
     const currentScrollPos = window.pageYOffset
 
@@ -30,6 +32,9 @@ export default function Header ({ isMain = true }) {
 
   useEffect(() => {
     window.addEventListener('scroll', handleHeaderScroll)
+    return () => {
+      window.removeEventListener('scroll', handleHeaderScroll)
+    }
   }, [])
 
   return (
