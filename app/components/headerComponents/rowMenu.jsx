@@ -1,11 +1,11 @@
 'use client'
 import { MENU } from '@/constants/vars'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { workSans } from '../../lib/fonts'
 
 export default function RowMenu() {
-  const pathname = usePathname()
+  const { asPath } = useRouter()
 
   return (
     <nav className='rowNav mt-1'>
@@ -13,7 +13,7 @@ export default function RowMenu() {
         {MENU.map((menuItem, index) => (
           <Link 
             key={`menu-${index}`}
-            href={pathname !== '/' ? `/${menuItem.href}` : menuItem.href}
+            href={asPath !== '/' ? `/${menuItem.href}` : menuItem.href}
             className='text-[1rem] font-bold hover:text-accent duration-150 ease-in-out'
           >
             {menuItem.name}

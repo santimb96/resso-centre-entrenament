@@ -36,6 +36,7 @@ export default function Workshop({
           <Link
             href={coordinates}
             target='_blank'
+            rel="noopener noreferrer"
             className='text-[1rem] flex flex-row justify-start items-center gap-1.5 font-bold hover:text-accent hover:brightness-110 hover:underline'
           >
             <span className='min-w-6'>
