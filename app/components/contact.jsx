@@ -7,11 +7,11 @@ import PlaceMap from './placeMap'
 
 export default function Contact () {
   return (
-    <section id='contacto' className=' w-full flex flex-col justify-center items-center gap-5 scroll-m-24 bg-accent pt-5'>
+    <section id='contacto' className='w-full flex flex-col justify-center items-center gap-5 scroll-m-24 bg-accent pt-5'>
       <div className={`${WIDTH_LAYOUT} flex flex-col justify-center items-center lg:!flex-row lg:items-start lg:justify-start gap-5`}>
         <div className='w-full h-full flex flex-col items-center justify-start gap-2.5'>
           <TitleSection title='Contacto' />
-          <div className='p-2.5 w-full flex flex-col justify-start items-start gap-2.5'>
+          <div className='p-2.5 w-full flex flex-col justify-center items-center gap-2.5'>
             <div className='w-full text-center'>
               <TextComponent text='Pregúntanos lo que quieras sin compromiso' textColor='primary' margin='mb-5' />
             </div>
@@ -32,7 +32,7 @@ export default function Contact () {
                 </span>
               </a>
             </div>
-            <div className='bg-primary rounded-lg w-full px-5 lg:px-10 py-5 flex flex-row justify-start items-center gap-2.5 mt-5 text-accent shadow-custom'>
+            <div className='bg-primary rounded-lg w-full md:w-3/4 lg:w-full px-5 lg:px-10 py-5 flex flex-row justify-start items-center gap-2.5 mt-5 text-accent shadow-custom'>
               <span className='min-w-20'><Clock size={80} /></span>
               <div className='flex flex-col justify-center items-start ml-5'>
                 <h5 className='text-[1.25rem] md:text-[1.5rem] mb-1'>Horarios</h5>
