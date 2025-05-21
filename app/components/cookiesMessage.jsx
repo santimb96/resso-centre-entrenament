@@ -48,7 +48,7 @@ export default function CookiesMessage() {
   return (
     !cookiesAllowed && (
       <>
-        <div className='z-50 border border-secondary fixed bottom-5 bg-primary shadow-custom rounded-md px-5 py-2.5 hidden md:flex md:flex-col md:w-[50%] lg:w-[35%] justify-start items-start gap-2.5'>
+        {/* <div className='z-50 border border-secondary fixed bottom-5 bg-primary shadow-custom rounded-md px-5 py-2.5 hidden lg:flex lg:flex-col lg:w-full justify-start items-start gap-2.5'>
           <div className='flex justify-start items-start gap-2.5'>
             <span className='min-w-9'><Cookie size={36} /></span>
             <p>Este sitio usa cookies. Para obtener más información, consulta nuestra <Link href="/cookies-policy" className='text-accent hover:brightness-90 hover:underline duration-150 ease-in-out' target='_blank'>política de cookies</Link></p>
@@ -57,20 +57,20 @@ export default function CookiesMessage() {
             <CookiesButton accept={true} saveCookiesPreference={saveCookiesPreference} />
             <CookiesButton accept={false} saveCookiesPreference={saveCookiesPreference} />
           </div>
-        </div>
-        <button onClick={() => setIsOpen(true)} id='cookiesModalButton' className='z-50 fixed bottom-20 right-5 bg-primary shadow-custom rounded-full block md:hidden border border-secondary p-1 animate-swing animate-infinite animate-duration-500 ease-in-out'><Cookie size={36} /></button>
+        </div> */}
+        <button title='Política de cookies' onClick={() => setIsOpen(true)} id='cookiesModalButton' className='z-50 fixed bottom-20 right-5 bg-primary shadow-custom rounded-full block border border-secondary p-1 animate-swing animate-infinite animate-duration-500 animate-ease-in-out hover:bg-accent hover:text-primary duration-150 ease-in-out'><Cookie size={36} /></button>
         {isOpen && (
-          <CookiesModal />
+          <CookiesModal saveCookiesPreference={saveCookiesPreference} />
         )}
       </>
     )
   )
 }
 
-function CookiesModal() {
+function CookiesModal({ saveCookiesPreference }) {
   return (
     <div id='cookiesModal' className='z-[9999] top-0 h-[100dvh] w-full fixed bg-black/25 backdrop-blur-[2px] flex flex-col items-center justify-center'>
-      <div className='bg-primary shadow-custom px-5 py-2.5 rounded-md border border-secondary w-[80%] md:w-[70%] lg:w-[60%]'>
+      <div className='bg-primary shadow-custom px-5 py-2.5 rounded-md border border-secondary w-[80%] md:w-[50%] lg:w-[25%]'>
         <h4 className='text-[1.5rem] font-bold mb-2.5'>Política de cookies</h4>
         <p>Este sitio usa cookies. Para obtener más información, consulta nuestra <Link href="/cookies-policy" className='text-accent hover:brightness-90 hover:underline duration-150 ease-in-out' target='_blank'>política de cookies</Link></p>
         <div className='flex flex-col items-center justify-center gap-2.5 mt-2.5'>
