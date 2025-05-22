@@ -19,19 +19,16 @@ export default function CookiesMessage() {
     if (isOpen) {
       // blocking scroll and interactions with the screen behind the cookieModal
       document.body.style.overflow = 'hidden'
-      document.body.style.position = 'fixed'
       window.addEventListener('click', (e) => {
         if (e.target?.id !== 'cookiesMessage' && e.target.parentNode?.id !== 'cookiesModalButton') {
           setIsOpen(false)
           document.body.style.overflow = 'auto'
-          document.body.style.position = 'static'
         }
       })
     }
     return () => {
       window.removeEventListener('click', () => {})
       document.body.style.overflow = 'auto'
-      document.body.style.position = 'static'
     }
   }, [isOpen])
 
@@ -58,7 +55,7 @@ export default function CookiesMessage() {
             <CookiesButton accept={false} saveCookiesPreference={saveCookiesPreference} />
           </div>
         </div> */}
-        <button title='Política de cookies' onClick={() => setIsOpen(true)} id='cookiesModalButton' className='z-50 fixed bottom-20 right-5 bg-primary shadow-custom rounded-full block border border-secondary p-1 animate-swing animate-infinite animate-duration-500 animate-ease-in-out hover:bg-accent hover:text-primary duration-150 ease-in-out'><Cookie size={36} /></button>
+        <button title='Política de cookies' onClick={() => setIsOpen(true)} id='cookiesModalButton' className='z-50 fixed bottom-20 right-5 bg-primary shadow-custom rounded-full block border border-secondary p-1 animate-swing animate-infinite animate-duration-500 animate-ease-in-out hover:scale-110 duration-150 ease-in-out'><Cookie size={36} /></button>
         {isOpen && (
           <CookiesModal saveCookiesPreference={saveCookiesPreference} />
         )}
