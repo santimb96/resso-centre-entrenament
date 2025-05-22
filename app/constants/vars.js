@@ -146,7 +146,7 @@ const WORKSHOPS =
       startTime: '20:00',
       endTime: '21:30',
       location: '#somosRaw',
-      img: '/img/workshops/calistenia.JPG',
+      img: '/img/workshops/calistenia.webp',
       coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9',
       teacherId: 2
     },
@@ -158,7 +158,7 @@ const WORKSHOPS =
       startTime: '20:00',
       endTime: '21:30',
       location: '#BeRessò',
-      img: '/img/workshops/judoPrincipiantes.JPG',
+      img: '/img/workshops/judoPrincipiantes.webp',
       coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9',
       teacherId: 1
     },
@@ -170,7 +170,7 @@ const WORKSHOPS =
       startTime: '20:00',
       endTime: '21:30',
       location: '#BeRessò',
-      img: '/img/workshops/rack.JPG',
+      img: '/img/workshops/rack.webp',
       coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9',
       teacherId: 1
     },
@@ -182,7 +182,7 @@ const WORKSHOPS =
       startTime: '20:00',
       endTime: '21:30',
       location: 'Centro de Alto Rendimiento, Sevilla',
-      img: '/img/judoWorkshop.jpg',
+      img: '/img/judoWorkshop.webp',
       coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9',
       teacherId: 1
     },
@@ -194,7 +194,7 @@ const WORKSHOPS =
       startTime: '20:00',
       endTime: '21:30',
       location: 'Academia de Seguridad, Zaragoza',
-      img: '/img/judoWorkshop.jpg',
+      img: '/img/judoWorkshop.webp',
       coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9',
       teacherId: 1
     }

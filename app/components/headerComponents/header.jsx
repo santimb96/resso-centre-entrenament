@@ -43,7 +43,7 @@ export default function Header ({ isMain = true }) {
         <Link href='/'>
           <picture>
             <Image
-              src='/img/logo-resso-fn-azul-blanco-resized.png'
+              src='/img/logo-resso-fn-azul-blanco-resized.webp'
               alt='Ressò fn azul logo'
               width={100}
               height={50}

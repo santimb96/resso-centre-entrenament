@@ -10,9 +10,9 @@ export default function GoToPlans () {
       const goToPlans = document.querySelector('#goToPlans')
       const minHeight = 2000
       if (window.scrollY > minHeight) {
-        goToPlans.classList.add('goToPlansVisible')
+        goToPlans?.classList.add('goToPlansVisible')
       } else {
-        goToPlans.classList.remove('goToPlansVisible')
+        goToPlans?.classList.remove('goToPlansVisible')
       }
     })
   }, [])

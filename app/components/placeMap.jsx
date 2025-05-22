@@ -45,7 +45,7 @@ export default function PlaceMap() {
             maxWidth={200}
             headerContent={
               <div>
-                <Image src='/img/logo-resso-fn-azul-blanco-resized.png' alt='Logo Ressò' width={50} height={50} />
+                <Image src='/img/logo-resso-fn-azul-blanco-resized.webp' alt='Logo Ressò' width={50} height={50} />
               </div>
             }
           >

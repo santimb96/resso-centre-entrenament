@@ -36,7 +36,7 @@ export default function HamburgerMenu () {
           <nav className='p-2.5 flex flex-col items-center gap-2.5'>
             <picture>
               <Image
-                src='/img/logo-resso-fn-azul-blanco-resized.png'
+                src='/img/logo-resso-fn-azul-blanco-resized.webp'
                 alt='Ressò logo'
                 width={150}
                 height={100}
