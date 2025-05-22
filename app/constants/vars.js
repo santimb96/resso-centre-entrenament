@@ -182,7 +182,7 @@ const WORKSHOPS =
       startTime: '20:00',
       endTime: '21:30',
       location: 'Centro de Alto Rendimiento, Sevilla',
-      img: '/img/judoWorkshop.webp',
+      img: '/img/workshops/judoPrincipiantes.webp',
       coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9',
       teacherId: 1
     },
@@ -194,7 +194,7 @@ const WORKSHOPS =
       startTime: '20:00',
       endTime: '21:30',
       location: 'Academia de Seguridad, Zaragoza',
-      img: '/img/judoWorkshop.webp',
+      img: '/img/workshops/judoPrincipiantes.webp',
       coordinates: 'https://maps.app.goo.gl/qTSbFygvya8yeynm9',
       teacherId: 1
     }
