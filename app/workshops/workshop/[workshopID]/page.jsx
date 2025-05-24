@@ -60,7 +60,7 @@ export default async function WorkshopInfo(props) {
             <h4 className='text-[1rem] lg:text-[1.25rem] font-bold'>Información del taller</h4>
             <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Calendar size={22} /></span>Fecha: <span className='font-normal'>{date}</span></div>
             <div className='font-bold flex flex-row justify-start items-center gap-2.5 whitespace-nowrap'><span className='min-w-6'><Clock size={22} /></span>Hora: <span className='font-normal'>{startTime}</span></div>
-            <Link href={coordinates} className='font-bold flex flex-row justify-start items-center gap-2.5 overflow-hidden hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={24} /></span><span className='font-bold whitespace-nowrap text-ellipsis overflow-hidden'>Lugar: <span className='font-normal'>{location}</span></span></Link>
+            <Link href={coordinates} className='font-bold flex flex-row justify-start items-start gap-2.5 overflow-hidden w-full hover:text-accent duration-150 ease-in-out'><span className='min-w-6'><Location size={26} /></span><span className='font-bold'>Lugar: <span className='font-normal'>{location}</span></span></Link>
             <h6 className='my-2.5 text-[1rem] lg:text-[1.25rem] font-bold'>Ponente</h6>
             <div className='flex justify-start items-center gap-2.5'>
               <Image

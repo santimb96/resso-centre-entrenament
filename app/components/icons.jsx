@@ -1,10 +1,10 @@
 import { BsTelephone } from 'react-icons/bs'
-import { FaInstagram, FaRegBell, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaRegBell, FaRegCalendar, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
-import { IoBagCheckOutline, IoCalendarOutline, IoCloseOutline } from 'react-icons/io5'
-import { LuCircleCheckBig, LuGoal, LuMouse } from 'react-icons/lu'
-import { MdOutlineCookie, MdOutlineEmail, MdOutlinePlace } from 'react-icons/md'
+import { IoBagCheckOutline, IoCloseOutline } from 'react-icons/io5'
+import { LuCircleCheckBig, LuGoal, LuMapPin, LuMouse } from 'react-icons/lu'
+import { MdOutlineCookie, MdOutlineEmail } from 'react-icons/md'
 import { PiUsersFour } from 'react-icons/pi'
 import { RiPriceTag3Line, RiServiceLine } from 'react-icons/ri'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
@@ -27,11 +27,11 @@ export function ArrowRightHamMenu ({size = 24}) {
 }
 
 export function Location ({size = 24}) {
-  return <MdOutlinePlace size={size} />
+  return <LuMapPin size={size} />
 }
 
 export function Calendar ({size = 24}) {
-  return <IoCalendarOutline size={size} />
+  return <FaRegCalendar size={size} />
 }
 
 export function Mouse ({size = 24}) {
