@@ -160,11 +160,11 @@ footer {
 
 header {
 	min-width: 100%;
-	animation: header-animation 1s linear both;
+	/* animation: header-animation 1s linear both;
 	animation-timeline: scroll();
-	animation-range: 0 25px;
+	animation-range: 0 25px; */
 }
-@keyframes header-animation {
+/* @keyframes header-animation {
 	0% {
     background: transparent;
 	}
@@ -173,7 +173,7 @@ header {
     background: var(--color-secondary);
 		box-shadow: 0 -10px 20px rgb(0, 0, 0);
 	}
-}
+} */
 
 .profileImg {
   aspect-ratio: 400 / 600;
@@ -186,32 +186,28 @@ header {
 }
 
 .headerAppear {
-  animation: appear .3s both ease-in-out;
+  animation: appear .25s both ease-in-out;
 }
 
 .headerDissapear {
-  animation: disappear .3s both ease-in-out;
+  animation: disappear .25s both ease-in-out;
 }
 
 @keyframes appear {
   from {
-    opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-105%);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes disappear {
   from {
-    opacity: 1;
     transform: translateY(0);
   }
   to {
-    opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-105%);
   }
 }
 
@@ -298,7 +294,7 @@ header {
 }
 
 /* SCROLL APPEARANCE ANIMATION */
-.scrollAppear {
+/* .scrollAppear {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
@@ -311,7 +307,7 @@ header {
   to {
     opacity: 1;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .keen-slider {
