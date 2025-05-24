@@ -42,14 +42,14 @@ export default function PlaceMap() {
             position={position}
             zIndex={1}
             onClick={() => window.open('https://maps.app.goo.gl/XFQZdjuTjio2sp7r8', '_blank')}
-            maxWidth={200}
+            maxWidth={250}
             headerContent={
-              <div>
-                <Image src='/img/logo-resso-fn-azul-blanco-resized.webp' alt='Logo Ressò' width={50} height={50} />
+              <div className='flex justify-start items-start'>
+                <Image src='/img/logo-resso-sf-azul-negro.webp' alt='Logo Ressò' width={75} height={75} />
               </div>
             }
           >
-            <div className='mt-5 flex flex-col justify-start items-start gap-1'>
+            <div className='flex flex-col justify-start items-start gap-1'>
               <h5 className='font-bold mb-1'>Ressò - Centre d&apos;entrenament</h5>
               <p>Avda. de la Font, 12</p>
               <p>08005 Barcelona</p>
