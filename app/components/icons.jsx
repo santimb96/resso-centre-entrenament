@@ -1,6 +1,7 @@
+import { BiCopy } from 'react-icons/bi'
 import { BsTelephone } from 'react-icons/bs'
 import { FaInstagram, FaRegBell, FaRegCalendar, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
-import { FaArrowRight, FaArrowUp, FaSquareFacebook } from 'react-icons/fa6'
+import { FaArrowRight, FaArrowUp, FaCheck, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoBagCheckOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuCircleCheckBig, LuGoal, LuMapPin, LuMouse } from 'react-icons/lu'
@@ -9,6 +10,7 @@ import { PiUsersFour } from 'react-icons/pi'
 import { RiPriceTag3Line, RiServiceLine } from 'react-icons/ri'
 import { RxCaretDown, RxHamburgerMenu } from 'react-icons/rx'
 import { TbExternalLink } from 'react-icons/tb'
+
 
 export function Hamburger ({size = 24}) {
   return <RxHamburgerMenu size={size} />
@@ -117,3 +119,12 @@ export function ExternalLink ({size = 24}) {
 export function Cookie ({size = 24}) {
   return <MdOutlineCookie size={size} />
 }
+
+export function Copy ({size = 24}) {
+  return <BiCopy size={size} />
+}
+
+export function Check ({size = 24}) {
+  return <FaCheck size={size} />
+}
+

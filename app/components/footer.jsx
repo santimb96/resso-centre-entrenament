@@ -1,11 +1,25 @@
-/* eslint-disable react/no-unescaped-entities */
-import { Facebook, Instagram, Location, Mail, Youtube } from '@/components/icons'
+'use client'
+
+import { Copy, Facebook, Instagram, Location, Mail, Youtube } from '@/components/icons'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { MENU } from '../constants/vars'
 import { workSans } from '../lib/fonts'
+import { Check } from './icons'
 
 export default function Footer() {
+
+  const [copied, setCopied] = useState(false)
+
+  const copyMail = () => {
+    navigator.clipboard.writeText('info@resso.fn.es')
+    setCopied(true)
+    setTimeout(() => {
+      setCopied(false)
+    }, 2000)
+  }
+
   return (
     <footer className='w-full flex flex-col items-center mt-auto'>
       <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 lg:!flex-row lg:justify-between lg:items-start'>
@@ -25,10 +39,15 @@ export default function Footer() {
               <span className='max-w-4 lg:min-w-6'><Location /></span>
               Calle de Sant Fiol 21, Marratxí, Islas Baleares, España
             </a>
-            <a className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out text-[0.75rem] lg:text-[1rem]' href='mailto:info@resso.fn.es'>
-              <span className='max-w-4 lg:min-w-6'><Mail /></span>
-              info@resso.fn.es
-            </a>
+            <div className='flex flex-row justify-center items-center gap-2.5 text-[0.75rem] lg:text-[1rem]'>
+              <a href='mailto:info@resso.fn.es' className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out'>
+                <span className='max-w-4 lg:min-w-6'><Mail size={24} /></span>
+                info@resso.fn.es
+              </a>
+              <button className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group !cursor-pointer'}`} onClick={copyMail}>{
+                copied ? <Check size={24} /> : <span className='group-hover:text-accent duration-150 ease-in-out'><Copy size={24} /></span>
+              }</button>
+            </div>
             <div className='w-full flex justify-center items-center gap-2.5 mt-5'>
               <a className='hover:text-accent duration-150 ease-in-out' href='' title='Instagram' target='_blank'><span className='max-w-4 lg:min-w-9'><Instagram size={32} /></span></a>
               <a className='hover:text-accent duration-150 ease-in-out' href='' title='Facebook' target='_blank'><span className='max-w-4 lg:min-w-9'><Facebook size={32} /></span></a>
@@ -48,7 +67,7 @@ export default function Footer() {
         </div>
       </div>
       <p className='text-pretty text-center font-normal my-2.5 text-[0.75rem] lg:text-[1rem]'>Accede a nuestra <Link href='/cookies-policy' target='_blank' className='text-accent hover:brightness-125 duration-150 ease-in-out hover:underline'>política de cookies</Link></p>
-      <p className='text-pretty text-center font-bold mb-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d'entrenament</p>
+      <p className='text-pretty text-center font-bold mb-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d&apos;entrenament</p>
       <small className='text-pretty text-center font-thin text-[0.75rem] lg:text-[1rem] mb-5'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-150' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
     </footer>
   )

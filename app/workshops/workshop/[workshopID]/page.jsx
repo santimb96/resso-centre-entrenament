@@ -39,7 +39,7 @@ export default async function WorkshopInfo(props) {
         /
         <Link href='/workshops' className='hover:underline duration-150 ease-in-out'>Workshops</Link>
         /
-        <p title={title} className='font-bold cursor-not-allowed line-clamp-1 italic'>{title}</p>
+        <p title={title} className='font-bold line-clamp-1 italic'>{title}</p>
       </div>
       <div className='w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw] grid grid-cols-1 lg:place-items-start px-2.5 md:px-0 lg:grid-cols-3 lg:grid-rows-1 gap-5'>
         <div className='lg:col-span-2 lg:row-span-2 flex flex-col justify-start items-start gap-2.5 w-full text-primary'>
