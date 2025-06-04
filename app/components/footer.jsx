@@ -44,7 +44,7 @@ export default function Footer() {
                 <span className='max-w-4 lg:min-w-6'><Mail size={24} /></span>
                 info@resso.fn.es
               </a>
-              <button className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group !cursor-pointer'}`} onClick={copyMail}>{
+              <button className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full lg:p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group !cursor-pointer'}`} onClick={copyMail}>{
                 copied ? <Check size={24} /> : <span className='group-hover:text-accent duration-150 ease-in-out'><Copy size={24} /></span>
               }</button>
             </div>
