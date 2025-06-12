@@ -1,9 +1,8 @@
 import { Calendar, Clock, Facebook, Instagram, Location, Tiktok, Youtube } from '@/components/icons'
-import { WORKSHOPS } from '@/constants/vars'
+import { TEACHERS, WORKSHOPS } from '@/constants/vars'
+import { workSans } from '@/lib/fonts'
 import Image from 'next/image'
 import Link from 'next/link'
-import { TEACHERS } from '../../../constants/vars'
-import { workSans } from '../../../lib/fonts'
 
 function getWorkshopById(workshopID) {
   const getData = () => {

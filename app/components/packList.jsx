@@ -1,6 +1,6 @@
 
 import { PACK_LIST } from '@/constants/vars'
-import { workSans } from '../lib/fonts'
+import { workSans } from '@/lib/fonts'
 import TextComponent from './common/TextComponent'
 import { CheckCircle, CloseCircle } from './icons'
 
