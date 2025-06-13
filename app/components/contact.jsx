@@ -16,17 +16,17 @@ export default function Contact () {
               <TextComponent text='Pregúntanos lo que quieras sin compromiso' textColor='primary' margin='mb-5' />
             </div>
             <div className='w-full flex flex-row justify-center items-center gap-10'>
-              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              <a aria-label='Instagram' href='https://www.instagram.com/pfisic_mario/' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Instagram size={40} />
                 </span>
               </a>
-              <a href='https://wa.me/673467364' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              <a aria-label='Whatsapp' href='https://wa.me/673467364' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Whatsapp size={40} />
                 </span>
               </a>
-              <a href='https://www.instagram.com/pfisic_mario/' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              <a aria-label='Correo electrónico' href='https://www.instagram.com/pfisic_mario/' target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Mail size={40} />
                 </span>

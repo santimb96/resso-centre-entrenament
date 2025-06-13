@@ -79,7 +79,7 @@ export default async function WorkshopInfo(props) {
               {rrss.map((socialProfile, index) => {
                 const { name, link } = socialProfile
                 return (
-                  <a key={name + index} className='hover:text-accent hover:cursor-pointer duration-150 ease-in-out' href={link} title={name} target='_blank'>
+                  <a aria-label={name} key={name + index} className='hover:text-accent hover:cursor-pointer duration-150 ease-in-out' href={link} title={name} target='_blank'>
                     <span className='max-w-4 lg:min-w-9'>
                       {
                         name === 'Instagram' ? <Instagram size={32} /> :
