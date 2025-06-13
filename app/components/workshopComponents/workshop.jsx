@@ -51,7 +51,7 @@ export default function Workshop({
           href={`/workshops/${id}-${title.toLowerCase()}`}
           className='font-semibold flex items-center gap-2.5 border border-primary hover:bg-gray-900/70 px-5 py-2.5 rounded-md duration-150 ease-in-out'
         >
-          Más información
+          Ver workshop
           <span className='min-w-6 w-6'>
             <ExternalLink size={20} />
           </span>
