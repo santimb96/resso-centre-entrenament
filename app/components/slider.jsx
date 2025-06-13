@@ -40,6 +40,7 @@ export default function Slider ({ children }) {
             ].map((idx) => {
               return (
                 <button
+                  title={`Ir al workshop ${idx + 1}`}
                   key={idx}
                   onClick={() => {
                     instanceRef.current?.moveToIdx(idx)

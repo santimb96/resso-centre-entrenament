@@ -81,6 +81,6 @@ function CookiesModal({ saveCookiesPreference }) {
 
 function CookiesButton({ accept = true, saveCookiesPreference }) {
   return (
-    <button onClick={() => saveCookiesPreference(accept)} className={`min-w-8 ${accept ? 'bg-accent border-accent' : 'bg-secondary border-secondary'} hover:border-accent text-primary rounded-md flex justify-center items-center gap-2.5 border px-5 py-2.5 w-full duration-150 ease-in-out hover:text-accent hover:bg-primary hover:text-accent'`}><CheckCircle size={24} /> {accept ? 'Aceptar cookies' : 'Rechazar cookies'}</button>
+    <button title={accept ? 'Aceptar cookies' : 'Rechazar cookies'} onClick={() => saveCookiesPreference(accept)} className={`min-w-8 ${accept ? 'bg-accent border-accent' : 'bg-secondary border-secondary'} hover:border-accent text-primary rounded-md flex justify-center items-center gap-2.5 border px-5 py-2.5 w-full duration-150 ease-in-out hover:text-accent hover:bg-primary hover:text-accent'`}><CheckCircle size={24} /> {accept ? 'Aceptar cookies' : 'Rechazar cookies'}</button>
   )
 }

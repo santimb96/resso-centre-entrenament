@@ -23,13 +23,13 @@ export default function HamburgerMenu () {
   }
   return (
     <>
-      <button className='relative colNav min-w-6 ml-auto cursor-pointer duration-150 ease-in-out mt-2' onClick={handleMenu}>
+      <button title='Abrir menú de navegación' className='relative colNav min-w-6 ml-auto cursor-pointer duration-150 ease-in-out mt-2' onClick={handleMenu}>
         <Hamburger size={24} />
       </button>
       {isOpen && (
         <div className={`hamburgerMenu ${isOpen && 'hamOpen'}`}>
           <div className='w-full flex justify-end items-center mt-10 px-2.5'>
-            <button className='cursor-pointer min-w-6' onClick={handleMenu}>
+            <button title='Cerrar menú de navegación' className='cursor-pointer min-w-6' onClick={handleMenu}>
               <Close />
             </button>
           </div>
