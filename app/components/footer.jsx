@@ -9,11 +9,11 @@ import { workSans } from '../lib/fonts'
 import { Check } from './icons'
 
 export default function Footer() {
-
+  const MAIL = 'info@resso.fn.es'
   const [copied, setCopied] = useState(false)
 
   const copyMail = () => {
-    navigator.clipboard.writeText('info@resso.fn.es')
+    navigator.clipboard.writeText(MAIL)
     setCopied(true)
     setTimeout(() => {
       setCopied(false)
@@ -40,9 +40,9 @@ export default function Footer() {
               Calle de Sant Fiol 21, Marratxí, Islas Baleares, España
             </a>
             <div className='flex flex-row justify-center items-center gap-2.5 text-[0.75rem] lg:text-[1rem]'>
-              <a aria-label='Correo electrónico' href='mailto:info@resso.fn.es' className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out'>
+              <a aria-label='Correo electrónico' href={`mailto:${MAIL}`} className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out'>
                 <span className='max-w-4 lg:min-w-6'><Mail size={24} /></span>
-                info@resso.fn.es
+                {MAIL}
               </a>
               <button title='Copiar correo' className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full lg:p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group !cursor-pointer'}`} onClick={copyMail}>{
                 copied ? <Check size={24} /> : <span className='group-hover:text-accent duration-150 ease-in-out'><Copy size={24} /></span>
