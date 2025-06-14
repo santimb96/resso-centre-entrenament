@@ -6,8 +6,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <title>Ressò - Centre d&apos;entrenament</title>
         {/* <icon href="/img/" /> */}
+        <title>Ressò - Centre d&apos;entrenament</title>
         <meta name="description" content="Ressò - Centre d&apos;entrenament es un centro de entrenamiento situado en el Pont d'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios para obtener la mejor versión posible de uno mismo." />
         <meta name="keywords" content="Ressò, Centre d'entrenament, entrenamiento, planes, talleres, workshops, servicios complementarios, Mallorca, Pont d'Inca, Palma, bienestar, salud, entrenamiento, rendimiento, nutrición" />
         <meta name="author" content="Ressò - Centre d&apos;entrenament" />
