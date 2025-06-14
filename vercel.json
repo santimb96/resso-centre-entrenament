@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "https://www.ressocentredentrenament.com/:path*",
+        "destination": "https://ressocentredentrenament.com/:path*",
+        "permanent": true
+      }
+    ]
+}
