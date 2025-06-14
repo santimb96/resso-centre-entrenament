@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="index, follow" />
         <meta property='og:title' content='Ressò - Centre d&apos;entrenament' />
         <meta property='og:description' content='¡Entra y mira todo lo que podemos ofrecerte para sacar la mejor versión de ti mismo!' />
-        <meta property='og:image' content='https://ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1' />
-        <meta property='og:url' content='https://ressocentredentrenament.com' />
+        <meta property='og:image' content='https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1' />
+        <meta property='og:url' content='https://www.ressocentredentrenament.com' />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://ressocentredentrenament.com/" />
+        <link rel="canonical" href="https://www.ressocentredentrenament.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
