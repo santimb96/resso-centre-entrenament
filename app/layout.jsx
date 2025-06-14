@@ -15,15 +15,15 @@ export default function RootLayout({ children }) {
         <meta property='og:title' content='Ressò - Centre d&apos;entrenament' />
         <meta property='og:description' content='¡Entra y mira todo lo que podemos ofrecerte para sacar la mejor versión de ti mismo!' />
         <meta property='og:url' content='https://ressocentredentrenament.com' />
-        <meta property='og:image' itemProp='image' content='/img/logo-resso-fn-azul-blanco.webp' />      
-        <meta property='og:image:secure_url' itemProp='image' content='/img/logo-resso-fn-azul-blanco.webp' />
-        <meta property='og:image:type' itemProp='image' content='image/webp' />
-        <meta property='og:image:width' itemProp='image' content='256' />
-        <meta property='og:image:height' itemProp='image' content='256' /> 
-        <link itemProp='thumbnailUrl' href='/img/logo-resso-fn-azul-blanco.webp' /> 
+        {/* <meta property='og:image' itemProp='image' content='/img/logo-resso-fn-azul-blanco.webp' />       */}
+        <meta property='og:image:secure_url' itemprop='image' content='/img/logo-resso-fn-azul-blanco.webp' />
+        <meta property='og:image:type' content='image/webp' />
+        <meta property='og:image:width' content='256' />
+        <meta property='og:image:height' content='256' /> 
+        {/* <link itemProp='thumbnailUrl' href='/img/logo-resso-fn-azul-blanco.webp' /> 
         <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> 
           <link itemprop="url" href="/img/logo-resso-fn-azul-blanco.webp" />
-        </span>
+        </span> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
