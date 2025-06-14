@@ -16,7 +16,8 @@ export default function RootLayout({ children }) {
         <meta property='og:description' content='¡Entra y mira todo lo que podemos ofrecerte para sacar la mejor versión de ti mismo!' />
         <meta property='og:url' content='https://ressocentredentrenament.com' />
         {/* <meta property='og:image' itemProp='image' content='/img/logo-resso-fn-azul-blanco.webp' />       */}
-        <meta property='og:image:secure_url' itemprop='image' content='/img/logo-resso-og-image.jpg' />
+        <meta property='og:image' content='https://ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1' />
+        <meta property="og:type" content="website" />
         {/* <link itemProp='thumbnailUrl' href='/img/logo-resso-fn-azul-blanco.webp' /> 
         <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> 
           <link itemprop="url" href="/img/logo-resso-fn-azul-blanco.webp" />
