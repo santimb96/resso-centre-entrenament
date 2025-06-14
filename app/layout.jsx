@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <meta property='og:title' content='Ressò - Centre d&apos;entrenament' />
         <meta property='og:description' content='¡Entra y mira todo lo que podemos ofrecerte para sacar la mejor versión de ti mismo!' />
         <meta property='og:image:secure_url' content='https://ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1' />
-        <meta property='og:url' content='https://ressocentredentrenament.com' />
+        <meta property='og:url' content='https://www.ressocentredentrenament.com' />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
