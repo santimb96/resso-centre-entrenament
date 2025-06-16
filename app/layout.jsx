@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="Ressò, Centre d'entrenament, entrenamiento, planes, talleres, workshops, servicios complementarios, Mallorca, Pont d'Inca, Palma, bienestar, salud, entrenamiento, rendimiento, nutrición" />
         <meta name="author" content="Ressò - Centre d&apos;entrenament" />
         <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="7OWtrRiaW9jNkUZytFaR7s8dWmSqsvMweaChbeqMWRw" />
         {/* <meta name="google-site-verification" content={`${process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}`} /> */}
         <meta property='og:title' content='Ressò - Centre d&apos;entrenament' />
         <meta property='og:description' content='¡Entra y mira todo lo que podemos ofrecerte para sacar la mejor versión de ti mismo!' />
