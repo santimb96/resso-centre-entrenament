@@ -33,7 +33,7 @@ function Pack ({pack}) {
           <span className='text-xl font-bold'>€</span>
         </div>
         <div className='flex flex-col justify-start items-start gap-0.5'>
-          {discount && <span className='line-through opacity-70 text-[1.5rem]'>{originalPrice}</span>}
+          {discount && <span className='line-through decoration-red-700 opacity-70 text-[1.5rem]'>{originalPrice}</span>}
           <span className='text-[0.75rem] mb-1.5'>Pago mensual</span>
         </div>
       </div>
