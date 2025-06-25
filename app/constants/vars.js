@@ -130,6 +130,7 @@ const WORKSHOPS =
     {
       id: 1,
       title: 'Trabaja con tu cuerpo: fundamentos del trabajo físico',
+      url: 'trabaja-con-tu-cuerpo-fundamentos-del-trabajo-fisico',
       description: 'Taller práctico de calistenia y movilidad. Aprenderemos a trabajar con nuestro propio cuerpo, utilizando ejercicios de calistenia y movilidad para mejorar la fuerza, flexibilidad y control corporal.\n\nEl taller incluirá una introducción a los principios de la calistenia, ejercicios básicos y progresiones para cada nivel. Se trabajará en la mejora de la movilidad articular y la activación muscular.\n\nLos participantes recibirán un plan de entrenamiento personalizado para continuar su práctica en casa. Ideal para aquellos que buscan mejorar su condición física sin necesidad de equipamiento adicional.',
       date: '15/02/2024',
       startTime: '20:00',
@@ -142,6 +143,7 @@ const WORKSHOPS =
     {
       id: 2,
       title: 'Judo para principiantes: fundamentos del judo',
+      url: 'judo-para-principiantes-fundamentos-del-judo',
       description: 'Taller práctico de judo. Aprenderemos los fundamentos básicos del judo, incluyendo técnicas de takedown, guard, ataque y defensa. El taller incluirá una introducción a las reglas del judo y la importancia de la disciplina y el respeto en el deporte.\n\nLos participantes recibirán una guía de entrenamiento personalizado para continuar su práctica en casa. Ideal para aquellos que desean aprender el deporte de manera segura y respetuosa.',
       date: '20/03/2024',
       startTime: '20:00',
@@ -154,6 +156,7 @@ const WORKSHOPS =
     {
       id: 3,
       title: 'Acondicionamiento físico para el judo',
+      url: 'acondicionamiento-fisico-para-el-judo',
       description: 'Taller práctico de acondicionamiento físico específico para el judo. Aprenderemos ejercicios y rutinas de entrenamiento adaptadas a las necesidades del judoka, incluyendo fuerza, resistencia y flexibilidad.\n\nEl taller incluirá una introducción a la planificación del entrenamiento y la importancia de la prevención de lesiones. Se trabajará en la mejora de la movilidad articular y la activación muscular.\n\nLos participantes recibirán un plan de entrenamiento personalizado para continuar su práctica en casa. Ideal para aquellos que buscan mejorar su rendimiento en el judo.',
       date: '05/04/2024',
       startTime: '20:00',
@@ -166,6 +169,7 @@ const WORKSHOPS =
     {
       id: 4,
       title: 'Preparación Física Específica para Judo',
+      url: 'preparacion-fisica-especifica-para-judo',
       description: 'Taller especializado en la preparación física adaptada a las necesidades específicas del judoka. Dirigido tanto a competidores como a practicantes recreativos que deseen mejorar su condición física.\n\nAprenderemos ejercicios específicos para desarrollar la fuerza, resistencia y potencia necesarias en judo. Se incluirán circuitos de entrenamiento funcional y trabajo con pesas adaptado.\n\nTrabajo específico de prevención de lesiones y recuperación activa. Introducción a técnicas de respiración y control corporal para optimizar el rendimiento.\n\nCada participante recibirá un plan de entrenamiento personalizado para continuar su preparación de forma autónoma.',
       date: '10/05/2024',
       startTime: '20:00',
@@ -178,6 +182,7 @@ const WORKSHOPS =
     {
       id: 5,
       title: 'Judo y Defensa Personal',
+      url: 'judo-y-defensa-personal',
       description: 'Taller práctico donde exploraremos las aplicaciones del judo en situaciones de defensa personal. Aprenderemos a adaptar las técnicas tradicionales a escenarios realistas de autoprotección.\n\nSe trabajarán situaciones comunes de defensa contra diferentes tipos de agresiones, siempre desde la perspectiva de la seguridad y la proporcionalidad en la respuesta.\n\nIncluiremos técnicas de control y neutralización, así como estrategias de prevención y evaluación de riesgos. Especial énfasis en la parte legal y ética de la defensa personal.\n\nPrácticas con diferentes escenarios y situaciones simuladas para integrar lo aprendido de forma segura y efectiva.',
       date: '15/06/2024',
       startTime: '20:00',

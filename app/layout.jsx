@@ -1,4 +1,3 @@
-import CookiesMessage from '@/components/cookiesMessage'
 import './globals.css'
 import { notoSans } from './lib/fonts'
 
@@ -24,7 +23,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
         {children}
-        <CookiesMessage />
       </body>
     </html>
   )
