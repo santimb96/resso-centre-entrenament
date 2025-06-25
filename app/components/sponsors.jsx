@@ -4,7 +4,7 @@ import TitleSection from './common/TitleSection'
 import InfiniteSlider from './infiniteSlider'
 export default function Sponsors() {
   return (
-    <section id='patrocinadores' className=' flex flex-col justify-center items-center gap-5 scroll-m-24 px-2.5'>
+    <section id='patrocinadores' className=' flex flex-col justify-center items-center gap-5 scroll-m-10 px-2.5'>
       <div className='w-full flex flex-col justify-center items-center mt-5 md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw]'>
         <TitleSection title='Patrocinadores' color='accent' />
         <TextComponent text='Colaboran con nosotros:' textColor='accent'  />

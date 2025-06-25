@@ -15,11 +15,15 @@ export default function Header ({ isMain = true }) {
     const currentScrollPos = window.pageYOffset
 
     if (prevScrollPos === currentScrollPos || prevScrollPos > currentScrollPos){
-      header.classList.remove('headerDissapear')
-      header.classList.add('headerAppear')
+      setTimeout(() => {
+        header.classList.remove('headerDissapear')
+        header.classList.add('headerAppear')
+      }, 500)
     } else {
-      header.classList.remove('headerAppear')
-      header.classList.add('headerDissapear')
+      setTimeout(() => {
+        header.classList.remove('headerAppear')
+        header.classList.add('headerDissapear')
+      }, 500)
     }
     prevScrollPos = currentScrollPos
 
