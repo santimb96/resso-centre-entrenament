@@ -65,23 +65,19 @@ const PACK_LIST = [
     title: 'Iniciación',
     description: 'Este plan está diseñado para principiantes que desean adentrarse en el mundo del judo.',
     includes: [
-      'Clases grupales 2 veces por semana',
-      'Acceso a material didáctico básico',
-      'Sesión de evaluación inicial',
-      'Asesoramiento técnico básico',
-      'Acceso a la comunidad de judo'
+      'Dos entrenos semanales',
+      'Acceso a los workshops mensuales',
+      'Uso libre del Workspace',
     ],
     notIncludes: [
-      'Clases personalizadas',
-      'Acceso a entrenamientos avanzados',
-      'Sesiones de recuperación física',
-      'Entrenamiento específico para competición',
-      'Acceso a seminarios especializados',
-      'Seguimiento nutricional'
+      'Entrevista y valoración inicial',
+      'Valoración nutricional',
+      '1 sesión de fisioterapia mensual'
     ],
     price: 80,
-    link: 'https://academiajudo.com/plan-iniciacion',
-    discount: false,
+    link: 'https://wa.me/+34604845184',
+    discount: true,
+    originalPrice: 100,
     popular: false,
     premium: false
   },
@@ -90,23 +86,20 @@ const PACK_LIST = [
     title: 'Avanzado',
     description: 'Este plan está pensado para aquellos que ya tienen experiencia en judo y buscan mejorar sus habilidades.',
     includes: [
-      'Clases grupales 2 veces por semana',
-      'Acceso a material didáctico básico',
-      'Sesión de evaluación inicial',
-      'Asesoramiento técnico básico',
-      'Acceso a la comunidad de judo',
-      'Clases personalizadas 1 vez por semana',
-      'Acceso a entrenamientos avanzados',
-      'Sesiones de recuperación física'
+      'Dos entrenos semanales',
+      'Acceso a los workshops mensuales',
+      'Uso libre del Workspace',
+      'Entrevista y valoración inicial',
+      
     ],
     notIncludes: [
-      'Entrenamiento específico para competición',
-      'Acceso a seminarios especializados',
-      'Seguimiento nutricional'
+      'Valoración nutricional',
+      '1 sesión de fisioterapia mensual'
     ],
     price: 90,
-    link: 'https://academiajudo.com/plan-intermedio',
-    discount: false,
+    link: 'https://wa.me/+34604845184',
+    discount: true,
+    originalPrice: 110,
     popular: true,
     premium: false
   },
@@ -115,22 +108,18 @@ const PACK_LIST = [
     title: 'Profesional',
     description: 'Este plan está diseñado para competidores de judo que buscan llevar su rendimiento al máximo nivel.',
     includes: [
-      'Clases grupales 2 veces por semana',
-      'Acceso a material didáctico básico',
-      'Sesión de evaluación inicial',
-      'Asesoramiento técnico básico',
-      'Acceso a la comunidad de judo',
-      'Clases personalizadas 1 vez por semana',
-      'Acceso a entrenamientos avanzados',
-      'Sesiones de recuperación física',
-      'Entrenamiento específico para competición',
-      'Acceso a seminarios especializados',
-      'Seguimiento nutricional'
+      'Dos entrenos semanales',
+      'Acceso a los workshops mensuales',
+      'Uso libre del Workspace',
+      'Entrevista y valoración inicial',
+      'Valoración nutricional',
+      '1 sesión de fisioterapia mensual'
     ],
     notIncludes: [],
     price: 120,
-    link: 'https://academiajudo.com/plan-avanzado',
-    discount: false,
+    link: 'https://wa.me/+34604845184',
+    discount: true,
+    originalPrice: 140,
     popular: false,
     premium: true
   }

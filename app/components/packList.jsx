@@ -18,7 +18,7 @@ export default function PackList () {
 }
 
 function Pack ({pack}) {
-  const { title, includes, notIncludes, price, link, discount, popular, premium } = pack
+  const { title, includes, notIncludes, price, link, discount, originalPrice, popular, premium } = pack
   return (
     <div className={`${premium ? 'text-primary' : 'text-secondary'} rounded-xl h-full shadow-custom min-h-content w-full flex flex-col gap-5 px-5 py-10 ${premium ? 'bg-secondary' : 'bg-primary'}`}>
       <div className='flex justify-between items-center'>
@@ -32,10 +32,12 @@ function Pack ({pack}) {
           </h2>
           <span className='text-xl font-bold'>€</span>
         </div>
-        <span className='text-[0.75rem] mb-1.5'>Pago mensual</span>
+        <div className='flex flex-col justify-start items-start gap-0.5'>
+          {discount && <span className='line-through opacity-70 text-[1.5rem]'>{originalPrice}</span>}
+          <span className='text-[0.75rem] mb-1.5'>Pago mensual</span>
+        </div>
       </div>
-      {discount && <h6 className='line-through'>{price - price/2}</h6>}
-      <a aria-label={`Apúntate al plan ${title}`} href={link} target='_blank' className={`bg-primary ${popular ? 'hover:bg-accent border !border-accent hover:!border-secondary text-accent' : 'hover:bg-accent border border-secondary'} ${premium && 'text-secondary hover:border-primary'} ${workSans.className} text-xl font-extrabold hover:text-primary transition-all duration-200 ease-in-out border border-secondary py-2.5 rounded-full text-center w-full`}>¡APÚNTATE!</a>
+      <a aria-label={`Apúntate al plan ${title}`} href={link} target='_blank' className={`bg-primary ${popular ? 'hover:bg-accent border !border-accent hover:!border-secondary text-accent' : 'hover:bg-accent border border-secondary'} ${premium && 'text-secondary hover:border-primary'} ${workSans.className} text-xl font-extrabold hover:text-primary transition-all duration-200 ease-in-out border border-secondary py-2.5 rounded-full text-center w-full`}>CONTÁCTAME</a>
       <div className='flex flex-col justify-start items-start gap-2.5'>
         <div className='flex flex-col justify-start items-start gap-2.5'>
           {includes.map((include, index) => {
