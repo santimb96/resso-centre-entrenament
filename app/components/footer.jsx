@@ -9,11 +9,10 @@ import { workSans } from '../lib/fonts'
 import { Check } from './icons'
 
 export default function Footer() {
-  const MAIL = 'info@resso.fn.es'
   const [copied, setCopied] = useState(false)
 
   const copyMail = () => {
-    navigator.clipboard.writeText(MAIL)
+    navigator.clipboard.writeText(RESSO_INFO.email)
     setCopied(true)
     setTimeout(() => {
       setCopied(false)
