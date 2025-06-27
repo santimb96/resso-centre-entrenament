@@ -37,7 +37,7 @@ function Pack ({pack}) {
           <span className='text-[0.75rem] mb-1.5'>Pago mensual</span>
         </div>
       </div>
-      <a aria-label={`Apúntate al plan ${title}`} href={link} target='_blank' className={`bg-primary ${popular ? 'hover:bg-accent border !border-accent hover:!border-secondary text-accent' : 'hover:bg-accent border border-secondary'} ${premium && 'text-secondary hover:border-primary'} ${workSans.className} text-xl font-extrabold hover:text-primary transition-all duration-200 ease-in-out border border-secondary py-2.5 rounded-full text-center w-full`}>CONTÁCTAME</a>
+      <a aria-label={`Apúntate al plan ${title}`} href={link} target='_blank' className={`bg-primary ${popular ? 'hover:bg-accent border !border-accent hover:!border-secondary text-accent' : 'hover:bg-accent border border-secondary'} ${premium && 'text-secondary hover:border-primary'}text-xl font-extrabold hover:text-primary transition-all duration-200 ease-in-out border border-secondary py-2.5 rounded-full text-center w-full`}>Elegir plan</a>
       <div className='flex flex-col justify-start items-start gap-2.5'>
         <div className='flex flex-col justify-start items-start gap-2.5'>
           {includes.map((include, index) => {
