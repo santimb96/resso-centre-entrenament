@@ -98,10 +98,22 @@ footer {
 } */
 
 .headerContainer {
-    background-image: url('/img/pic-header.webp');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.headerContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/headerImg.webp');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) contrast(150%) brightness(120%);
+  z-index: -1;
 }
 
 .colNav {
