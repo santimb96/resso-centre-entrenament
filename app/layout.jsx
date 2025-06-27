@@ -5,7 +5,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        {/* <icon href="/img/" /> */}
         <title>Ressò - Centre d&apos;entrenament</title>
         <meta name="description" content="Ressò - Centre d&apos;entrenament es un centro de entrenamiento situado en el Pont d'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios para obtener la mejor versión posible de uno mismo." />
         <meta name="keywords" content="Ressò, Centre d'entrenament, entrenamiento, planes, talleres, workshops, servicios complementarios, Mallorca, Pont d'Inca, Palma, bienestar, salud, entrenamiento, rendimiento, nutrición" />
@@ -20,6 +19,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.ressocentredentrenament.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="50x50" />
       </head>
       <body className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
         {children}
