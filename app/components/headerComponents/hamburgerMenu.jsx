@@ -1,7 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
+ 
 'use client'
 
-import { Close, Hamburger } from '@/components/icons'
+import { Close, Github, Hamburger } from '@/components/icons'
 import { MENU } from '@/constants/vars'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -51,13 +51,14 @@ export default function HamburgerMenu () {
           </nav>
           <Divider />
           <h4 className={`${workSans.className} text-center my-2.5 text-[2rem] text-accent`}>¡Sígueme en redes!</h4>
-          <div className='flex justify-center items-center gap-5 my-2.5'>
+          <div className='flex justify-center items-center gap-5 my-5'>
             <Rrss />
           </div>
-          <Divider />
-          <div className='mt-10 w-full flex flex-col items-center gap-2.5'>
-            <h6 className='text-pretty text-center opacity-80'>2025 | Ressò - Centre d'entrenament</h6>
-            <small className='text-pretty text-center opacity-80'>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-300 text-[12px]' href='https://github.com/santimb96' target='_blank'>Santiago Martínez</Link></small>
+          <p className='text-pretty text-center font-normal my-2.5 text-[0.75rem] lg:text-[1rem]'>Accede a nuestra <Link href='/cookies-policy' target='_blank' className='text-accent hover:brightness-125 duration-150 ease-in-out hover:underline'>política de cookies</Link></p>
+          <p className='text-pretty text-center font-bold mb-2.5 text-[0.75rem] lg:text-[1rem]'>2025 | Ressò - Centre d&apos;entrenament</p>
+          <div className='w-full text-pretty text-center font-thin text-[0.75rem] flex justify-center items-center gap-2.5 my-5'>
+            <p>Hecho con ♥️ por <Link className='underline hover:text-accent ease-in-out duration-150' href='https://smartinezdev.com' target='_blank'>Santiago Martínez</Link></p>
+            <Link href='https://github.com/santimb96' target='_blank' className='hover:text-accent ease-in-out duration-150'><Github size={20} /></Link>
           </div>
         </div>
       )}

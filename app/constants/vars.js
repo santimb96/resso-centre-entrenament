@@ -1,7 +1,14 @@
 const WIDTH_LAYOUT = 'w-full md:w-[85vw] lg:w-[80vw] xl:w-[75vw] 2xl:w-[70vw]'
 
-const PERSONAL_INFO = {
-  description: 'Soy <strong>Mario Martín</strong>, <strong>entrenador</strong> y <strong>preparador físico</strong> con una sólida trayectoria en deportes reglados, principalmente en <strong>judo</strong>, <strong>natación</strong> y <strong>escalada</strong>. \n\nDurante años, he sido responsable de entrenar y preparar a <em>judokas que compiten a nivel nacional</em>, enfocándome en conducirlos a alcanzar su <em>máximo potencial competitivo</em>. \n\nMi experiencia no solo abarca el entrenamiento, sino también el <strong>desarrollo integral del atleta</strong>, incluyendo el <em>análisis biomecánico de técnicas</em>, <em>optimización de rendimiento</em> y <em>corrección de compensaciones posturales</em>.\n\nAdemás de mi labor en el entrenamiento, imparto <strong>charlas y formaciones especializadas</strong> para <strong>maestros de judo</strong> sobre temas clave como <em>preparación física</em> y <em>planificación de temporada</em>. También ofrezco <strong>mentorías para entrenadores</strong>, ayudándoles a perfeccionar sus métodos y mejorar los resultados de sus propios deportistas. Esta combinación de <em>experiencia práctica y educativa</em> me permite contribuir al crecimiento de la comunidad de judo, promoviendo la <strong>excelencia</strong> en cada nivel.'
+const RESSO_INFO = {
+  instagramName: 'resso_ct',
+  instagram: 'https://www.instagram.com/resso_ct/',
+  tlf: '604845184',
+  whatsapp: 'https://wa.me/604845184',
+  email: 'info@ressocentredentrenament.com',
+  locationName: 'Avinguda d\'Antoni Maura, 69, Cas Miot, 07141 Es Pont d\'Inca, Illes Balears',
+  mapsLink: 'https://maps.app.goo.gl/kq1ZrCgsYfx6CJKRA',
+  coordinates: { lat: 39.59921893976584, lng: 2.694535093541754 }
 }
 
 const MENU = [
@@ -204,19 +211,11 @@ const TEACHERS = [
     rrss: [
       {
         name: 'Instagram',
-        href: 'https://www.instagram.com/mario_martin_judo/',
+        href: 'https://www.instagram.com/resso_ct/',
       },
       {
-        name: 'Facebook',
-        href: 'https://www.facebook.com/mario.martin.judo',
-      },
-      {
-        name: 'TikTok',
-        href: 'https://www.tiktok.com/@mario_martin_judo',
-      },
-      {
-        name: 'YouTube',
-        href: 'https://www.youtube.com/@mario_martinjudo',
+        name: 'Whatsapp',
+        href: 'https://wa.me/604845184',
       }
     ]
   },
@@ -229,22 +228,10 @@ const TEACHERS = [
     rrss: [
       {
         name: 'Instagram',
-        link: 'https://www.instagram.com/mario_martin_judo/',
-      },
-      {
-        name: 'Facebook',
-        link: 'https://www.facebook.com/mario.martin.judo',
-      },
-      {
-        name: 'TikTok',
-        link: 'https://www.tiktok.com/@mario_martin_judo',
-      },
-      {
-        name: 'YouTube',
-        link: 'https://www.youtube.com/@mario_martinjudo',
+        href: 'https://www.instagram.com/somosRaw/',
       }
     ]
   }
 ]
 
-export { MENU, PACK_LIST, PERSONAL_INFO, SERVICES, TEACHERS, WIDTH_LAYOUT, WORKSHOPS }
+export { MENU, PACK_LIST, RESSO_INFO, SERVICES, TEACHERS, WIDTH_LAYOUT, WORKSHOPS }

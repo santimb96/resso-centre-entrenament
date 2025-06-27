@@ -1,6 +1,6 @@
 import { BiCopy } from 'react-icons/bi'
 import { BsTelephone } from 'react-icons/bs'
-import { FaInstagram, FaRegBell, FaRegCalendar, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaRegBell, FaRegCalendar, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaArrowRight, FaArrowUp, FaCheck, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoBagCheckOutline, IoCloseOutline } from 'react-icons/io5'
@@ -126,5 +126,9 @@ export function Copy ({size = 24}) {
 
 export function Check ({size = 24}) {
   return <FaCheck size={size} />
+}
+
+export function Github ({size = 24}) {
+  return <FaGithub size={size} />
 }
 

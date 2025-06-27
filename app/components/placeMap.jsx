@@ -2,8 +2,7 @@
 import { AdvancedMarker, APIProvider, InfoWindow, Map } from '@vis.gl/react-google-maps'
 import Image from 'next/image'
 
-export default function PlaceMap() {
-  const position = { lat: 39.574979872981274, lng: 2.6579112512360803 }
+export default function PlaceMap({ mapsLink, coordinates, locationName}) {
 
   return (
     <div className='w-full px-2.5 md:px-0 md:w-3/4 lg:w-full h-[40vh] md:h-[60vh] lg:h-[70vh] flex justify-center items-start lg:justify-start lg:items-start'>
@@ -14,7 +13,7 @@ export default function PlaceMap() {
       >
         <Map
           mapId={process.env.NEXT_PUBLIC_MAP_ID}
-          defaultCenter={position}
+          defaultCenter={coordinates}
           defaultZoom={18}
           defaultMapTypeId='roadmap'
           defaultOptions={{
@@ -33,15 +32,15 @@ export default function PlaceMap() {
           }}
         >
           <AdvancedMarker
-            position={position}
+            position={coordinates}
             title="Ressò - Centre d'entrenament"
             zIndex={1}
-            onClick={() => window.open('https://maps.app.goo.gl/XFQZdjuTjio2sp7r8', '_blank')}
+            onClick={() => window.open(mapsLink, '_blank')}
           />
           <InfoWindow
-            position={position}
+            position={coordinates}
             zIndex={1}
-            onClick={() => window.open('https://maps.app.goo.gl/XFQZdjuTjio2sp7r8', '_blank')}
+            onClick={() => window.open(mapsLink, '_blank')}
             maxWidth={250}
             headerContent={
               <div className='flex justify-start items-start'>
@@ -51,8 +50,7 @@ export default function PlaceMap() {
           >
             <div className='flex flex-col justify-start items-start gap-1'>
               <h5 className='font-bold mb-1'>Ressò - Centre d&apos;entrenament</h5>
-              <p>Avda. de la Font, 12</p>
-              <p>08005 Barcelona</p>
+              <p>{locationName}</p>
             </div>
           </InfoWindow>
         </Map>

@@ -1,4 +1,4 @@
-import { Calendar, Clock, Facebook, Instagram, Location, Tiktok, Youtube } from '@/components/icons'
+import { Calendar, Clock, Facebook, Instagram, Location, Tiktok, Whatsapp, Youtube } from '@/components/icons'
 import { TEACHERS, WORKSHOPS } from '@/constants/vars'
 import { workSans } from '@/lib/fonts'
 import Image from 'next/image'
@@ -86,7 +86,8 @@ export default async function WorkshopInfo(props) {
                           name === 'Facebook' ? <Facebook size={32} /> :
                             name === 'TikTok' ? <Tiktok size={28} /> :
                               name === 'YouTube' ? <Youtube size={32} /> :
-                                null
+                                name === 'Whatsapp' ? <Whatsapp size={32} /> :
+                                  null
                       }
                     </span>
                   </a>
