@@ -234,4 +234,14 @@ const TEACHERS = [
   }
 ]
 
-export { MENU, PACK_LIST, RESSO_INFO, SERVICES, TEACHERS, WIDTH_LAYOUT, WORKSHOPS }
+const SPONSORS_LIST = [
+  {
+    name: 'Pigo',
+    image: '/img/sponsors/pigo.webp',
+    width: 100,
+    height: 100,
+    href: '#'
+  }
+]
+
+export { MENU, PACK_LIST, RESSO_INFO, SERVICES, SPONSORS_LIST, TEACHERS, WIDTH_LAYOUT, WORKSHOPS }
