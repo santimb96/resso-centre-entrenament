@@ -5,16 +5,28 @@ import { ExternalLink } from './icons'
 
 export default function GoToPlans () {
 
+  const handleGoToPlans = () => {
+    const goToPlans = document.querySelector('#goToPlans')
+    // hardcoded min and max interval and it needs to be optimized/dynamic
+    const minHeight = 1500
+    const maxHeight = 3500
+    if (window.scrollY > minHeight && window.scrollY < maxHeight) {
+      goToPlans?.classList.add('goToPlansVisible')
+    } else {
+      goToPlans?.classList.remove('goToPlansVisible')
+    }
+  }
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      const goToPlans = document.querySelector('#goToPlans')
-      const minHeight = 2000
-      if (window.scrollY > minHeight) {
-        goToPlans?.classList.add('goToPlansVisible')
-      } else {
-        goToPlans?.classList.remove('goToPlansVisible')
-      }
+      handleGoToPlans()
     })
+
+    return () => {
+      window.removeEventListener('scroll', () => {
+        handleGoToPlans()
+      })
+    }
   }, [])
 
   return (

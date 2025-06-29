@@ -20,7 +20,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className='w-full flex flex-col items-center mt-auto'>
+    <footer id='footer' className='w-full flex flex-col items-center mt-auto'>
       <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 lg:!flex-row lg:justify-between lg:items-start'>
         <div className='flex flex-col justify-center items-center gap-2.5'>
           <Link href='/'>
