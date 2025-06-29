@@ -82,7 +82,7 @@ const PACK_LIST = [
       '1 sesión de fisioterapia mensual'
     ],
     price: 80,
-    link: 'https://wa.me/+34604845184',
+    link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan de Iniciación. ¿Podrías darme más información?',
     discount: true,
     originalPrice: 100,
     popular: false,
@@ -104,7 +104,7 @@ const PACK_LIST = [
       '1 sesión de fisioterapia mensual'
     ],
     price: 90,
-    link: 'https://wa.me/+34604845184',
+    link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan Avanzado. ¿Podrías darme más información?',
     discount: true,
     originalPrice: 110,
     popular: true,
@@ -124,7 +124,7 @@ const PACK_LIST = [
     ],
     notIncludes: [],
     price: 120,
-    link: 'https://wa.me/+34604845184',
+    link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan Profesional. ¿Podrías darme más información?',
     discount: true,
     originalPrice: 140,
     popular: false,
