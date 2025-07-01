@@ -3,7 +3,6 @@ import { MENU } from '@/constants/vars'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { workSans } from '../../lib/fonts'
 
 export default function RowMenu() {
   const { asPath } = useRouter()
@@ -54,7 +53,7 @@ export default function RowMenu() {
           )
         })}
       </div>
-      <span className={`${workSans.className} text-[1rem] ml-5 font-extrabold italic clipPathHashtag py-1.5 px-10 min-w-max flex justify-center items-center bg-primary text-secondary`}>#BERESSÒ</span>
+      {/* <span className={`${workSans.className} text-[1rem] ml-5 font-extrabold italic clipPathHashtag py-1.5 px-10 min-w-max flex justify-center items-center bg-primary text-secondary`}>#BERESSÒ</span> */}
     </nav>
   )
 }
