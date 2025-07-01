@@ -7,8 +7,8 @@ const RESSO_INFO = {
   whatsapp: 'https://wa.me/604845184',
   email: 'mario@ressocentredentrenament.com',
   locationName: 'Avinguda d\'Antoni Maura, 69, Cas Miot, 07141 Es Pont d\'Inca, Illes Balears',
-  mapsLink: 'https://maps.app.goo.gl/kq1ZrCgsYfx6CJKRA',
-  coordinates: { lat: 39.59921893976584, lng: 2.694535093541754 }
+  mapsLink: 'https://maps.app.goo.gl/A3Gnwu5uknGrvUpAA',
+  coordinates: { lat: 39.598915606336604, lng: 2.694483325041169 }
 }
 
 const MENU = [
@@ -43,25 +43,25 @@ const SERVICES = [
   {
     id: 1,
     title: 'Grupos de 4 personas',
-    description: 'Podrás disfrutar de una atención personalizada y un enfoque individualizado en cada sesión, ya sea que estés buscando mejorar tu condición física, aprender nuevas habilidades o simplemente disfrutar de una actividad en grupo.',
+    description: 'Entrenos con un plan personalizado adaptado a tus objetivos con una supervisión constante.',
     icon: 'Users'
   },
   {
     id: 2,
     title: 'Evaluación inicial',
-    description: 'Podrás solicitar una evaluación inicial para determinar tu nivel de condición física y establecer objetivos claros y alcanzables. Esta evaluación te permitirá conocer tus fortalezas y áreas de mejora, y te ayudará a diseñar un plan de entrenamiento adaptado a tus necesidades.',
+    description: 'Podrás solicitar una evaluación inicial para determinar tu nivel de condición física y establecer objetivos claros y alcanzables.',
     icon: 'HealthCheck'
   },
   {
     id: 3,
     title: 'Servicios complementarios',
-    description: 'Disponemos de servicios complementarios como sesiones de recuperación física y seguimiento nutricional. Estos servicios están diseñados para ayudarte a optimizar tu rendimiento y bienestar general.',
+    description: 'Disponemos de un equipo compuesto por un nutricionista y un fisioterapeuta para ayudarte a alcanzar tus metas.',
     icon: 'Services'
   },
   {
     id: 4,
-    title: 'Preparados para tus objetivos',
-    description: 'Ofrecemos entrenamiento personalizado para aquellos que desean un enfoque más específico y personalizado en su entrenamiento. Nuestros entrenadores especializados trabajarán contigo para diseñar un plan de entrenamiento personalizado que se adapte a tus necesidades y objetivos específicos.',
+    title: 'Preparados para lo que necesites',
+    description: 'Nuestro equipo está preparado para trabajar contigo y ayudarte a alcanzar tus objetivos.',
     icon: 'Goal'
   }
 ]
@@ -112,7 +112,7 @@ const PACK_LIST = [
   },
   {
     id: 3,
-    title: 'Profesional',
+    title: 'Élite',
     description: 'Este plan está diseñado para competidores de judo que buscan llevar su rendimiento al máximo nivel.',
     includes: [
       'Dos entrenos semanales',
@@ -124,7 +124,7 @@ const PACK_LIST = [
     ],
     notIncludes: [],
     price: 120,
-    link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan Profesional. ¿Podrías darme más información?',
+    link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan Élite. ¿Podrías darme más información?',
     discount: true,
     originalPrice: 140,
     popular: false,
@@ -207,7 +207,7 @@ const TEACHERS = [
     profileImg: '/img/teachers/mario.png',
     fullname: 'Mario Martín',
     occupation: 'Preparador físico de judo',
-    resume: 'Preparador físico de judo con +10 años de experiencia compitiendo y formando a deportistas de élite.',
+    resume: 'Preparador físico de judo con más de 8 años de experiencia compitiendo y formando a deportistas de élite.',
     rrss: [
       {
         name: 'Instagram',

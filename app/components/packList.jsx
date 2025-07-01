@@ -7,7 +7,7 @@ import { CheckCircle, CloseCircle } from './icons'
 export default function PackList () {
   return (
     <>
-      <TextComponent text={'Estos son los planes que están a disposición: <i>iniciación, avanzado y profesional</i>'} textColor='accent' />
+      <TextComponent text={'Estos son los planes que están a disposición: <i class="font-bold">Iniciación, Avanzado y Élite</i>'} textColor='accent' />
       <div className='mt-10 grid grid-cols-1 gap-5 lg:grid-cols-3 lg:items-center'>
         {PACK_LIST.map((pack, index) => (
           <Pack key={index + pack.title} pack={pack} />

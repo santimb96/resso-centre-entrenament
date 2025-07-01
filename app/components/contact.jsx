@@ -36,8 +36,8 @@ export default function Contact () {
               <span className='min-w-20'><Clock size={80} /></span>
               <div className='flex flex-col justify-center items-start ml-5'>
                 <h5 className='text-[1.25rem] md:text-[1.5rem] mb-1'>Horarios</h5>
-                <p className='font-normal'><span className='font-bold mr-2.5'>Lunes a viernes:</span>8h - 20h</p>
-                <p className='font-normal'><span className='font-bold mr-2.5'>Sábados:</span>9h - 13h</p>
+                <p className='font-normal'><span className='font-bold mr-2.5'>Lunes a viernes:</span>16h - 21h</p>
+                <p className='font-normal'><span className='font-bold mr-2.5'>Sábados:</span>Apertura próximamente</p>
                 <p className='font-normal'><span className='font-bold mr-2.5'>Domingos:</span>Cerrado</p>
               </div>
             </div>
