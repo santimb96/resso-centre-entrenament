@@ -53,7 +53,6 @@ export default function RowMenu() {
           )
         })}
       </div>
-      {/* <span className={`${workSans.className} text-[1rem] ml-5 font-extrabold italic clipPathHashtag py-1.5 px-10 min-w-max flex justify-center items-center bg-primary text-secondary`}>#BERESSÒ</span> */}
     </nav>
   )
 }

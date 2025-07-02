@@ -238,7 +238,14 @@ const SPONSORS_LIST = [
   {
     name: 'Pigo',
     image: '/img/sponsors/pigo.webp',
-    width: 100,
+    width: 150,
+    height: 150,
+    href: '#'
+  },
+  {
+    name: 'La Guarida | Barber - studio',
+    image: '/img/sponsors/laGuarida.webp',
+    width: 200,
     height: 100,
     href: '#'
   }
