@@ -13,9 +13,7 @@ export default {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         accent: 'var(--color-accent)',
-        instagramStart: '#FDDC5C',
-        instagramEnd: '#EA2F85',
-        facebook: '#1877F2'
+        whatsapp: '#22B33B'
       },
       boxShadow: {
         custom: '0 -4px 8px -2px rgba(0, 0, 0, 0.1), 0 8px 12px -2px rgba(0, 0, 0, 0.2)',

@@ -1,4 +1,5 @@
 import Contact from '@/components/contact'
+import ContactMeFixed from '@/components/contactMeFixed'
 import Footer from '@/components/footer'
 import Header from '@/components/headerComponents/header'
 import ScrollToTop from '@/components/scrollToTop'
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
         {children}
       </section>
       {/* <CookiesMessage /> */}
+      <ContactMeFixed />
       <ScrollToTop />
       <Contact />
       <Footer />

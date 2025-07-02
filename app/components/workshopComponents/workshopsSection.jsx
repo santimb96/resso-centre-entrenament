@@ -8,7 +8,7 @@ export default function WorkshopsSection () {
       <div className={WIDTH_LAYOUT}>
         <TitleSection title='Workshops' />
         {/* <TextComponent text='Aquí podrás encontrar los próximos talleres que tendrán lugar en el centro' textColor='primary' /> */}
-        <div className='mt-10'>
+        <div className='my-10'>
           <Workshops />
         </div>
       </div>
