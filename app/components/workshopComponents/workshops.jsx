@@ -3,11 +3,17 @@ import Link from 'next/link'
 import { Suspense } from 'react'
 import { ExternalLink } from '../icons'
 import Slider from '../slider'
+import EmptyWorkshopsMessage from './emptyWorkshopsMessage'
 import Workshop from './workshop'
 
 async function WorkshopsList (){
   const fullData = await getWorkshops()
   let data = fullData.data
+  if (data.length === 0) {
+    return (
+      <EmptyWorkshopsMessage />
+    )
+  }
   if (data.length > 3){
     data = data.slice(0, 3)
   }
@@ -39,7 +45,7 @@ async function WorkshopsList (){
 export default async function Workshops() {
   return (
     <div>
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<p>Cargando contenido...</p>}>
         <WorkshopsList />
       </Suspense>
     </div>
