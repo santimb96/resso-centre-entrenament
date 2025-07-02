@@ -13,7 +13,7 @@ export default function Contact () {
           <TitleSection title='Contacto' />
           <div className='p-2.5 w-full flex flex-col justify-center items-center gap-2.5'>
             <div className='w-full text-center'>
-              <TextComponent text='Pregúntanos lo que quieras sin compromiso' textColor='primary' margin='mb-5' />
+              <TextComponent text='Pregúntanos lo que quieras sin compromiso' textColor='primary' margin='mb-5' textAlign='text-center' />
             </div>
             <div className='w-full flex flex-row justify-center items-center gap-10'>
               <a aria-label='Instagram' href={RESSO_INFO.instagram} target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
