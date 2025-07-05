@@ -15,7 +15,6 @@ export default function robots() {
       },
       {
         userAgent: 'Googlebot',
-        allow: '/',
         disallow: [
           '/api/',
           '/private/',
@@ -24,11 +23,15 @@ export default function robots() {
         ],
       },
       {
-        userAgent: [
-          'AhrefsBot',
-          'SemrushBot',
-          'MJ12bot',
-        ],
+        userAgent: 'AhrefsBot',
+        disallow: '/'
+      },
+      {
+        userAgent: 'SemrushBot',
+        disallow: '/'
+      },
+      {
+        userAgent: 'MJ12bot',
         disallow: '/'
       }
     ],
