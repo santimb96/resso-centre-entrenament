@@ -8,12 +8,12 @@ import Workshop from './workshop'
 
 async function WorkshopsList (){
   const fullData = await getWorkshops()
-  let data = fullData.data
-  if (data.length === 0) {
+  if (fullData instanceof Error) {
     return (
-      <EmptyWorkshopsMessage />
+      <EmptyWorkshopsMessage text='Próximamente anunciaremos los primeros talleres que tendrán lugar en el centro.' color='primary' />
     )
   }
+  let data = fullData
   if (data.length > 3){
     data = data.slice(0, 3)
   }

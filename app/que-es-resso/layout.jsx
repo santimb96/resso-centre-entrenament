@@ -1,6 +1,13 @@
 import Footer from '@/components/footer'
 import ScrollToTop from '@/components/scrollToTop'
 import { notoSans } from '../lib/fonts'
+
+export const metadata = {
+  title: {
+    default: '¿Qué es Ressò?'
+  },
+}
+
 export default function AboutUsLayout({ children }){
   return (
     <div className={`${notoSans.className} w-full flex flex-col items-center justify-start relative`}>

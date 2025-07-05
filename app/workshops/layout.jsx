@@ -4,6 +4,12 @@ import Header from '@/components/headerComponents/header'
 import ScrollToTop from '@/components/scrollToTop'
 import { notoSans } from '../lib/fonts'
 
+export const metadata = {
+  title: {
+    default: 'Workshops',
+  },
+}
+
 export default function WorkshopLayout({ children }) {
   return (
     <div className={`${notoSans.className} w-full flex flex-col items-center justify-start relative`}>

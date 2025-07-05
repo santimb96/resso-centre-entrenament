@@ -1,4 +1,5 @@
 import TitleSection from '@/components/common/TitleSection'
+import EmptyWorkshopsMessage from '@/components/workshopComponents/emptyWorkshopsMessage'
 import { WIDTH_LAYOUT } from '@/constants/vars'
 import { getWorkshops } from '@/services/getData'
 import Link from 'next/link'
@@ -7,7 +8,14 @@ import WorkshopCard from './workshopCard'
 
 async function WorkshopsList (){
   const fullData = await getWorkshops()
-  const data = fullData.data
+  if (fullData instanceof Error) {
+    return (
+      <div className='w-full flex justify-center items-center my-10 '>
+        <EmptyWorkshopsMessage text='No se han encontrado talleres en este momento' color='accent' />
+      </div>
+    )
+  }
+  const data = fullData
 
   return (
     <div className='w-full grid grid-cols-1 place-items-start sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4 gap-5 mt-5'>

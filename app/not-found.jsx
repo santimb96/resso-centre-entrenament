@@ -1,6 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+export function generateMetadata() {
+  return {
+    title: {
+      default: '404 | Ressò - Centre d\'entrenament',
+    },
+    description: '404 | Ressò - Centre d\'entrenament',
+  }
+}
+
 export default function NotFound() {
   return (
     <div className="w-full h-[100dvh] bg-primary p-10 flex flex-col justify-center items-center gap-5">

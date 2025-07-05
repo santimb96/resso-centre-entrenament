@@ -1,6 +1,7 @@
 import { Calendar, Clock, Facebook, Instagram, Location, Tiktok, Whatsapp, Youtube } from '@/components/icons'
 import { TEACHERS, WORKSHOPS } from '@/constants/vars'
 import { workSans } from '@/lib/fonts'
+import NotFound from '@/not-found'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,23 +10,46 @@ function getWorkshopById(workshopID) {
     const data = WORKSHOPS
     const workshop = data.find(workshop => workshop.id === parseInt(workshopID))
     if (!workshop) {
-      return { code: 500, error: `Workshop with id ${workshopID} not found` , data: null }
+      return new Error(JSON.stringify({ code: 404, error: `Workshop with id ${workshopID} not found`, data: null }))
     }
-    return { code: 200, error: null, data: workshop }
+    return workshop
   }
 
   return getData()
+}
+
+export async function generateMetadata(props) {
+  const params = await props.params
+  const { workshopID } = params
+  const data = getWorkshopById(workshopID)
+  if (data instanceof Error) {
+    return {
+      title: {
+        default: '404 | Ressò - Centre d\'entrenament | Taller no encontrado',
+      },
+      description: '404 | Ressò - Centre d\'entrenament | Taller no encontrado',
+    }
+  } else {
+    const { title, description } = data
+    return {
+      title: {
+        default: title + ' | Ressò - Centre d\'entrenament',
+      },
+      description: description,
+    }
+  }
+
 }
 
 export default async function WorkshopInfo(props) {
   const params = await props.params
   const { workshopID } = params
   const data = getWorkshopById(workshopID)
-  const { error, data: workshop } = data
-  if (error !== null) {
-    return <p className='text-red-500'>Error: {JSON.stringify(error)}</p>
+  if (data instanceof Error) {
+    // if workshop doesn't exist, return not found page
+    return <NotFound />
   }
-  const { title, description, date, startTime, location, img, coordinates, teacherId } = workshop
+  const { title, description, date, startTime, location, img, coordinates, teacherId } = data
 
   const teacher = TEACHERS.find(teacher => teacher.id === teacherId)
 
