@@ -7,7 +7,6 @@ export default function robots() {
         disallow: [
           '/api/',
           '/private/',
-          '/_next/',
           '/admin/',
           '/404'
         ],
@@ -18,7 +17,6 @@ export default function robots() {
         disallow: [
           '/api/',
           '/private/',
-          '/_next/',
           '/admin/',
         ],
       },
