@@ -1,5 +1,39 @@
 import './globals.css'
 import { notoSans } from './lib/fonts'
+export const jsonLD = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://www.ressocentredentrenament.com',
+  'name': 'Ressò - Centre d\'entrenament',
+  'description': 'Ressò - Centre d\'entrenament es un centro de entrenamiento situado en el Pont d\'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia.',
+  'url': 'https://www.ressocentredentrenament.com',
+  'logo': {
+    '@type': 'ImageObject',
+    '@id': 'https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1',
+    'url': 'https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1',
+    'width': 1200,
+    'height': 630,
+    'caption': 'Ressò - Centre d\'entrenament',
+    'alt': 'Ressò - Centre d\'entrenament',
+  },
+  'foundingDate': '2025',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': 'Avinguda d\'Antoni Maura, 69, Cas Miot, 07141 Es Pont d\'Inca, Illes Balears',
+    'addressRegion': 'Illes Balears',
+    'postalCode': '07141',
+    'addressCountry': 'ES',
+  },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 39.598915606336604,
+    'longitude': 2.694483325041169,
+  },
+  '@publisher': {
+    '@id': 'https://www.ressocentredentrenament.com',
+  },
+  'inLanguage': 'es-ES',
+}
 
 export const metadata = {
   metadataBase: new URL('https://www.ressocentredentrenament.com'),
@@ -92,6 +126,7 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href="https://www.ressocentredentrenament.com/" />
         <link rel="icon" href="/icon.png" type="image/png" sizes="50x50" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
       </head>
       <body className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
         {children}
