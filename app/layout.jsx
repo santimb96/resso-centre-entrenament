@@ -83,6 +83,12 @@ export const metadata = {
     icon: [
       { url: '/icon.png', sizes: '50x50', type: 'image/png' }
     ],
+  },
+  other: {
+    'geo.region': 'ES-PM',
+    'geo.placename': 'Pont d\'Inca, Illes Balears',
+    'geo.position': '39.598915606336604;2.694483325041169',
+    'ICBM': '39.598915606336604;2.694483325041169',
   }
 }
 
