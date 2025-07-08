@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
         <meta name="apple-mobile-web-app-title" content="Ressò - Centre d'entrenament" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
       </head>
