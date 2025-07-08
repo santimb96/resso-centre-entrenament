@@ -1,16 +1,22 @@
 'use client'
-
 import { useEffect } from 'react'
 import { ArrowUp } from './icons'
 
-export default function GoToPlans () {
-
+export default function GoToPlans() {
   const handleGoToPlans = () => {
     const goToPlans = document.querySelector('#goToPlans')
-    // hardcoded min and max interval and it needs to be optimized/dynamic
-    const minHeight = 1750
-    const maxHeight = 3350
-    if (window.scrollY > minHeight && window.scrollY < maxHeight) {
+    const planesSection = document.querySelector('#planes')
+    const footer = document.querySelector('footer')
+    
+    if (!planesSection || !footer) return
+    
+    const planesSectionEnd = planesSection.offsetTop + planesSection.offsetHeight
+    
+    const footerStart = footer.offsetTop
+    
+    const currentScrollY = window.scrollY + window.innerHeight
+    
+    if (currentScrollY > planesSectionEnd && window.scrollY < footerStart - window.innerHeight) {
       goToPlans?.classList.add('goToPlansVisible')
     } else {
       goToPlans?.classList.remove('goToPlansVisible')
@@ -18,14 +24,15 @@ export default function GoToPlans () {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const scrollHandler = () => {
       handleGoToPlans()
-    })
+    }
+    window.addEventListener('scroll', scrollHandler)
+    
+    handleGoToPlans()
 
     return () => {
-      window.removeEventListener('scroll', () => {
-        handleGoToPlans()
-      })
+      window.removeEventListener('scroll', scrollHandler)
     }
   }, [])
 
