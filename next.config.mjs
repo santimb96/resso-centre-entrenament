@@ -8,10 +8,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'ressocentredentrenament.com', // without www
+            value: 'https://www.ressocentredentrenament.com',
           },
         ],
-        destination: 'https://www.ressocentredentrenament.com/:path*', // with www
+        destination: 'https://ressocentredentrenament.com/:path*',
         permanent: true, // 301 redirect
       },
     ]

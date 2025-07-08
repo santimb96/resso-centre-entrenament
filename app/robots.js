@@ -33,7 +33,7 @@ export default function robots() {
         disallow: '/'
       }
     ],
-    sitemap: 'https://www.ressocentredentrenament.com/sitemap.xml',
-    host: 'https://www.ressocentredentrenament.com',
+    sitemap: 'https://ressocentredentrenament.com/sitemap.xml',
+    host: 'https://ressocentredentrenament.com',
   }
 }

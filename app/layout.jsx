@@ -4,12 +4,12 @@ import { notoSans } from './lib/fonts'
 export const jsonLD = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'GymAndFitnessClub', 'HealthClub'],
-  '@id': 'https://www.ressocentredentrenament.com',
+  '@id': 'https://ressocentredentrenament.com',
   'name': 'Ressò - Centre d\'entrenament',
   'description': 'Ressò - Centre d\'entrenament es un centro de entrenamiento situado en el Pont d\'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia.',
-  'url': 'https://www.ressocentredentrenament.com',
-  'logo': 'https://www.ressocentredentrenament.com/img/logo-resso.png',
-  'image': 'https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg',
+  'url': 'https://ressocentredentrenament.com',
+  'logo': 'https://ressocentredentrenament.com/img/logo-resso.png',
+  'image': 'https://ressocentredentrenament.com/img/logo-resso-og-image.jpg',
   'address': {
     '@type': 'PostalAddress',
     'streetAddress': 'Avinguda d\'Antoni Maura, 69, Cas Miot',
@@ -49,7 +49,7 @@ export const jsonLD = {
 }
 
 export const metadata = {
-  metadataBase: new URL('https://www.ressocentredentrenament.com'),
+  metadataBase: new URL('https://ressocentredentrenament.com'),
   title: {
     default: 'Ressò - Centre d\'entrenament',
     template: '%s | Ressò - Centre d\'entrenament',
@@ -97,12 +97,12 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://www.ressocentredentrenament.com',
+    url: 'https://ressocentredentrenament.com',
     title: 'Ressò - Centre d\'entrenament',
     description: 'Ressò - Centre d\'entrenament es un centro de entrenamiento situado en el Pont d\'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia.',
     images: [
       {
-        url: 'https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1',
+        url: 'https://ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1',
         width: 1200,
         height: 630,
         alt: 'Ressò - Centre d\'entrenament',
@@ -111,7 +111,7 @@ export const metadata = {
     siteName: 'Ressò - Centre d\'entrenament',
   },
   alternates: {
-    canonical: 'https://www.ressocentredentrenament.com',
+    canonical: 'https://ressocentredentrenament.com',
   },
   icons: {
     icon: [
@@ -126,7 +126,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Ressò - Centre d\'entrenament',
     description: 'Centro de entrenamiento en Pont d\'Inca, Mallorca',
-    images: ['https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1'],
+    images: ['https://ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1'],
   },
   other: {
     'geo.region': 'ES-PM',
