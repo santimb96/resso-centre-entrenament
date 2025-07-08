@@ -2,7 +2,7 @@ import { workSans } from '../lib/fonts'
 import { CaretDown, Mouse } from './icons'
 export default function Presentation () {
   return (
-    <div className={`${workSans.className} font-[900] h-[600px] md:h-[750px] headerContainer`}>
+    <div fetchpriority="high" className={`${workSans.className} font-[900] h-[600px] md:h-[750px] headerContainer`}>
       <div className='w-full absolute top-[200px] md:top-[300px] flex flex-col justify-center items-center px-2.5'>
         <h1 className='textShadow text-center text-primary text-[3rem] sm:text-[3.75rem] lg:text-[4.25rem] xl:text-[5.75rem]'>NO SOMOS UN GIMNASIO.</h1>
         <h1 className='textShadow text-center text-accent text-[3rem] sm:text-[3.75rem] lg:text-[4.25rem] xl:text-[5.75rem] mb-5'>SOMOS TU EQUIPO.</h1>
