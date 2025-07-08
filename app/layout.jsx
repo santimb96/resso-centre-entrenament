@@ -115,13 +115,13 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
-      { url: '/favicon.svg', type: 'image/svg+xml' }
+      { url: '/favicon.ico?v=1', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon.svg?v=1', type: 'image/svg+xml' }
     ],
-    shortcut: '/favicon.ico',
-    apple: '/apple-icon.png',
+    shortcut: '/favicon.ico?v=1',
+    apple: '/apple-icon.png?v=1'
   },
-  manifest: '/site.webmanifest',
+  manifest: '/manifest.json',
   twitter: {
     card: 'summary_large_image',
     title: 'Ressò - Centre d\'entrenament',
@@ -140,6 +140,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
+        {/* <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" /> */}
         <meta name="apple-mobile-web-app-title" content="Ressò - Centre d'entrenament" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
