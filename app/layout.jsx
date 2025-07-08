@@ -79,11 +79,6 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.ressocentredentrenament.com',
   },
-  icons: {
-    icon: [
-      { url: '/icon.png', sizes: '50x50', type: 'image/png' }
-    ],
-  },
   other: {
     'geo.region': 'ES-PM',
     'geo.placename': 'Pont d\'Inca, Illes Balears',
@@ -96,19 +91,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        {/*  <title>Ressò - Centre d&apos;entrenament</title>
-        <meta name="description" content="Ressò - Centre d&apos;entrenament es un centro de entrenamiento situado en el Pont d'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia." />
-        <meta name="keywords" content="Ressò, Centre d'entrenament, entrenamiento, planes, talleres, workshops, servicios complementarios, Mallorca, Pont d'Inca, Palma, bienestar, salud, entrenamiento, rendimiento, nutrición, fisioterapia, calistenia, crossfit, readaptación, recuperación" />
-        <meta name="author" content="Ressò - Centre d&apos;entrenament" />
-        <meta name="robots" content="index, follow" />
-        <meta name="google-site-verification" content="7OWtrRiaW9jNkUZytFaR7s8dWmSqsvMweaChbeqMWRw" />
-        <meta property='og:title' content='Ressò - Centre d&apos;entrenament' />
-        <meta property='og:description' content='Entrenamientos grupales, talleres y servicios de nutrición y fisioterapia.' />
-        <meta property='og:image' content='https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1' />
-        <meta property='og:url' content='https://www.ressocentredentrenament.com' />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.ressocentredentrenament.com/" />
-        <link rel="icon" href="/icon.png" type="image/png" sizes="50x50" /> */}
+        <meta name="apple-mobile-web-app-title" content="Ressò - Centre d'entrenament" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Ressò - Centre d'entrenament" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
       </head>
