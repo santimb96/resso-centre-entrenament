@@ -1,16 +1,51 @@
 import './globals.css'
 import { notoSans } from './lib/fonts'
+
 export const jsonLD = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
+  '@type': ['LocalBusiness', 'GymAndFitnessClub', 'HealthClub'],
   '@id': 'https://www.ressocentredentrenament.com',
   'name': 'Ressò - Centre d\'entrenament',
   'description': 'Ressò - Centre d\'entrenament es un centro de entrenamiento situado en el Pont d\'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia.',
   'url': 'https://www.ressocentredentrenament.com',
-  '@publisher': {
-    '@id': 'https://www.ressocentredentrenament.com',
+  'logo': 'https://www.ressocentredentrenament.com/img/logo-resso.png',
+  'image': 'https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': 'Avinguda d\'Antoni Maura, 69, Cas Miot',
+    'addressLocality': 'Pont d\'Inca',
+    'addressRegion': 'Illes Balears',
+    'postalCode': '07141',
+    'addressCountry': 'ES'
   },
-  'inLanguage': 'es-ES',
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 39.598915606336604,
+    'longitude': 2.694483325041169
+  },
+  'telephone': '604845184',
+  'email': 'mario@ressocentredentrenament.com',
+  'openingHours': ['Mo-Fr 16:00-21:00'],
+  'openingHoursSpecification': [
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '16:00',
+      'closes': '21:00'
+    }
+  ],
+  'priceRange': '€€',
+  'currenciesAccepted': 'EUR',
+  'inLanguage': ['es-ES', 'ca-ES'],
+  'knowsLanguage': ['Spanish', 'Catalan'],
+  'employee': [
+    {
+      '@type': 'Person',
+      'name': 'Mario Martín',
+      'jobTitle': 'Entrenador Personal',
+      'description': 'Entrenador personal con experiencia en entrenamiento funcional'
+    }
+  ],
 }
 
 export const metadata = {
@@ -57,8 +92,7 @@ export const metadata = {
     }
   },
   verification: {
-    google: 'google'
-    // google: '7OWtrRiaW9jNkUZytFaR7s8dWmSqsvMweaChbeqMWRw',
+    google: '7OWtrRiaW9jNkUZytFaR7s8dWmSqsvMweaChbeqMWRw',
   },
   openGraph: {
     type: 'website',
@@ -79,6 +113,21 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.ressocentredentrenament.com',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
+      { url: '/favicon.svg', type: 'image/svg+xml' }
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
+  manifest: '/site.webmanifest',
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ressò - Centre d\'entrenament',
+    description: 'Centro de entrenamiento en Pont d\'Inca, Mallorca',
+    images: ['https://www.ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1'],
+  },
   other: {
     'geo.region': 'ES-PM',
     'geo.placename': 'Pont d\'Inca, Illes Balears',
@@ -92,11 +141,6 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <meta name="apple-mobile-web-app-title" content="Ressò - Centre d'entrenament" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="Ressò - Centre d'entrenament" />
-        <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
       </head>
