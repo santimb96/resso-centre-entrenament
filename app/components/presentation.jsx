@@ -9,7 +9,7 @@ export default function Presentation () {
         src='/img/headerImg.webp'
         alt='Imagen de cabecera de la zona de entrenamiento'
         fill
-        fetchPriority='high'
+        fetchpriority='high'
         priority
         className='object-cover object-center grayscale-[100%] contrast-[150%] brightness-[115%] z-[-1]'
       />
