@@ -45,6 +45,7 @@ export default function RowMenu() {
           return (
             <Link
               key={`menu-${index}`}
+              title={`Ir a la sección ${menuItem.name}`}
               href={asPath !== '/' ? `/${menuItem.href}` : menuItem.href}
               className={`text-[1rem] font-bold hover:text-accent duration-150 ease-in-out ${isActive ? 'text-accent' : ''}`}
             >
