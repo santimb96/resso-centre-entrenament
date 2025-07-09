@@ -9,8 +9,7 @@ export default function Presentation () {
         src='/img/headerImg.webp'
         alt='Imagen de cabecera de la zona de entrenamiento'
         fill
-        priority={true}
-        loading='eager'
+        fetchpriority='high'
         className='object-cover object-center grayscale-[100%] contrast-[150%] brightness-[115%] z-[-1]'
       />
       <div className='w-full absolute top-[200px] md:top-[300px] flex flex-col justify-center items-center px-2.5'>
