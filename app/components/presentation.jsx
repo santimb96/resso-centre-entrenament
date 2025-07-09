@@ -10,7 +10,6 @@ export default function Presentation () {
         alt='Imagen de cabecera de la zona de entrenamiento'
         fill
         fetchpriority='high'
-        priority={true}
         loading='eager'
         className='object-cover object-center grayscale-[100%] contrast-[150%] brightness-[115%] z-[-1]'
       />
