@@ -1,5 +1,7 @@
 import './globals.css'
 import { notoSans } from './lib/fonts'
+import { Analytics } from '@vercel/analytics/next'
+
 
 export const jsonLD = {
   '@context': 'https://schema.org',
@@ -149,6 +151,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
