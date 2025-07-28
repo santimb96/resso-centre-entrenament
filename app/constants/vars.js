@@ -72,7 +72,7 @@ const PACK_LIST = [
     title: 'Iniciación',
     description: 'Este plan está diseñado para principiantes que desean adentrarse en el mundo del judo.',
     includes: [
-      'Dos entrenos semanales',
+      '2 entrenos semanales',
       'Acceso a los workshops mensuales',
       'Uso libre del Workspace',
     ],
@@ -93,7 +93,7 @@ const PACK_LIST = [
     title: 'Avanzado',
     description: 'Este plan está pensado para aquellos que ya tienen experiencia en judo y buscan mejorar sus habilidades.',
     includes: [
-      'Dos entrenos semanales',
+      '3 entrenos semanales',
       'Acceso a los workshops mensuales',
       'Uso libre del Workspace',
       'Entrevista y valoración inicial',
@@ -115,7 +115,7 @@ const PACK_LIST = [
     title: 'Élite',
     description: 'Este plan está diseñado para competidores de judo que buscan llevar su rendimiento al máximo nivel.',
     includes: [
-      'Dos entrenos semanales',
+      '5 entrenos semanales',
       'Acceso a los workshops mensuales',
       'Uso libre del Workspace',
       'Entrevista y valoración inicial',
