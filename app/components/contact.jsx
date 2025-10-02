@@ -2,7 +2,7 @@
 import { RESSO_INFO, WIDTH_LAYOUT } from '@/constants/vars'
 import TextComponent from './common/TextComponent'
 import TitleSection from './common/TitleSection'
-import { Clock, Instagram, Mail, Whatsapp } from './icons'
+import { Clock, Instagram, Whatsapp } from './icons'
 import PlaceMap from './placeMap'
 
 export default function Contact () {
@@ -26,11 +26,11 @@ export default function Contact () {
                   <Whatsapp size={40} />
                 </span>
               </a>
-              <a aria-label='Correo electrónico' href={`mailto:${RESSO_INFO.email}`} target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              {/* <a aria-label='Correo electrónico' href={`mailto:${RESSO_INFO.email}`} target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Mail size={40} />
                 </span>
-              </a>
+              </a> */}
             </div>
             <div className='bg-primary rounded-lg w-full md:w-3/4 lg:w-full px-5 lg:px-10 py-5 flex flex-row justify-start items-center gap-2.5 mt-5 text-accent shadow-custom'>
               <span className='min-w-20'><Clock size={80} /></span>

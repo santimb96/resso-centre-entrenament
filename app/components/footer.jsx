@@ -1,23 +1,21 @@
 'use client'
 
-import { Copy, Github, Instagram, Location, Mail, Whatsapp } from '@/components/icons'
+import { Github, Instagram, Location, Whatsapp } from '@/components/icons'
 import { MENU, RESSO_INFO } from '@/constants/vars'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 import { workSans } from '../lib/fonts'
-import { Check } from './icons'
 
 export default function Footer() {
-  const [copied, setCopied] = useState(false)
+  // const [copied, setCopied] = useState(false)
 
-  const copyMail = () => {
-    navigator.clipboard.writeText(RESSO_INFO.email)
-    setCopied(true)
-    setTimeout(() => {
-      setCopied(false)
-    }, 2000)
-  }
+  // const copyMail = () => {
+  //   navigator.clipboard.writeText(RESSO_INFO.email)
+  //   setCopied(true)
+  //   setTimeout(() => {
+  //     setCopied(false)
+  //   }, 2000)
+  // }
 
   return (
     <footer id='footer' className='w-full flex flex-col items-center mt-auto'>
@@ -38,7 +36,7 @@ export default function Footer() {
               <span className='mt-1 lg:mt-0 max-w-4 lg:min-w-6'><Location /></span>
               <span className='w-3/4 lg:w-full text-pretty'>{RESSO_INFO.locationName}</span>
             </a>
-            <div className='flex flex-row justify-center items-center gap-2.5 text-[0.75rem] lg:text-[1rem]'>
+            {/* <div className='flex flex-row justify-center items-center gap-2.5 text-[0.75rem] lg:text-[1rem]'>
               <a aria-label='Correo electrónico' href={`mailto:${RESSO_INFO.email}`} className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out'>
                 <span className='max-w-4 lg:min-w-6'><Mail size={24} /></span>
                 <span className='text-pretty'>{RESSO_INFO.email}</span>
@@ -46,7 +44,7 @@ export default function Footer() {
               <button title='Copiar correo' className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full lg:p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group !cursor-pointer'}`} onClick={copyMail}>{
                 copied ? <Check size={24} /> : <span className='group-hover:text-accent duration-150 ease-in-out'><Copy size={24} /></span>
               }</button>
-            </div>
+            </div> */}
             <div className='w-full flex justify-center items-center gap-2.5 mt-5'>
               <a aria-label='Instagram' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.instagram} title='Instagram' target='_blank'><span className='max-w-4 lg:min-w-9'><Instagram size={32} /></span></a>
               <a aria-label='Whatsapp' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.whatsapp} title='Whatsapp' target='_blank'><span className='max-w-4 lg:min-w-9'><Whatsapp size={32} /></span></a>
