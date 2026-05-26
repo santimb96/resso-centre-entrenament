@@ -6,7 +6,7 @@ export default function PlaceMap({ mapsLink }) {
         target='_blank'
         rel='noopener noreferrer'
         aria-label="Ver ubicación de Ressò en Google Maps"
-        className='w-full h-[75%] block rounded-[10px] overflow-hidden shadow-[0_0_10px_rgba(0,0,0,0.5)] group'
+        className='w-full h-[75%] block rounded-xl overflow-hidden group'
       >
         <iframe
           src='https://maps.google.com/maps?q=39.598915606336604,2.694483325041169&z=18&hl=es&output=embed'

@@ -32,7 +32,7 @@ export default function Contact () {
                 </span>
               </a> */}
             </div>
-            <div className='bg-primary rounded-lg w-full md:w-3/4 lg:w-full px-5 lg:px-10 py-5 flex flex-row justify-start items-center gap-2.5 mt-5 text-accent shadow-custom'>
+            <div className='bg-primary rounded-xl w-full md:w-3/4 lg:w-full px-5 lg:px-10 py-5 flex flex-row justify-start items-center gap-2.5 mt-5 text-accent'>
               <span className='min-w-20'><Clock size={80} /></span>
               <div className='flex flex-col justify-center items-start ml-5'>
                 <h5 className='text-[1.25rem] md:text-[1.5rem] mb-1'>Horarios</h5>
