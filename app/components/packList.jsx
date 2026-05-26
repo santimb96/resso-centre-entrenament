@@ -2,6 +2,7 @@
 import { PACK_LIST } from '@/constants/vars'
 import { workSans } from '@/lib/fonts'
 import TextComponent from './common/TextComponent'
+import { CheckCircle, CloseCircle } from './icons'
 
 export default function PackList () {
   return (
@@ -42,9 +43,9 @@ function Pack ({pack}) {
           {includes.map((include, index) => {
             return (
               <div key={index + include} className='flex justify-start items-start gap-2.5'>
-                {/* <span className='text-green-400 min-w-5 mt-0.5'>
+                <span className='text-green-400 min-w-5 mt-0.5'>
                   <CheckCircle size={20}/>
-                </span> */}
+                </span>
                 <p className='font-medium'>{include}</p>
               </div>
             )
@@ -55,9 +56,9 @@ function Pack ({pack}) {
             {notIncludes.map((notInclude, index) => {
               return (
                 <div key={index + notInclude} className='flex justify-start items-start gap-2.5'>
-                  {/* <span className='text-red-400 min-w-5 mt-0.5'>
+                  <span className='text-red-400 min-w-5 mt-0.5'>
                     <CloseCircle size={20}/>
-                  </span> */}
+                  </span>
                   <p className='opacity-50 font-medium'>{notInclude}</p>
                 </div>
               )

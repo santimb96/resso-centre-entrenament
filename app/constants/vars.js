@@ -70,7 +70,7 @@ const PACK_LIST = [
   {
     id: 1,
     title: 'Iniciación',
-    description: 'Este plan está diseñado para principiantes que desean adentrarse en el mundo del judo.',
+    description: 'Plan pensado para quienes se inician en el entrenamiento funcional. Ideal para establecer bases sólidas de movimiento y condición física.',
     includes: [
       '2 entrenos semanales',
       'Acceso a los workshops mensuales',
@@ -90,7 +90,7 @@ const PACK_LIST = [
   {
     id: 2,
     title: 'Avanzado',
-    description: 'Este plan está pensado para aquellos que ya tienen experiencia en judo y buscan mejorar sus habilidades.',
+    description: 'Para personas con experiencia que buscan llevar su entrenamiento al siguiente nivel con mayor frecuencia y seguimiento.',
     includes: [
       '3 entrenos semanales',
       'Acceso a los workshops mensuales',
@@ -111,7 +111,7 @@ const PACK_LIST = [
   {
     id: 3,
     title: 'Élite',
-    description: 'Este plan está diseñado para competidores de judo que buscan llevar su rendimiento al máximo nivel.',
+    description: 'El plan más completo. Máxima frecuencia de entreno, valoración nutricional y seguimiento fisioterapéutico mensual incluido.',
     includes: [
       '5 entrenos semanales',
       'Acceso a los workshops mensuales',

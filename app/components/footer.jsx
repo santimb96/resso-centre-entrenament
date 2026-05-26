@@ -22,17 +22,15 @@ export default function Footer() {
       <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 lg:!flex-row lg:justify-between lg:items-start'>
         <div className='flex flex-col justify-center items-center gap-2.5'>
           <Link href='/'>
-            <picture>
-              <Image
-                src='/img/logo-resso-fn-azul-blanco-resized.webp'
-                alt='Ressò fn azul logo'
-                width={150}
-                height={150}
-              />
-            </picture>
+            <Image
+              src='/img/logo-resso-fn-azul-blanco-resized.webp'
+              alt='Ressò fn azul logo'
+              width={150}
+              height={150}
+            />
           </Link>
           <div className='flex flex-col lg:items-start gap-2.5 font-thin mt-5'>
-            <a aria-label='Dirección' className='flex justify-center items-start gap-2.5 hover:text-accent duration-150 ease-in-out text-[0.75rem] lg:text-[1rem]' href={RESSO_INFO.mapsLink} target='_blank'>
+            <a aria-label='Dirección' className='flex justify-center items-start gap-2.5 hover:text-accent duration-150 ease-in-out text-[0.75rem] lg:text-[1rem]' href={RESSO_INFO.mapsLink} target='_blank' rel='noopener noreferrer'>
               <span className='mt-1 lg:mt-0 max-w-4 lg:min-w-6'><Location /></span>
               <span className='w-3/4 lg:w-full text-pretty'>{RESSO_INFO.locationName}</span>
             </a>
@@ -46,8 +44,8 @@ export default function Footer() {
               }</button>
             </div> */}
             <div className='w-full flex justify-center items-center gap-2.5 mt-5'>
-              <a aria-label='Instagram' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.instagram} title='Instagram' target='_blank'><span className='max-w-4 lg:min-w-9'><Instagram size={32} /></span></a>
-              <a aria-label='Whatsapp' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.whatsapp} title='Whatsapp' target='_blank'><span className='max-w-4 lg:min-w-9'><Whatsapp size={32} /></span></a>
+              <a aria-label='Instagram' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.instagram} title='Instagram' target='_blank' rel='noopener noreferrer'><span className='max-w-4 lg:min-w-9'><Instagram size={32} /></span></a>
+              <a aria-label='Whatsapp' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.whatsapp} title='Whatsapp' target='_blank' rel='noopener noreferrer'><span className='max-w-4 lg:min-w-9'><Whatsapp size={32} /></span></a>
             </div>
           </div>
         </div>
@@ -63,10 +61,10 @@ export default function Footer() {
       </div>
       {/* TODO: Set cookies policy in the future */}
       {/* <p className='text-pretty text-center font-normal my-2.5 text-[0.75rem] lg:text-[1rem]'>Accede a nuestra <Link href='/politica-de-cookies' target='_blank' className='text-accent hover:brightness-125 duration-150 ease-in-out hover:underline'>política de cookies</Link></p> */}
-      <p className='text-pretty text-center font-bold text-[0.75rem] lg:text-[1rem] mt-5'>2025 | Ressò - Centre d&apos;entrenament</p>
+      <p className='text-pretty text-center font-bold text-[0.75rem] lg:text-[1rem] mt-5'>{new Date().getFullYear()} | Ressò - Centre d&apos;entrenament</p>
       <div className='w-full text-pretty text-center font-thin text-[0.75rem] flex justify-center items-center gap-2.5 mt-2.5 mb-5'>
-        <p>Web desarrollada por <Link aria-label='Github' title='Portafolio de Santiago Martínez' className='underline hover:text-accent ease-in-out duration-150' href='https://smartinezdev.com' target='_blank'>Santiago Martínez</Link></p>
-        <Link aria-label='Github' title='Github de Santiago Martínez' href='https://github.com/santimb96' target='_blank' className='hover:text-accent ease-in-out duration-150'><Github size={14} /></Link>
+        <p>Web desarrollada por <Link aria-label='Github' title='Portafolio de Santiago Martínez' className='underline hover:text-accent ease-in-out duration-150' href='https://smartinezdev.com' target='_blank' rel='noopener noreferrer'>Santiago Martínez</Link></p>
+        <Link aria-label='Github' title='Github de Santiago Martínez' href='https://github.com/santimb96' target='_blank' rel='noopener noreferrer' className='hover:text-accent ease-in-out duration-150'><Github size={14} /></Link>
       </div>
     </footer>
   )

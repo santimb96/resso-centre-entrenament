@@ -21,8 +21,6 @@ html {
 body {
   width: 100%;
   min-height: 100dvh;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold;
 }
 
 input, button, textarea, select {

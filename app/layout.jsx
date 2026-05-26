@@ -70,7 +70,6 @@ export const metadata = {
     'Palma',
     'bienestar',
     'salud',
-    'entrenamiento',
     'rendimiento',
     'nutrición',
     'fisioterapia',

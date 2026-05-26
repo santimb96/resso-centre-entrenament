@@ -16,12 +16,12 @@ export default function Contact () {
               <TextComponent text='Pregúntanos lo que quieras sin compromiso' textColor='primary' margin='mb-5' textAlign='text-center' />
             </div>
             <div className='w-full flex flex-row justify-center items-center gap-10'>
-              <a aria-label='Instagram' href={RESSO_INFO.instagram} target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              <a aria-label='Instagram' href={RESSO_INFO.instagram} target='_blank' rel='noopener noreferrer' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Instagram size={40} />
                 </span>
               </a>
-              <a aria-label='Whatsapp' href={RESSO_INFO.whatsapp} target='_blank' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
+              <a aria-label='Whatsapp' href={RESSO_INFO.whatsapp} target='_blank' rel='noopener noreferrer' className='font-bold hover:scale-110 text-primary duration-150 ease-in-out'>
                 <span className='min-w-10'>
                   <Whatsapp size={40} />
                 </span>

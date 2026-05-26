@@ -1,11 +1,11 @@
 'use client'
 import { MENU } from '@/constants/vars'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 export default function RowMenu() {
-  const { asPath } = useRouter()
+  const pathname = usePathname()
   const [activeSection, setActiveSection] = useState('')
   const sectionsIds = MENU.map(section => section.href.replace('#', ''))
 
@@ -46,7 +46,7 @@ export default function RowMenu() {
             <Link
               key={`menu-${index}`}
               title={`Ir a la sección ${menuItem.name}`}
-              href={asPath !== '/' ? `/${menuItem.href}` : menuItem.href}
+              href={pathname !== '/' ? `/${menuItem.href}` : menuItem.href}
               className={`text-[1rem] font-bold hover:text-accent duration-150 ease-in-out ${isActive ? 'text-accent' : ''}`}
             >
               {menuItem.name}
