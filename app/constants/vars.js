@@ -74,16 +74,15 @@ const PACK_LIST = [
     includes: [
       '2 entrenos semanales',
       'Acceso a los workshops mensuales',
-      'Uso libre del Workspace',
     ],
     notIncludes: [
       'Entrevista y valoración inicial',
       'Valoración nutricional',
       '1 sesión de fisioterapia mensual'
     ],
-    price: 80,
+    price: 90,
     link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan de Iniciación. ¿Podrías darme más información?',
-    discount: true,
+    discount: false,
     originalPrice: 100,
     popular: false,
     premium: false
@@ -95,7 +94,6 @@ const PACK_LIST = [
     includes: [
       '3 entrenos semanales',
       'Acceso a los workshops mensuales',
-      'Uso libre del Workspace',
       'Entrevista y valoración inicial',
       
     ],
@@ -103,9 +101,9 @@ const PACK_LIST = [
       'Valoración nutricional',
       '1 sesión de fisioterapia mensual'
     ],
-    price: 90,
+    price: 100,
     link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan Avanzado. ¿Podrías darme más información?',
-    discount: true,
+    discount: false,
     originalPrice: 110,
     popular: true,
     premium: false
@@ -117,15 +115,14 @@ const PACK_LIST = [
     includes: [
       '5 entrenos semanales',
       'Acceso a los workshops mensuales',
-      'Uso libre del Workspace',
       'Entrevista y valoración inicial',
       'Valoración nutricional',
       '1 sesión de fisioterapia mensual'
     ],
     notIncludes: [],
-    price: 120,
+    price: 140,
     link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan Élite. ¿Podrías darme más información?',
-    discount: true,
+    discount: false,
     originalPrice: 140,
     popular: false,
     premium: true
