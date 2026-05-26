@@ -49,7 +49,7 @@ function TimeRow({ time, isEven }) {
 
 export default function Schedule() {
   return (
-    <section id='horarios' className='w-full flex flex-col justify-center items-center scroll-m-10 bg-accent py-10 px-2.5'>
+    <section id='horarios' className='w-full flex flex-col justify-center items-center bg-accent py-10 px-2.5'>
       <div className={`${WIDTH_LAYOUT} flex flex-col justify-center items-center gap-6`}>
         <TitleSection title='Horarios' />
         <div className='w-[75%] flex flex-col items-center'>

@@ -152,6 +152,10 @@ header {
 	min-width: 100%;
 }
 
+section[id] {
+  scroll-margin-top: 80px;
+}
+
 .profileImg {
   aspect-ratio: 400 / 600;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
@@ -240,21 +244,20 @@ header {
 }
 
 @media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
   .colNav {
     display: none;
   }
 
   .rowNav {
-    font-size: 20px;
     text-transform: uppercase;
     display: flex;
     justify-content: end;
     align-items: center;
     width: 100%;
   }
-}
-
-@media (min-width: 1280px) {
 }
 
 @media (min-width: 1536px) {

@@ -7,7 +7,7 @@ import PlaceMap from './placeMap'
 
 export default function Contact () {
   return (
-    <section id='contacto' className='w-full flex flex-col justify-center items-center gap-5 scroll-m-10 bg-primary pt-5'>
+    <section id='contacto' className='w-full flex flex-col justify-center items-center gap-5 bg-primary pt-5'>
       <div className={`${WIDTH_LAYOUT} flex flex-col justify-center items-center gap-5`}>
         <div className='w-full flex flex-col items-center justify-start gap-2.5'>
           <TitleSection title='Contacto' color='accent' />
