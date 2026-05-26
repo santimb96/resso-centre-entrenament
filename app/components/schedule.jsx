@@ -3,7 +3,8 @@ import TextComponent from './common/TextComponent'
 import TitleSection from './common/TitleSection'
 
 const ALL_DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
-const ACTIVE_DAYS = new Set(['Martes', 'Miércoles', 'Viernes'])
+const MORNING_DAYS = new Set(['Martes', 'Miércoles', 'Jueves'])
+const AFTERNOON_DAYS = new Set(['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'])
 const MORNING_START = 8
 const AFTERNOON_START = 16
 const MORNING_END = 13
@@ -21,15 +22,21 @@ function generateSlots(startHour, endHour) {
 const MORNING_SLOTS = generateSlots(MORNING_START, MORNING_END)
 const AFTERNOON_SLOTS = generateSlots(AFTERNOON_START, AFTERNOON_END)
 
-function ClassTag({ label }) {
+const TAG_STYLES = {
+  grupal: 'bg-blue-100 text-blue-500 border-blue-200',
+  openbox: 'bg-orange-100 text-orange-500 border-orange-200',
+}
+
+function ClassTag({ label, type = 'grupal' }) {
   return (
-    <span className='inline-block bg-blue-100 text-blue-500 border border-blue-200 text-xs font-semibold px-2.5 py-1 rounded-lg'>
+    <span className={`inline-block border text-xs font-semibold px-2.5 py-1 rounded-lg ${TAG_STYLES[type]}`}>
       {label}
     </span>
   )
 }
 
-function TimeRow({ time, isEven }) {
+function TimeRow({ time, isEven, isMorning }) {
+  const activeDays = isMorning ? MORNING_DAYS : AFTERNOON_DAYS
   return (
     <tr className={isEven ? 'bg-gray-50' : 'bg-white'}>
       <td className='pl-7 py-2 text-sm font-semibold text-secondary border-b border-gray-200 whitespace-nowrap'>
@@ -37,9 +44,9 @@ function TimeRow({ time, isEven }) {
       </td>
       {ALL_DAYS.map(day => (
         <td key={day} className='p-2 text-center border-b border-gray-200'>
-          {ACTIVE_DAYS.has(day)
-            ? <ClassTag label='Grupal' />
-            : <span className='text-gray-300 text-xs'>—</span>
+          {activeDays.has(day)
+            ? <ClassTag label='Grupal' type='grupal' />
+            : <ClassTag label='Open box' type='openbox' />
           }
         </td>
       ))}
@@ -52,10 +59,8 @@ export default function Schedule() {
     <section id='horarios' className='w-full flex flex-col justify-center items-center bg-accent py-10 px-2.5'>
       <div className={`${WIDTH_LAYOUT} flex flex-col justify-center items-center gap-6`}>
         <TitleSection title='Horarios' />
-        <div className='w-[75%] flex flex-col items-center'>
-          <TextComponent text='Clases grupales — <b>Martes, Miércoles y Viernes</b>' textColor='primary' textAlign='text-center' margin='my-0' />
-          <TextComponent text={`Mañanas: <b>${MORNING_START}h - ${MORNING_END}h</b>`} textColor='primary' textAlign='text-center' margin='my-0' />
-          <TextComponent text={`Tardes: <b>${AFTERNOON_START}h - ${AFTERNOON_END}h</b>`} textColor='primary' textAlign='text-center' margin='my-0' />
+        <div className='w-[75%] flex flex-col items-center gap-1'>
+          <TextComponent text='Sesiones disponibles de lunes a viernes, tanto por las mañanas como por las tardes.' textColor='primary' textAlign='text-center' margin='my-0' />
         </div>
 
         <div className='w-full overflow-x-auto rounded-xl'>
@@ -68,7 +73,7 @@ export default function Schedule() {
                 {ALL_DAYS.map(day => (
                   <th
                     key={day}
-                    className={`p-3 text-center text-sm font-bold border-b border-gray-200 bg-secondary text-white ${ACTIVE_DAYS.has(day) ? 'text-secondary' : 'text-secondary/30'}`}
+                    className={`p-3 text-center text-sm font-bold border-b border-gray-200 bg-secondary ${AFTERNOON_DAYS.has(day) ? 'text-white' : 'text-white/30'}`}
                   >
                     {day}
                   </th>
@@ -77,7 +82,7 @@ export default function Schedule() {
             </thead>
             <tbody>
               {MORNING_SLOTS.map((time, i) => (
-                <TimeRow key={time} time={time} isEven={i % 2 === 0} />
+                <TimeRow key={time} time={time} isEven={i % 2 === 0} isMorning={true} />
               ))}
               <tr>
                 <td colSpan={8} className='py-2 px-3 text-center text-sm text-secondary/40 border-b border-gray-200 bg-gray-50'>
@@ -85,7 +90,7 @@ export default function Schedule() {
                 </td>
               </tr>
               {AFTERNOON_SLOTS.map((time, i) => (
-                <TimeRow key={time} time={time} isEven={i % 2 === 0} />
+                <TimeRow key={time} time={time} isEven={i % 2 === 0} isMorning={false} />
               ))}
             </tbody>
           </table>

@@ -75,7 +75,7 @@ function Pack ({pack}) {
             {notIncludes.map((notInclude, index) => {
               return (
                 <div key={index + notInclude} className='flex justify-start items-start gap-2.5'>
-                  <p className='opacity-50 font-medium'>{notInclude}</p>
+                  <p className='opacity-50 font-medium line-through'>{notInclude}</p>
                 </div>
               )
             })}
