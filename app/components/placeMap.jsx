@@ -13,7 +13,7 @@ export default function PlaceMap({ mapsLink }) {
           title="Ubicación de Ressò - Centre d'entrenament"
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
-          className='w-full h-full grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-[filter] duration-500'
+          className='w-full h-full grayscale-0 brightness-90 md:grayscale md:group-hover:grayscale-0 transition-[filter] md:group-hover:brightness-100 duration-150 ease-in-out'
           style={{ border: 0 }}
         />
       </a>

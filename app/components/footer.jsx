@@ -61,7 +61,7 @@ export default function Footer() {
       </div>
       {/* TODO: Set cookies policy in the future */}
       {/* <p className='text-pretty text-center font-normal my-2.5 text-[0.75rem] lg:text-[1rem]'>Accede a nuestra <Link href='/politica-de-cookies' target='_blank' className='text-accent hover:brightness-125 duration-150 ease-in-out hover:underline'>política de cookies</Link></p> */}
-      <p className='text-pretty text-center font-bold text-[0.75rem] lg:text-[1rem] mt-5'>{new Date().getFullYear()} | Ressò - Centre d&apos;entrenament</p>
+      <p className='text-pretty text-center font-bold text-[0.75rem] lg:text-[1rem] mt-5'>2025 | Ressò - Centre d&apos;entrenament</p>
       <div className='w-full text-pretty text-center font-thin text-[0.75rem] flex justify-center items-center gap-2.5 mt-2.5 mb-5'>
         <p>Web desarrollada por <Link aria-label='Github' title='Portafolio de Santiago Martínez' className='underline hover:text-accent ease-in-out duration-150' href='https://smartinezdev.com' target='_blank' rel='noopener noreferrer'>Santiago Martínez</Link></p>
         <Link aria-label='Github' title='Github de Santiago Martínez' href='https://github.com/santimb96' target='_blank' rel='noopener noreferrer' className='hover:text-accent ease-in-out duration-150'><Github size={14} /></Link>

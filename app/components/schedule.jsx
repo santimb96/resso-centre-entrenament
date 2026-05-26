@@ -23,7 +23,7 @@ const AFTERNOON_SLOTS = generateSlots(AFTERNOON_START, AFTERNOON_END)
 
 function ClassTag({ label }) {
   return (
-    <span className='inline-block bg-blue-100 text-blue-700 border border-blue-200 text-xs font-semibold px-2.5 py-1 rounded-lg'>
+    <span className='inline-block bg-blue-100 text-blue-500 border border-blue-200 text-xs font-semibold px-2.5 py-1 rounded-lg'>
       {label}
     </span>
   )
@@ -32,14 +32,14 @@ function ClassTag({ label }) {
 function TimeRow({ time, isEven }) {
   return (
     <tr className={isEven ? 'bg-gray-50' : 'bg-white'}>
-      <td className='p-3 text-sm font-semibold text-secondary border-b border-gray-200 whitespace-nowrap'>
+      <td className='pl-7 py-2 text-sm font-semibold text-secondary border-b border-gray-200 whitespace-nowrap'>
         {time}
       </td>
       {ALL_DAYS.map(day => (
-        <td key={day} className='p-3 text-center border-b border-gray-200'>
+        <td key={day} className='p-2 text-center border-b border-gray-200'>
           {ACTIVE_DAYS.has(day)
             ? <ClassTag label='Grupal' />
-            : <span className='text-secondary/30 font-medium'>—</span>
+            : <span className='text-gray-300 text-xs'>—</span>
           }
         </td>
       ))}
@@ -62,13 +62,13 @@ export default function Schedule() {
           <table className='w-full min-w-[560px] border-collapse'>
             <thead>
               <tr className='bg-gray-100'>
-                <th className='p-3 text-left text-sm font-bold text-secondary/50 border-b border-gray-200'>
+                <th className='px-5 py-3 text-left text-sm font-bold text-secondary/50 border-b bg-secondary text-white'>
                   Horario
                 </th>
                 {ALL_DAYS.map(day => (
                   <th
                     key={day}
-                    className={`p-3 text-center text-sm font-bold border-b border-gray-200 ${ACTIVE_DAYS.has(day) ? 'text-secondary' : 'text-secondary/30'}`}
+                    className={`p-3 text-center text-sm font-bold border-b border-gray-200 bg-secondary text-white ${ACTIVE_DAYS.has(day) ? 'text-secondary' : 'text-secondary/30'}`}
                   >
                     {day}
                   </th>
