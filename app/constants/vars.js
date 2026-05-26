@@ -29,8 +29,8 @@ const MENU = [
   },
   {
     id: 4,
-    name: 'Patrocinadores',
-    href: '#patrocinadores'
+    name: 'Colaboradores',
+    href: '#colaboradores'
   },
   {
     id: 5,
@@ -240,13 +240,6 @@ const TEACHERS = [
 ]
 
 const SPONSORS_LIST = [
-  {
-    name: 'Pigo',
-    image: '/img/sponsors/pigo.webp',
-    width: 150,
-    height: 150,
-    href: '#'
-  },
   {
     name: 'La Guarida | Barber - studio',
     image: '/img/sponsors/laGuarida.webp',
