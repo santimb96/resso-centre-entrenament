@@ -1,6 +1,7 @@
 import GoToPlans from '@/components/goToPlans'
 import Plans from '@/components/plans'
 import Presentation from '@/components/presentation'
+import Schedule from '@/components/schedule'
 import Services from '@/components/servicesComponents/services'
 import Sponsors from '@/components/sponsors'
 import WorkshopsSection from '@/components/workshopComponents/workshopsSection'
@@ -13,6 +14,7 @@ export default function Home() {
       <Plans />
       <WorkshopsSection />
       <Sponsors />
+      <Schedule />
       <GoToPlans />
     </section>
   )

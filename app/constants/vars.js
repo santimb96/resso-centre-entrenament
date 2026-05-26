@@ -34,6 +34,11 @@ const MENU = [
   },
   {
     id: 5,
+    name: 'Horarios',
+    href: '#horarios'
+  },
+  {
+    id: 6,
     name: 'Contacto',
     href: '#contacto'
   }
