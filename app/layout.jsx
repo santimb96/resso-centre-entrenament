@@ -155,23 +155,25 @@ export const metadata = {
     'geo.placename': 'Pont d\'Inca, Illes Balears',
     'geo.position': '39.598915606336604;2.694483325041169',
     'ICBM': '39.598915606336604;2.694483325041169',
+    'apple-mobile-web-app-title': 'Ressò - Centre d\'entrenament',
   }
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <head>
-        {/* <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" /> */}
-        <meta name="apple-mobile-web-app-title" content="Ressò - Centre d'entrenament" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
-      </head>
-      <body className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
+      <body suppressHydrationWarning className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
         {children}
         <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
+        />
       </body>
     </html>
   )
