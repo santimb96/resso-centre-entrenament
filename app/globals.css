@@ -32,7 +32,6 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* text-shadow: #2B2B29 0px 0px 0px;   */
   line-height: normal;
   text-wrap: balance;
 }
@@ -51,6 +50,7 @@ img, video, svg {
     transition: none;
   }
 }
+
 /* CSS VARS */
 :root {
   --color-primary: #FFFFFF;
@@ -68,7 +68,6 @@ img, video, svg {
   -1px -1px 1px rgba(0, 0, 0, 0.3),
   1px 1px 2px rgba(0, 0, 0, 0.5),
   -1px -1px 2px rgba(0, 0, 0, 0.5);
-
 }
 
 /* GLOBAL STYLES */
@@ -94,7 +93,6 @@ footer {
 .textStrokePrimary {
   -webkit-text-stroke: 1px var(--color-primary);
 } */
-
 
 .colNav {
   display: block;
@@ -152,75 +150,18 @@ footer {
 
 header {
 	min-width: 100%;
-	/* animation: header-animation 1s linear both;
-	animation-timeline: scroll();
-	animation-range: 0 25px; */
 }
-/* @keyframes header-animation {
-	0% {
-    background: transparent;
-	}
-
-	100% {
-    background: var(--color-secondary);
-		box-shadow: 0 -10px 20px rgb(0, 0, 0);
-	}
-} */
 
 .profileImg {
   aspect-ratio: 400 / 600;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
-			mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
 }
-
-.headerScroll {
-  background-color: var(--color-secondary);
-}
-
-.headerAppear {
-  animation: appear .25s both ease-in-out;
-}
-
-.headerDissapear {
-  animation: disappear .25s both ease-in-out;
-}
-
-@keyframes appear {
-  from {
-    transform: translateY(-105%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes disappear {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-105%);
-  }
-}
-
-/* #scrollToTop {
-  z-index: 9999;
-	background-color: var(--color-primary);
-	color: var(--color-secondary);
-	border-radius: 10px;
-	border: 2px solid var(--color-secondary);
-	padding: 10px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	cursor: pointer;
-	opacity: 0;
-	transition: all 0.25s ease-in-out;
-} */
 
 .scrollToTopActive {
 	opacity: 1 !important;
 }
+
 .goToPlansVisible {
 	opacity: 1 !important;
 }
@@ -242,7 +183,6 @@ header {
 .arrow--disabled {
   fill: var(--color-primary);
   opacity: 0.5;
-  /* fill: rgba(255, 255, 255, 0.5); */
 }
 
 .dots {
@@ -275,31 +215,17 @@ header {
   width: 100% !important;
   border-radius: 20px;
 }
+
 .sliderWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .workshopList {
   display: none;
 }
-
-/* SCROLL APPEARANCE ANIMATION */
-/* .scrollAppear {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
 
 @media (min-width: 768px) {
   .keen-slider {
@@ -312,12 +238,7 @@ header {
     display: flex;
   }
 }
-/* MEDIA QUERY SLIDER */
-@media (min-width: 768px) {
-  /* #scrollToTop {
-    right: 20px;
-  } */
-}
+
 @media (min-width: 1024px) {
   .colNav {
     display: none;
@@ -331,15 +252,10 @@ header {
     align-items: center;
     width: 100%;
   }
+}
 
-  /* #scrollToTop {
-    right: calc((100vw - 75vw) / 2 + 20px);
-  } */
-}
 @media (min-width: 1280px) {
-  /* #scrollToTop {
-    right: calc((100vw - 80vw) / 2 + 20px);
-  } */
 }
+
 @media (min-width: 1536px) {
 }

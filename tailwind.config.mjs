@@ -16,7 +16,8 @@ export default {
         whatsapp: '#22B33B'
       },
       boxShadow: {
-        custom: '0 -4px 8px -2px rgba(0, 0, 0, 0.1), 0 8px 12px -2px rgba(0, 0, 0, 0.2)',
+        // less shadow, less intensity
+        custom: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06)',
       },
       animation: {
         marquee: 'marquee 25s linear infinite',

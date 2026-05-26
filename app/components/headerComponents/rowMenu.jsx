@@ -39,7 +39,7 @@ export default function RowMenu() {
 
   return (
     <nav className='rowNav mt-1'>
-      <div className='flex flex-row justify-start items-end ml-5 gap-5 textShadow'>
+      <div className='flex flex-row justify-center items-center ml-5 gap-5'>
         {MENU.map((menuItem, index) => {
           const isActive = activeSection === menuItem.href.replace('#', '')
           return (
@@ -47,12 +47,15 @@ export default function RowMenu() {
               key={`menu-${index}`}
               title={`Ir a la sección ${menuItem.name}`}
               href={pathname !== '/' ? `/${menuItem.href}` : menuItem.href}
-              className={`text-[1rem] font-bold hover:text-accent duration-150 ease-in-out ${isActive ? 'text-accent' : ''}`}
+              className={`text-sm font-bold hover:text-accent duration-150 ease-in-out ${isActive ? 'text-accent' : ''}`}
             >
               {menuItem.name}
             </Link>
           )
         })}
+        <Link href="#contacto" title="Ir a la sección de contacto" className="text-sm py-2 px-4 bg-accent rounded-lg font-bold hover:shadow-[0_0_8px_rgba(85,179,183,0.5)] duration-150 ease-in-out">
+          ¿Nos encuentras?
+        </Link>
       </div>
     </nav>
   )
