@@ -8,7 +8,7 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'https://www.ressocentredentrenament.com',
+            value: 'www.ressocentredentrenament.com',
           },
         ],
         destination: 'https://ressocentredentrenament.com/:path*',

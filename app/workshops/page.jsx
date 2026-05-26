@@ -6,6 +6,19 @@ import Link from 'next/link'
 import { Suspense } from 'react'
 import WorkshopCard from './workshopCard'
 
+export const metadata = {
+  title: 'Workshops',
+  description: 'Talleres de fitness, nutrición y bienestar en Ressò Centre d\'Entrenament, Pont d\'Inca, Mallorca. Apúntate a nuestros próximos workshops.',
+  alternates: {
+    canonical: 'https://ressocentredentrenament.com/workshops',
+  },
+  openGraph: {
+    url: 'https://ressocentredentrenament.com/workshops',
+    title: 'Workshops | Ressò - Centre d\'Entrenament',
+    description: 'Talleres de fitness, nutrición y bienestar en Ressò Centre d\'Entrenament, Pont d\'Inca, Mallorca. Apúntate a nuestros próximos workshops.',
+  },
+}
+
 async function WorkshopsList (){
   const fullData = await getWorkshops()
   if (fullData instanceof Error) {

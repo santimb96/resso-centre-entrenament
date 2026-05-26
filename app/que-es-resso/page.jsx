@@ -1,5 +1,13 @@
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'Quiénes somos',
+  robots: {
+    index: false,
+    follow: false,
+  },
+}
+
 export default function AboutUs() {
   return (
     <div className="min-h-[50dvh] w-full flex justify-center items-center flex-col gap-2.5">

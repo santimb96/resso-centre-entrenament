@@ -8,9 +8,14 @@ export const jsonLD = {
   '@type': ['LocalBusiness', 'GymAndFitnessClub', 'HealthClub'],
   '@id': 'https://ressocentredentrenament.com',
   'name': 'Ressò - Centre d\'entrenament',
-  'description': 'Ressò - Centre d\'entrenament es un centro de entrenamiento situado en el Pont d\'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia.',
+  'description': 'Centro de entrenamiento en Pont d\'Inca, Mallorca. Planes personalizados, talleres de fitness y servicios de nutrición y fisioterapia.',
   'url': 'https://ressocentredentrenament.com',
-  'logo': 'https://ressocentredentrenament.com/img/logo-resso.png',
+  'logo': {
+    '@type': 'ImageObject',
+    'url': 'https://ressocentredentrenament.com/img/logo-resso-fn-azul-blanco-resized.webp',
+    'width': 100,
+    'height': 50
+  },
   'image': 'https://ressocentredentrenament.com/img/logo-resso-og-image.jpg',
   'address': {
     '@type': 'PostalAddress',
@@ -25,27 +30,43 @@ export const jsonLD = {
     'latitude': 39.598915606336604,
     'longitude': 2.694483325041169
   },
-  'telephone': '604845184',
+  'hasMap': 'https://maps.app.goo.gl/A3Gnwu5uknGrvUpAA',
+  'telephone': '+34604845184',
   'email': 'mario@ressocentredentrenament.com',
-  'openingHours': ['Mo-Fr 16:00-21:00'],
+  'openingHours': ['Tu,We,Fr 08:00-13:00', 'Tu,We,Fr 16:00-21:00'],
   'openingHoursSpecification': [
     {
       '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'dayOfWeek': ['Tuesday', 'Wednesday', 'Friday'],
+      'opens': '08:00',
+      'closes': '13:00'
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Tuesday', 'Wednesday', 'Friday'],
       'opens': '16:00',
       'closes': '21:00'
     }
   ],
   'priceRange': '€€',
   'currenciesAccepted': 'EUR',
+  'paymentAccepted': 'Cash, Credit Card',
   'inLanguage': ['es-ES', 'ca-ES'],
   'knowsLanguage': ['Spanish', 'Catalan'],
+  'sameAs': [
+    'https://www.instagram.com/resso_ct/'
+  ],
+  'areaServed': {
+    '@type': 'City',
+    'name': 'Pont d\'Inca'
+  },
   'employee': [
     {
       '@type': 'Person',
       'name': 'Mario Martín',
       'jobTitle': 'Entrenador Personal',
-      'description': 'Entrenador personal con experiencia en entrenamiento funcional'
+      'description': 'Entrenador personal con experiencia en entrenamiento funcional',
+      'sameAs': ['https://www.instagram.com/resso_ct/']
     }
   ],
 }
@@ -53,32 +74,31 @@ export const jsonLD = {
 export const metadata = {
   metadataBase: new URL('https://ressocentredentrenament.com'),
   title: {
-    default: 'Ressò - Centre d\'entrenament',
-    template: '%s | Ressò - Centre d\'entrenament',
+    default: 'Ressò - Centre d\'Entrenament | Pont d\'Inca, Mallorca',
+    template: '%s | Ressò - Centre d\'Entrenament',
   },
-  description: 'Ressò - Centre d\'entrenament es un centro de entrenamiento situado en el Pont d\'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia.',
+  description: 'Centro de entrenamiento en Pont d\'Inca, Mallorca. Planes personalizados, talleres de fitness y servicios de nutrición y fisioterapia. ¡Empieza hoy en Ressò!',
   keywords: [
     'Ressò',
-    'Centre d\'entrenament',
-    'entrenamiento',
-    'planes',
-    'talleres',
+    'centre entrenament',
+    'centro entrenamiento Mallorca',
+    'entrenamiento personal',
+    'gym Pont d\'Inca',
+    'planes entrenamiento',
+    'talleres fitness',
     'workshops',
-    'servicios complementarios',
+    'nutrición deportiva',
+    'fisioterapia',
     'Mallorca',
     'Pont d\'Inca',
     'Palma',
     'bienestar',
     'salud',
-    'rendimiento',
-    'nutrición',
-    'fisioterapia',
-    'calistenia',
-    'crossfit',
+    'rendimiento deportivo',
     'readaptación',
-    'recuperación',
+    'recuperación deportiva',
   ],
-  authors: [{name: 'Ressò - Centre d\'entrenament'}],
+  authors: [{ name: 'Ressò - Centre d\'entrenament', url: 'https://ressocentredentrenament.com' }],
   creator: 'Ressò - Centre d\'entrenament',
   publisher: 'Ressò - Centre d\'entrenament',
   robots: {
@@ -98,15 +118,16 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
+    alternateLocale: ['ca_ES'],
     url: 'https://ressocentredentrenament.com',
-    title: 'Ressò - Centre d\'entrenament',
-    description: 'Ressò - Centre d\'entrenament es un centro de entrenamiento situado en el Pont d\'Inca, Mallorca. En él puedes encontrar servicios de entrenamiento mediante planes, así como talleres y servicios complementarios de nutrición y fisioterapia.',
+    title: 'Ressò - Centre d\'Entrenament | Pont d\'Inca, Mallorca',
+    description: 'Centro de entrenamiento en Pont d\'Inca, Mallorca. Planes personalizados, talleres de fitness y servicios de nutrición y fisioterapia. ¡Empieza hoy en Ressò!',
     images: [
       {
         url: 'https://ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1',
         width: 1200,
         height: 630,
-        alt: 'Ressò - Centre d\'entrenament',
+        alt: 'Ressò - Centre d\'Entrenament, Pont d\'Inca, Mallorca',
       },
     ],
     siteName: 'Ressò - Centre d\'entrenament',
@@ -125,8 +146,8 @@ export const metadata = {
   manifest: '/manifest.json',
   twitter: {
     card: 'summary_large_image',
-    title: 'Ressò - Centre d\'entrenament',
-    description: 'Centro de entrenamiento en Pont d\'Inca, Mallorca',
+    title: 'Ressò - Centre d\'Entrenament | Pont d\'Inca, Mallorca',
+    description: 'Centro de entrenamiento en Pont d\'Inca, Mallorca. Planes personalizados, talleres de fitness y servicios de nutrición y fisioterapia. ¡Empieza hoy en Ressò!',
     images: ['https://ressocentredentrenament.com/img/logo-resso-og-image.jpg?v=1'],
   },
   other: {
