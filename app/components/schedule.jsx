@@ -4,6 +4,10 @@ import TitleSection from './common/TitleSection'
 
 const ALL_DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
 const ACTIVE_DAYS = new Set(['Martes', 'Miércoles', 'Viernes'])
+const MORNING_START = 8
+const AFTERNOON_START = 16
+const MORNING_END = 13
+const AFTERNOON_END = 21
 
 function generateSlots(startHour, endHour) {
   const slots = []
@@ -14,8 +18,8 @@ function generateSlots(startHour, endHour) {
   return slots
 }
 
-const MORNING_SLOTS = generateSlots(8, 13)
-const AFTERNOON_SLOTS = generateSlots(16, 21)
+const MORNING_SLOTS = generateSlots(MORNING_START, MORNING_END)
+const AFTERNOON_SLOTS = generateSlots(AFTERNOON_START, AFTERNOON_END)
 
 function ClassTag({ label }) {
   return (
@@ -48,7 +52,11 @@ export default function Schedule() {
     <section id='horarios' className='w-full flex flex-col justify-center items-center scroll-m-10 bg-accent py-10 px-2.5'>
       <div className={`${WIDTH_LAYOUT} flex flex-col justify-center items-center gap-6`}>
         <TitleSection title='Horarios' />
-        <TextComponent text='Clases grupales — Martes, Miércoles y Viernes' textColor='primary' textAlign='text-center' margin='my-0' />
+        <div className='w-[75%] flex flex-col items-center'>
+          <TextComponent text='Clases grupales — <b>Martes, Miércoles y Viernes</b>' textColor='primary' textAlign='text-center' margin='my-0' />
+          <TextComponent text={`Mañanas: <b>${MORNING_START}h - ${MORNING_END}h</b>`} textColor='primary' textAlign='text-center' margin='my-0' />
+          <TextComponent text={`Tardes: <b>${AFTERNOON_START}h - ${AFTERNOON_END}h</b>`} textColor='primary' textAlign='text-center' margin='my-0' />
+        </div>
 
         <div className='w-full overflow-x-auto rounded-xl'>
           <table className='w-full min-w-[560px] border-collapse'>
@@ -72,7 +80,7 @@ export default function Schedule() {
                 <TimeRow key={time} time={time} isEven={i % 2 === 0} />
               ))}
               <tr>
-                <td colSpan={8} className='py-2 px-3 text-center text-sm text-secondary/40 italic border-b border-gray-200 bg-gray-50'>
+                <td colSpan={8} className='py-2 px-3 text-center text-sm text-secondary/40 border-b border-gray-200 bg-gray-50'>
                   No hay clases en estas horas
                 </td>
               </tr>
