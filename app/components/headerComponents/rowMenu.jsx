@@ -1,5 +1,6 @@
 'use client'
-import { MENU } from '@/constants/vars'
+import { Whatsapp } from '@/components/icons'
+import { MENU, RESSO_INFO } from '@/constants/vars'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -53,8 +54,9 @@ export default function RowMenu() {
             </Link>
           )
         })}
-        <Link href="#contacto" title="Ir a la sección de contacto" className="text-sm py-2 px-4 bg-accent rounded-lg font-bold hover:shadow-[0_0_8px_rgba(85,179,183,0.5)] duration-150 ease-in-out">
-          ¿Nos encuentras?
+        <Link href={RESSO_INFO.whatsapp} rel='noopener noreferrer' target='_blank' title="¡Contáctanos por WhatsApp!" className="flex flex-row items-center justify-center gap-2 text-sm py-2 px-4 bg-accent rounded-lg font-bold hover:shadow-[0_0_8px_rgba(85,179,183,0.5)] duration-150 ease-in-out">
+          ¡Contáctanos sin compromiso!
+          <span className={'min-w-[20px] text-white'}><Whatsapp size={20} /></span>
         </Link>
       </div>
     </nav>
