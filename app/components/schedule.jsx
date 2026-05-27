@@ -87,10 +87,10 @@ function TimeRow({ time, isEven, isMorning }) {
 
 export default function Schedule() {
   return (
-    <section id='horarios' className='w-full flex flex-col justify-center items-center bg-accent py-10 px-2.5'>
-      <div className={`${WIDTH_LAYOUT} flex flex-col justify-center items-center gap-6`}>
-        <TitleSection title='Horarios' />
-        <div className='w-[75%] flex flex-col items-center gap-1'>
+    <section id='horarios' className='w-full flex flex-col justify-center items-center bg-accent py-8 px-4'>
+      <div className={`${WIDTH_LAYOUT} flex flex-col items-center gap-8`}>
+        <div className='w-full flex flex-col items-center gap-3'>
+          <TitleSection title='Horarios' />
           <TextComponent text='Sesiones disponibles todos los días excepto los domingos.' textColor='primary' textAlign='text-center' margin='my-0' />
         </div>
 

@@ -30,9 +30,9 @@ export default function Footer() {
             />
           </Link>
           <div className='flex flex-col lg:items-start gap-2.5 font-thin mt-5'>
-            <a aria-label='Dirección' className='flex justify-center items-start gap-2.5 hover:text-accent duration-150 ease-in-out text-[0.75rem] lg:text-[1rem]' href={RESSO_INFO.mapsLink} target='_blank' rel='noopener noreferrer'>
-              <span className='mt-1 lg:mt-0 max-w-4 lg:min-w-6'><Location /></span>
-              <span className='w-3/4 lg:w-full text-pretty'>{RESSO_INFO.locationName}</span>
+            <a aria-label='Dirección' className='flex justify-center items-center gap-1.5 lg:gap-2.5 hover:text-accent duration-150 ease-in-out text-[0.75rem] lg:text-[1rem]' href={RESSO_INFO.mapsLink} target='_blank' rel='noopener noreferrer'>
+              <span className='shrink-0 [&>svg]:w-3.5 [&>svg]:h-3.5 lg:[&>svg]:w-6 lg:[&>svg]:h-6'><Location /></span>
+              <span className='text-pretty text-left'>{RESSO_INFO.locationName}</span>
             </a>
             {/* <div className='flex flex-row justify-center items-center gap-2.5 text-[0.75rem] lg:text-[1rem]'>
               <a aria-label='Correo electrónico' href={`mailto:${RESSO_INFO.email}`} className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out'>

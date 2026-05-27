@@ -6,8 +6,8 @@ import TextComponent from './common/TextComponent'
 export default function PackList () {
   return (
     <>
-      <TextComponent text={'Estos son los planes que están a disposición: <b>Iniciación</b>, <b>Avanzado</b> y <b>Élite</b>'} textColor='accent' />
-      <div className='mt-10 pt-5 grid grid-cols-1 gap-5 lg:grid-cols-3 lg:items-center'>
+      <TextComponent text={'Estos son los planes que están a disposición: <b>Iniciación</b>, <b>Avanzado</b> y <b>Élite</b>'} textColor='accent' textAlign='text-center' margin='my-0' />
+      <div className='w-full mt-5 grid grid-cols-1 gap-5 lg:grid-cols-3 lg:items-center'>
         {PACK_LIST.map((pack, index) => (
           <Pack key={index + pack.title} pack={pack} />
         ))}

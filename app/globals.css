@@ -5,6 +5,7 @@
 
 /* CSS RESET by midudev (https://github.com/midudev) */
 html {
+  color-scheme: only light;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
@@ -115,14 +116,19 @@ footer {
   background-color: var(--color-secondary);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
-  overflow-x: auto;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-gutter: stable;
 }
 
 .hamOpen {
   visibility: visible;
-  opacity: 1 !important;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
 .hamburgerMenu > nav {

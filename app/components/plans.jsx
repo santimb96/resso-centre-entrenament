@@ -4,12 +4,10 @@ import PackList from './packList'
 
 export default function Plans() {
   return (
-    <section id='planes' className='flex flex-col justify-center items-center gap-5 px-2.5 py-5'>
-      <div className={WIDTH_LAYOUT}>
+    <section id='planes' className='flex flex-col justify-center items-center py-8 px-4'>
+      <div className={`${WIDTH_LAYOUT} flex flex-col items-center gap-8`}>
         <TitleSection title='Planes' color='accent' />
-        <div className='mt-5'>
-          <PackList />
-        </div>
+        <PackList />
       </div>
     </section>
   )
