@@ -33,19 +33,25 @@ export const jsonLD = {
   'hasMap': 'https://maps.app.goo.gl/A3Gnwu5uknGrvUpAA',
   'telephone': '+34604845184',
   'email': 'mario@ressocentredentrenament.com',
-  'openingHours': ['Tu,We,Th 08:00-13:00', 'Mo,Tu,We,Th,Fr 16:00-21:00'],
+  'openingHours': ['Tu,We,Th 08:00-12:00', 'Mo,Tu,We,Th,Fr 16:00-20:00', 'Sa 09:00-13:00'],
   'openingHoursSpecification': [
     {
       '@type': 'OpeningHoursSpecification',
       'dayOfWeek': ['Tuesday', 'Wednesday', 'Thursday'],
       'opens': '08:00',
-      'closes': '13:00'
+      'closes': '12:00'
     },
     {
       '@type': 'OpeningHoursSpecification',
       'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
       'opens': '16:00',
-      'closes': '21:00'
+      'closes': '20:00'
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Saturday'],
+      'opens': '09:00',
+      'closes': '13:00'
     }
   ],
   'priceRange': '€€',

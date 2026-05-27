@@ -83,7 +83,6 @@ const PACK_LIST = [
     notIncludes: [
       'Entrevista y valoración inicial',
       'Valoración nutricional',
-      '1 sesión de fisioterapia mensual'
     ],
     price: 90,
     link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan de Iniciación. ¿Podrías darme más información?',
@@ -104,7 +103,6 @@ const PACK_LIST = [
     ],
     notIncludes: [
       'Valoración nutricional',
-      '1 sesión de fisioterapia mensual'
     ],
     price: 100,
     link: 'https://wa.me/+34604845184?text=¡Hola!, estoy interesado en el plan Avanzado. ¿Podrías darme más información?',
@@ -122,7 +120,6 @@ const PACK_LIST = [
       'Acceso a los workshops mensuales',
       'Entrevista y valoración inicial',
       'Valoración nutricional',
-      '1 sesión de fisioterapia mensual'
     ],
     notIncludes: [],
     price: 140,

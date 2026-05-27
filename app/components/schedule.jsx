@@ -7,8 +7,8 @@ const MORNING_DAYS = new Set(['Martes', 'Miércoles', 'Jueves'])
 const AFTERNOON_DAYS = new Set(['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'])
 const MORNING_START = 8
 const AFTERNOON_START = 16
-const MORNING_END = 13
-const AFTERNOON_END = 21
+const MORNING_END = 12
+const AFTERNOON_END = 20
 
 function generateSlots(startHour, endHour) {
   const slots = []
@@ -16,6 +16,7 @@ function generateSlots(startHour, endHour) {
     slots.push(`${String(h).padStart(2, '0')}:00`)
     slots.push(`${String(h).padStart(2, '0')}:30`)
   }
+  slots.push(`${String(endHour).padStart(2, '0')}:00`)
   return slots
 }
 
@@ -23,33 +24,63 @@ const MORNING_SLOTS = generateSlots(MORNING_START, MORNING_END)
 const AFTERNOON_SLOTS = generateSlots(AFTERNOON_START, AFTERNOON_END)
 
 const TAG_STYLES = {
-  grupal: 'bg-blue-100 text-blue-500 border-blue-200',
-  openbox: 'bg-orange-100 text-orange-500 border-orange-200',
+  grupal:     'bg-blue-100    text-blue-600    border-blue-200',
+  openbox:    'bg-green-100   text-green-600   border-green-200',
+  simulacros: 'bg-purple-100  text-purple-600  border-purple-200',
+  talleres:   'bg-sky-100    text-sky-600    border-sky-200',
 }
 
-function ClassTag({ label, type = 'grupal' }) {
+const TAG_LABELS = {
+  grupal:     'Grupal',
+  openbox:    'Open box',
+  simulacros: 'Simulacros',
+  talleres:   'Talleres',
+}
+
+function ClassTag({ type }) {
   return (
     <span className={`inline-block border text-xs font-semibold px-2.5 py-1 rounded-lg ${TAG_STYLES[type]}`}>
-      {label}
+      {TAG_LABELS[type]}
     </span>
   )
 }
 
+function Dash() {
+  return <span className='text-gray-300 text-xs'>—</span>
+}
+
+function getCellContent(day, time, isMorning) {
+  const hour = parseInt(time.split(':')[0])
+
+  if (day === 'Domingo') return null
+
+  if (day === 'Sábado') {
+    if (!isMorning) return null
+    if (hour < 9) return null
+    if (hour === 9) return 'simulacros'
+    return 'talleres'
+  }
+
+  if (isMorning) {
+    return MORNING_DAYS.has(day) ? 'grupal' : 'openbox'
+  }
+  return AFTERNOON_DAYS.has(day) ? 'grupal' : null
+}
+
 function TimeRow({ time, isEven, isMorning }) {
-  const activeDays = isMorning ? MORNING_DAYS : AFTERNOON_DAYS
   return (
     <tr className={isEven ? 'bg-gray-50' : 'bg-white'}>
       <td className='pl-7 py-2 text-sm font-semibold text-secondary border-b border-gray-200 whitespace-nowrap'>
         {time}
       </td>
-      {ALL_DAYS.map(day => (
-        <td key={day} className='p-2 text-center border-b border-gray-200'>
-          {activeDays.has(day)
-            ? <ClassTag label='Grupal' type='grupal' />
-            : <ClassTag label='Open box' type='openbox' />
-          }
-        </td>
-      ))}
+      {ALL_DAYS.map(day => {
+        const tagType = getCellContent(day, time, isMorning)
+        return (
+          <td key={day} className='p-2 text-center border-b border-gray-200'>
+            {tagType ? <ClassTag type={tagType} /> : <Dash />}
+          </td>
+        )
+      })}
     </tr>
   )
 }
@@ -60,20 +91,20 @@ export default function Schedule() {
       <div className={`${WIDTH_LAYOUT} flex flex-col justify-center items-center gap-6`}>
         <TitleSection title='Horarios' />
         <div className='w-[75%] flex flex-col items-center gap-1'>
-          <TextComponent text='Sesiones disponibles de lunes a viernes, tanto por las mañanas como por las tardes.' textColor='primary' textAlign='text-center' margin='my-0' />
+          <TextComponent text='Sesiones disponibles todos los días excepto los domingos.' textColor='primary' textAlign='text-center' margin='my-0' />
         </div>
 
         <div className='w-full overflow-x-auto rounded-xl'>
           <table className='w-full min-w-[560px] border-collapse'>
             <thead>
-              <tr className='bg-gray-100'>
-                <th className='px-5 py-3 text-left text-sm font-bold text-secondary/50 border-b bg-secondary text-white'>
+              <tr>
+                <th className='px-5 py-3 text-left text-sm font-bold border-b bg-secondary text-white'>
                   Horario
                 </th>
                 {ALL_DAYS.map(day => (
                   <th
                     key={day}
-                    className={`p-3 text-center text-sm font-bold border-b border-gray-200 bg-secondary ${AFTERNOON_DAYS.has(day) ? 'text-white' : 'text-white/30'}`}
+                    className={`p-3 text-center text-sm font-bold border-b bg-secondary ${day === 'Domingo' ? 'text-white/30' : 'text-white'}`}
                   >
                     {day}
                   </th>
