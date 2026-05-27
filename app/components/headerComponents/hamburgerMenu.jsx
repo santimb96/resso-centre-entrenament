@@ -4,6 +4,7 @@ import { Close, Github, Hamburger, Whatsapp } from '@/components/icons'
 import { MENU, RESSO_INFO } from '@/constants/vars'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { workSans } from '../../lib/fonts'
 import Divider from '../divider'
@@ -11,6 +12,7 @@ import Rrss from '../rrss'
 
 export default function HamburgerMenu () {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
   const handleMenu = () => {
     const body = document.getElementsByTagName('body')[0]
@@ -47,7 +49,7 @@ export default function HamburgerMenu () {
               className='my-2.5 !text-[1.5rem] hover:text-accent duration-150 ease-in-out'
               onClick={handleMenu}
               key={index + menuItem.name}
-              href={location !== '/' ? `/${menuItem.href}` : menuItem.href}
+              href={pathname !== '/' ? `/${menuItem.href}` : menuItem.href}
             >
               <span>{menuItem.name}</span>
             </Link>
