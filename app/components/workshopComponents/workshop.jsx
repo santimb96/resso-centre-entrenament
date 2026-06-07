@@ -20,7 +20,7 @@ export default function Workshop({
         sizes='500px'
         fill
       />
-      <div className='md:rounded-xl absolute inset-0 bg-gradient-to-b from-transparent to-black' />
+      <div className='md:rounded-xl absolute inset-0 bg-linear-to-b from-transparent to-black' />
       <div className='pr-5 pl-5 w-full absolute flex flex-col justify-start items-start gap-2.5 bottom-5 text-primary'>
         <h4 className='drop-shadow-md text-[1.5rem] mb-2.5 textShadow'>
           {title}

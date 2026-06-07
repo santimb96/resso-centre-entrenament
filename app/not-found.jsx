@@ -12,7 +12,7 @@ export function generateMetadata() {
 
 export default function NotFound() {
   return (
-    <div className="w-full h-[100dvh] bg-primary p-10 flex flex-col justify-center items-center gap-5">
+    <div className="w-full h-dvh bg-primary p-10 flex flex-col justify-center items-center gap-5">
       <Link href='/' className='mb-5'>
         <Image src='/img/logo-resso-fb-negro-azul.webp' width={100} height={100} alt='logo Ressò - Centre d&apos;entrenament' />
       </Link>

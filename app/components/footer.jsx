@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     <footer id='footer' className='w-full flex flex-col items-center mt-auto'>
-      <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 lg:!flex-row lg:justify-between lg:items-start'>
+      <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 lg:flex-row! lg:justify-between lg:items-start'>
         <div className='flex flex-col justify-center items-center gap-2.5'>
           <Link href='/'>
             <Image
@@ -39,7 +39,7 @@ export default function Footer() {
                 <span className='max-w-4 lg:min-w-6'><Mail size={24} /></span>
                 <span className='text-pretty'>{RESSO_INFO.email}</span>
               </a>
-              <button title='Copiar correo' className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full lg:p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group !cursor-pointer'}`} onClick={copyMail}>{
+              <button title='Copiar correo' className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full lg:p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group cursor-pointer!'}`} onClick={copyMail}>{
                 copied ? <Check size={24} /> : <span className='group-hover:text-accent duration-150 ease-in-out'><Copy size={24} /></span>
               }</button>
             </div> */}

@@ -46,7 +46,7 @@ export default function HamburgerMenu () {
           <Divider />
           {MENU.map((menuItem, index) => (
             <Link
-              className='my-2.5 !text-[1.5rem] hover:text-accent duration-150 ease-in-out'
+              className='my-2.5 text-[1.5rem]! hover:text-accent duration-150 ease-in-out'
               onClick={handleMenu}
               key={index + menuItem.name}
               href={pathname !== '/' ? `/${menuItem.href}` : menuItem.href}

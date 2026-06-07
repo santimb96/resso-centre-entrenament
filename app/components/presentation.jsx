@@ -4,18 +4,18 @@ import { CaretDown, Mouse } from './icons'
 
 export default function Presentation () {
   return (
-    <div className={`${workSans.className} font-[900] h-[600px] md:h-[750px] relative w-full`}>
+    <div className={`${workSans.className} font-black h-[600px] md:h-[750px] relative w-full`}>
       <Image
         src='/img/headerImg.webp'
         alt='Imagen de cabecera de la zona de entrenamiento'
         fill
         priority
-        className='object-cover object-center grayscale-[100%] contrast-[150%] brightness-[115%] z-[-1]'
+        className='object-cover object-center grayscale-100 contrast-150 brightness-115 z-[-1]'
       />
       <div className='w-full absolute top-[200px] md:top-[300px] flex flex-col justify-center items-center px-2.5'>
         <h1 className='textShadow text-center text-primary text-[3rem] sm:text-[3.75rem] lg:text-[4.25rem] xl:text-[5.75rem]'>NO SOMOS UN GIMNASIO</h1>
-        <p className='textShadow text-center text-accent text-[3rem] sm:text-[3.75rem] lg:text-[4.25rem] xl:text-[5.75rem] mb-5 font-[900]'>SOMOS TU EQUIPO</p>
-        {/* <div className='w-full flex flex-col md:max-w-max md:!flex-row justify-center items-center gap-5 text-xl sm:text-2xl lg:text-4xl'>
+        <p className='textShadow text-center text-accent text-[3rem] sm:text-[3.75rem] lg:text-[4.25rem] xl:text-[5.75rem] mb-5 font-black'>SOMOS TU EQUIPO</p>
+        {/* <div className='w-full flex flex-col md:max-w-max md:flex-row! justify-center items-center gap-5 text-xl sm:text-2xl lg:text-4xl'>
           <Link href='/que-es-resso' className='whitespace-nowrap w-full py-2.5 px-5 bg-accent hover:border-accent hover:text-accent border border-transparent rounded-full text-primary shadow-custom hover:bg-primary duration-150 text-center'>TE CUENTO NUESTRA HISTORIA</Link>
         </div> */}
       </div>

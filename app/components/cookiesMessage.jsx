@@ -71,7 +71,7 @@ function CookiesModal({ saveCookiesPreference }) {
       role='dialog'
       aria-modal='true'
       aria-labelledby='cookiesModalTitle'
-      className='z-[9999] top-0 h-[100dvh] w-full fixed bg-black/25 backdrop-blur-[2px] flex flex-col items-center justify-center'
+      className='z-9999 top-0 h-dvh w-full fixed bg-black/25 backdrop-blur-[2px] flex flex-col items-center justify-center'
     >
       <div className='bg-primary shadow-custom px-5 py-2.5 rounded-md border border-secondary w-[80%] md:w-[50%] lg:w-[25%]'>
         <h4 id='cookiesModalTitle' className='text-[1.5rem] font-bold mb-2.5'>Política de cookies</h4>
