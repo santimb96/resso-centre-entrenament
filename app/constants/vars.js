@@ -5,7 +5,7 @@ const RESSO_INFO = {
   instagram: 'https://www.instagram.com/resso_ct/',
   tlf: '604845184',
   whatsapp: 'https://wa.me/604845184',
-  email: 'mario@ressocentredentrenament.com',
+  email: 'mario@ressocentre.es',
   locationName: 'Avda. d\'Antoni Maura, 69, Cas Miot, 07141 Es Pont d\'Inca',
   mapsLink: 'https://maps.app.goo.gl/A3Gnwu5uknGrvUpAA',
   coordinates: { lat: 39.598915606336604, lng: 2.694483325041169 }

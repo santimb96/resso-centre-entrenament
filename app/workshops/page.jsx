@@ -10,10 +10,10 @@ export const metadata = {
   title: 'Workshops',
   description: 'Talleres de fitness, nutrición y bienestar en Ressò Centre d\'Entrenament, Pont d\'Inca, Mallorca. Apúntate a nuestros próximos workshops.',
   alternates: {
-    canonical: 'https://ressocentredentrenament.com/workshops',
+    canonical: 'https://ressocentre.es/workshops',
   },
   openGraph: {
-    url: 'https://ressocentredentrenament.com/workshops',
+    url: 'https://ressocentre.es/workshops',
     title: 'Workshops | Ressò - Centre d\'Entrenament',
     description: 'Talleres de fitness, nutrición y bienestar en Ressò Centre d\'Entrenament, Pont d\'Inca, Mallorca. Apúntate a nuestros próximos workshops.',
   },
