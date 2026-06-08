@@ -57,6 +57,13 @@ export const jsonLD = {
   'priceRange': '€€',
   'currenciesAccepted': 'EUR',
   'paymentAccepted': 'Cash, Credit Card',
+  'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '5',
+    'reviewCount': '18',
+    'bestRating': '5',
+    'worstRating': '1',
+  },
   'inLanguage': ['es-ES', 'ca-ES'],
   'knowsLanguage': ['Spanish', 'Catalan'],
   'sameAs': [
@@ -165,6 +172,7 @@ export const metadata = {
     'geo.position': '39.598915606336604;2.694483325041169',
     'ICBM': '39.598915606336604;2.694483325041169',
     'apple-mobile-web-app-title': 'Ressò - Centre d\'entrenament',
+    'color-scheme': 'only light',
   }
 }
 
