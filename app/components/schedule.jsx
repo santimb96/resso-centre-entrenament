@@ -1,6 +1,8 @@
-import { WIDTH_LAYOUT } from '@/constants/vars'
+import { RESSO_INFO, WIDTH_LAYOUT } from '@/constants/vars'
+import Link from 'next/link'
 import TextComponent from './common/TextComponent'
 import TitleSection from './common/TitleSection'
+import { Clock } from './icons'
 
 const ALL_DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
 const MORNING_DAYS = new Set(['Martes', 'Miércoles', 'Jueves'])
@@ -70,7 +72,7 @@ function getCellContent(day, time, isMorning) {
 function TimeRow({ time, isEven, isMorning }) {
   return (
     <tr className={isEven ? 'bg-gray-50' : 'bg-white'}>
-      <td className='pl-7 py-2 text-sm font-semibold text-secondary border-b border-gray-200 whitespace-nowrap'>
+      <td className='p-3 text-center text-sm font-semibold text-secondary border-b border-gray-200 whitespace-nowrap'>
         {time}
       </td>
       {ALL_DAYS.map(day => {
@@ -98,8 +100,10 @@ export default function Schedule() {
           <table className='w-full min-w-[560px] border-collapse'>
             <thead>
               <tr>
-                <th className='px-5 py-3 text-left text-sm font-bold border-b bg-secondary text-white'>
-                  Horario
+                <th className='p-3 text-sm font-bold border-b bg-secondary text-white'>
+                  <span className='w-full flex items-center justify-center'>
+                    <Clock size={16} />
+                  </span>
                 </th>
                 {ALL_DAYS.map(day => (
                   <th
@@ -126,6 +130,13 @@ export default function Schedule() {
             </tbody>
           </table>
         </div>
+
+        <p className='text-white text-[1.125rem] md:text-[1.25rem] font-medium text-center'>
+          ¡Cualquier duda, no dudes en{' '}
+          <Link href={RESSO_INFO.whatsapp} target='_blank' rel='noopener noreferrer' className='underline hover:text-secondary duration-150 ease-in-out'>
+            contactar con nosotros!
+          </Link>
+        </p>
       </div>
     </section>
   )

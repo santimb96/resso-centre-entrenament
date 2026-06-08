@@ -52,7 +52,7 @@ export default function CookiesMessage() {
           title='Política de cookies'
           onClick={() => setIsOpen(true)}
           id='cookiesModalButton'
-          className='z-50 fixed bottom-36 right-5 bg-primary shadow-custom rounded-full block border border-secondary p-1 animate-swing animate-once animate-duration-500 animate-ease-in-out hover:scale-110 duration-150 ease-in-out'
+          className='z-50 fixed bottom-36 right-5 bg-primary rounded-full block border border-secondary p-1 animate-swing animate-once animate-duration-500 animate-ease-in-out hover:scale-110 duration-150 ease-in-out'
         >
           <Cookie size={36} />
         </button>

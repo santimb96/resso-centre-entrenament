@@ -54,7 +54,7 @@ export default function RowMenu() {
             </Link>
           )
         })}
-        <Link href={RESSO_INFO.whatsapp} rel='noopener noreferrer' target='_blank' title="¡Contáctanos por WhatsApp!" className="flex flex-row items-center justify-center gap-2 text-sm py-2 px-4 bg-accent rounded-lg font-bold hover:shadow-[0_0_8px_rgba(85,179,183,0.5)] duration-150 ease-in-out">
+        <Link href={RESSO_INFO.whatsapp} rel='noopener noreferrer' target='_blank' title="¡Contáctanos por WhatsApp!" className="flex flex-row items-center justify-center gap-2 text-sm py-2 px-4 bg-accent rounded-lg font-bold hover:shadow-[0_0_8px_rgba(85,179,183,0.5)] hover:scale-105 duration-150 ease-in-out">
           ¡Contáctanos sin compromiso!
           <span className={'min-w-[20px] text-white'}><Whatsapp size={20} /></span>
         </Link>

@@ -1,7 +1,7 @@
 import { BiCopy } from 'react-icons/bi'
 import { BsTelephone } from 'react-icons/bs'
 import { FaGithub, FaInstagram, FaRegBell, FaRegCalendar, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
-import { FaArrowRight, FaArrowUp, FaCheck, FaSquareFacebook } from 'react-icons/fa6'
+import { FaArrowDown, FaArrowRight, FaArrowUp, FaCheck, FaSquareFacebook } from 'react-icons/fa6'
 import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
 import { IoBagCheckOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuCircleCheckBig, LuGoal, LuMapPin, LuMouse } from 'react-icons/lu'
@@ -20,8 +20,16 @@ export function Close ({size = 24}) {
   return <IoCloseOutline size={size} />
 }
 
+export function ArrowDown ({size = 24}) {
+  return <FaArrowDown size={size} />
+}
+
 export function ArrowUp ({size = 24}) {
   return <FaArrowUp size={size} />
+}
+
+export function ArrowRight ({size = 24}) {
+  return <FaArrowRight size={size} />
 }
 
 export function ArrowRightHamMenu ({size = 24}) {
