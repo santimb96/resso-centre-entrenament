@@ -24,8 +24,8 @@ const MENU = [
   },
   {
     id: 3,
-    name: 'Workshops',
-    href: '#workshops'
+    name: 'Talleres',
+    href: '#talleres'
   },
   {
     id: 4,
