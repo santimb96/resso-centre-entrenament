@@ -240,9 +240,23 @@ const SPONSORS_LIST = [
   {
     name: 'La Guarida | Barber - studio',
     image: '/img/sponsors/laGuarida.webp',
-    width: 200,
-    height: 100,
+    width: 300,
+    height: 200,
     href: '#'
+  },
+  {
+    name: 'Carpe Guiem | Nutre tu día',
+    image: '/img/sponsors/carpe-guiem.webp',
+    width: 300,
+    height: 200,
+    href: '#'
+  },
+  {
+    name: 'Garden Store | Césped artificial',
+    image: '/img/sponsors/garden-store.webp',
+    width: 300,
+    height: 200,
+    href: 'https://www.gardenstore.es/cesped-artificial-mallorca/'
   }
 ]
 
