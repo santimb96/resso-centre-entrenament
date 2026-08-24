@@ -5,7 +5,7 @@ import TitleSection from './common/TitleSection'
 import { Clock } from './icons'
 
 const ALL_DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
-const MORNING_DAYS = new Set(['Martes', 'Miércoles', 'Jueves'])
+const MORNING_DAYS = new Set(['Lunes', 'Martes', 'Miércoles', 'Jueves'])
 const AFTERNOON_DAYS = new Set(['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'])
 const MORNING_START = 8
 const AFTERNOON_START = 16
