@@ -20,7 +20,7 @@ export default function Sponsors() {
                 width={sponsor.width} 
                 height={sponsor.height}
                 loading='lazy'
-                style={{ width: 'auto', height: 'auto' }}
+                sizes='(max-width: 768px) 100px, (max-width: 1024px) 150px, 300px'
               />
             ) : (
               <Link key={index + sponsor.name} href={sponsor.href} target='_blank'>
@@ -32,7 +32,7 @@ export default function Sponsors() {
                   width={sponsor.width} 
                   height={sponsor.height}
                   loading='lazy'
-                  style={{ width: 'auto', height: 'auto' }}
+                  sizes='(max-width: 768px) 100px, (max-width: 1024px) 150px, 300px'
                 />
               </Link>
             )

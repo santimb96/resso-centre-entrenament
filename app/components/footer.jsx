@@ -17,7 +17,7 @@ export default function Footer() {
               alt='Ressò fn azul logo'
               width={150}
               height={150}
-              style={{ width: 'auto', height: 'auto' }}
+              sizes='150px'
             />
           </Link>
           <div className='flex flex-col lg:items-start gap-2.5 font-thin mt-5'>
