@@ -117,22 +117,10 @@ export default async function WorkshopInfo(props) {
                   </a>
                 )
               })}
-              {/* <a className='hover:text-accent duration-150 ease-in-out' href='' title='Instagram' target='_blank'><span className='max-w-4 lg:min-w-9'><Instagram size={32} /></span></a>
-              <a className='hover:text-accent duration-150 ease-in-out' href='' title='Facebook' target='_blank'><span className='max-w-4 lg:min-w-9'><Facebook size={32} /></span></a>
-              <a className='hover:text-accent duration-150 ease-in-out' href='' title='TikTok' target='_blank'><span className='max-w-4 lg:min-w-9'><Tiktok size={28} /></span></a>
-              <a className='hover:text-accent duration-150 ease-in-out' href='' title='YouTube' target='_blank'><span className='max-w-4 lg:min-w-9'><Youtube size={32} /></span></a> */}
             </div>
           </div>
         </div>
       </div>
-      {/* <div className='w-full flex flex-col justify-start items-start gap-2.5'>
-        <h2>{title}</h2>
-        <div className='flex flex-row justify-center items-center gap-5'>
-          <p className='flex flex-row justify-center items-center gap-2.5 opacity-60 font-bold'><span className='min-w-6'><Calendar size={20} /></span>{date}</p>
-          <p className='flex flex-row justify-center items-center gap-2.5 opacity-60 font-bold'><span className='min-w-6'><Location size={20} /></span>{location}</p>
-        </div>
-        <p className='whitespace-pre-wrap'>{description}</p>
-      </div> */}
     </section>
   )
 }

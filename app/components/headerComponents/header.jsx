@@ -13,6 +13,7 @@ export default function Header () {
             alt='Ressò fn azul logo'
             width={100}
             height={50}
+            style={{ width: 'auto', height: 'auto' }}
           />
         </Link>
         <HamburgerMenu />

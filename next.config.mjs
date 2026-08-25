@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: false,
+  experimental: {
+    optimizePackageImports: ['react-icons', 'keen-slider'],
+  },
   async redirects() {
     return [
       {
@@ -12,7 +15,31 @@ const nextConfig = {
           },
         ],
         destination: 'https://ressocentre.es/:path*',
-        permanent: true, // 301 redirect
+        permanent: true,
+      },
+    ]
+  },
+  async headers() {
+    return [
+      {
+        source: '/:all*(svg|jpg|jpeg|png|webp|avif|ico)',
+        locale: false,
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:all*(woff|woff2|ttf|otf|eot)',
+        locale: false,
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
       },
     ]
   },

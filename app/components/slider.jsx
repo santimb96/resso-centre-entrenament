@@ -32,6 +32,7 @@ export default function Slider ({ children }) {
         <div className='mt-5 flex justify-center items-center h-min gap-10'>
           <Arrow
             left
+            aria-label="Previous slide"
             onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()} />
 
           <div className="dots">
@@ -40,7 +41,8 @@ export default function Slider ({ children }) {
             ].map((idx) => {
               return (
                 <button
-                  title={`Ir al workshop ${idx + 1}`}
+                  title={`Go to slide ${idx + 1}`}
+                  aria-label={`Go to slide ${idx + 1}`}
                   key={idx}
                   onClick={() => {
                     instanceRef.current?.moveToIdx(idx)
@@ -51,6 +53,7 @@ export default function Slider ({ children }) {
             })}
           </div>
           <Arrow
+            aria-label="Next slide"
             onClick={(e) => e.stopPropagation() || instanceRef.current?.next()} />
         </div>  
       )
@@ -64,6 +67,15 @@ function Arrow (props) {
   return (
     <svg
       onClick={props.onClick}
+      aria-label={props['aria-label']}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          props.onClick?.(e)
+        }
+      }}
       className={`arrow textShadow ${
         props.left ? 'arrow--left' : 'arrow--right'
       } ${disabled}`}

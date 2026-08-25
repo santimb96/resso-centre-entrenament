@@ -11,10 +11,29 @@ export default function Sponsors() {
         <div className='w-full flex flex-wrap justify-center items-center gap-10'>
           {SPONSORS_LIST.map((sponsor, index) => (
             sponsor.href === '#' ? (
-              <Image title={sponsor.name} className='md:opacity-60 md:grayscale hover:opacity-100 hover:grayscale-0 hover:scale-105 transition-all duration-150 ease-in-out max-w-[100px] md:max-w-[150px] lg:max-w-none' key={index + sponsor.name} src={sponsor.image} alt={sponsor.name} width={sponsor.width} height={sponsor.height} />
+              <Image 
+                title={sponsor.name} 
+                className='md:opacity-60 md:grayscale hover:opacity-100 hover:grayscale-0 hover:scale-105 transition-all duration-150 ease-in-out max-w-[100px] md:max-w-[150px] lg:max-w-none' 
+                key={index + sponsor.name} 
+                src={sponsor.image} 
+                alt={sponsor.name} 
+                width={sponsor.width} 
+                height={sponsor.height}
+                loading='lazy'
+                style={{ width: 'auto', height: 'auto' }}
+              />
             ) : (
               <Link key={index + sponsor.name} href={sponsor.href} target='_blank'>
-                <Image title={sponsor.name} className='md:opacity-60 md:grayscale hover:opacity-100 hover:grayscale-0 hover:scale-105 transition-all duration-150 ease-in-out max-w-[100px] md:max-w-[150px] lg:max-w-none' src={sponsor.image} alt={sponsor.name} width={sponsor.width} height={sponsor.height} />
+                <Image 
+                  title={sponsor.name} 
+                  className='md:opacity-60 md:grayscale hover:opacity-100 hover:grayscale-0 hover:scale-105 transition-all duration-150 ease-in-out max-w-[100px] md:max-w-[150px] lg:max-w-none' 
+                  src={sponsor.image} 
+                  alt={sponsor.name} 
+                  width={sponsor.width} 
+                  height={sponsor.height}
+                  loading='lazy'
+                  style={{ width: 'auto', height: 'auto' }}
+                />
               </Link>
             )
           ))}

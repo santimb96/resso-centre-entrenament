@@ -184,8 +184,9 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <body suppressHydrationWarning className={`${notoSans.className} flex flex-col items-center justify-start relative`}>
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         {children}
         <Analytics />
         <script

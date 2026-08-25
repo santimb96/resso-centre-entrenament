@@ -7,16 +7,6 @@ import Link from 'next/link'
 import { workSans } from '../lib/fonts'
 
 export default function Footer() {
-  // const [copied, setCopied] = useState(false)
-
-  // const copyMail = () => {
-  //   navigator.clipboard.writeText(RESSO_INFO.email)
-  //   setCopied(true)
-  //   setTimeout(() => {
-  //     setCopied(false)
-  //   }, 2000)
-  // }
-
   return (
     <footer id='footer' className='w-full flex flex-col items-center mt-auto'>
       <div className='w-full md:w-[75vw] lg:w-[60vw] flex flex-col items-center gap-2.5 py-5 px-2.5 md:px-0 lg:flex-row! lg:justify-between lg:items-start'>
@@ -27,6 +17,7 @@ export default function Footer() {
               alt='Ressò fn azul logo'
               width={150}
               height={150}
+              style={{ width: 'auto', height: 'auto' }}
             />
           </Link>
           <div className='flex flex-col lg:items-start gap-2.5 font-thin mt-5'>
@@ -34,15 +25,6 @@ export default function Footer() {
               <span className='shrink-0 [&>svg]:w-3.5 [&>svg]:h-3.5 lg:[&>svg]:w-6 lg:[&>svg]:h-6'><Location /></span>
               <span className='text-pretty text-left'>{RESSO_INFO.locationName}</span>
             </a>
-            {/* <div className='flex flex-row justify-center items-center gap-2.5 text-[0.75rem] lg:text-[1rem]'>
-              <a aria-label='Correo electrónico' href={`mailto:${RESSO_INFO.email}`} className='flex justify-center items-center gap-2.5 hover:text-accent duration-150 ease-in-out'>
-                <span className='max-w-4 lg:min-w-6'><Mail size={24} /></span>
-                <span className='text-pretty'>{RESSO_INFO.email}</span>
-              </a>
-              <button title='Copiar correo' className={`max-w-4 lg:min-w-6 ml-2.5 rounded-full lg:p-1 cursor-default ${!copied && 'hover:bg-slate-700 duration-150 ease-in-out group cursor-pointer!'}`} onClick={copyMail}>{
-                copied ? <Check size={24} /> : <span className='group-hover:text-accent duration-150 ease-in-out'><Copy size={24} /></span>
-              }</button>
-            </div> */}
             <div className='w-full flex justify-center items-center gap-2.5 mt-5'>
               <a aria-label='Instagram' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.instagram} title='Instagram' target='_blank' rel='noopener noreferrer'><span className='max-w-4 lg:min-w-9'><Instagram size={32} /></span></a>
               <a aria-label='Whatsapp' className='hover:text-accent duration-150 ease-in-out' href={RESSO_INFO.whatsapp} title='Whatsapp' target='_blank' rel='noopener noreferrer'><span className='max-w-4 lg:min-w-9'><Whatsapp size={32} /></span></a>
@@ -59,8 +41,6 @@ export default function Footer() {
 
         </div>
       </div>
-      {/* TODO: Set cookies policy in the future */}
-      {/* <p className='text-pretty text-center font-normal my-2.5 text-[0.75rem] lg:text-[1rem]'>Accede a nuestra <Link href='/politica-de-cookies' target='_blank' className='text-accent hover:brightness-125 duration-150 ease-in-out hover:underline'>política de cookies</Link></p> */}
       <p className='text-pretty text-center font-bold text-[0.75rem] lg:text-[1rem] mt-5'>2025 | Ressò - Centre d&apos;entrenament</p>
       <div className='w-full text-pretty text-center font-thin text-[0.75rem] flex justify-center items-center gap-2.5 mt-2.5 mb-5'>
         <p>Web desarrollada por <Link aria-label='Github' title='Portafolio de Santiago Martínez' className='underline hover:text-accent ease-in-out duration-150' href='https://smartinezdev.com' target='_blank' rel='noopener noreferrer'>Santiago Martínez</Link></p>

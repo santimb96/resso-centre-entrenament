@@ -6,6 +6,9 @@
 .agents/
 skills-lock.json
 package-lock.json
+.skill*
+skill*
+sdd*
 # dependencies
 /node_modules
 /.pnp

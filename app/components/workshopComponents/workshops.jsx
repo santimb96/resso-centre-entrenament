@@ -11,37 +11,35 @@ async function WorkshopsList (){
   if (fullData instanceof Error) {
     return (
       <div className='w-full flex flex-col md:grid md:grid-cols-2 gap-5 md:gap-8 items-center'>
-        {/* Bento grid */}
         <div className='w-full grid grid-cols-2 grid-rows-[65%_35%] gap-2.5 h-[350px]'>
-          {/* Charla - 100% height left */}
           <div className='col-span-1 row-span-2 relative rounded-xl overflow-hidden'>
             <Image
               src='/img/workshops/charla.webp'
               alt='Charlas y formaciones'
               fill
+              sizes='(max-width: 768px) 100vw, 50vw'
               className='object-cover grayscale'
             />
           </div>
-          {/* Simulacro - 65% height right top */}
           <div className='col-span-1 relative rounded-xl overflow-hidden'>
             <Image
               src='/img/workshops/simulacro.webp'
               alt='Simulacros de carrera'
               fill
+              sizes='(max-width: 768px) 100vw, 50vw'
               className='object-cover grayscale'
             />
           </div>
-          {/* Crono - 35% height right bottom */}
           <div className='col-span-1 relative rounded-xl overflow-hidden'>
             <Image
               src='/img/workshops/crono.webp'
               alt='Cronometrando'
               fill
+              sizes='(max-width: 768px) 100vw, 50vw'
               className='object-cover grayscale'
             />
           </div>
         </div>
-        {/* Text - centered on mobile, left-aligned on desktop */}
         <div className='w-full flex flex-col items-center'>
           <div className='w-full md:w-auto'>
             <h3 className='text-primary text-[1.5rem] md:text-[2rem] font-extrabold leading-tight mb-4 text-center md:text-left'>

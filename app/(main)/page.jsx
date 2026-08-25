@@ -8,7 +8,7 @@ import WorkshopsSection from '@/components/workshopComponents/workshopsSection'
 
 export default function Home() {
   return (
-    <section className='relative flex flex-col w-full'>
+    <section id='main-content' className='relative flex flex-col w-full'>
       <Presentation />
       <Services />
       <Plans />

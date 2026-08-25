@@ -11,7 +11,6 @@ export default function RootLayout({ children }) {
       <section className='w-full flex flex-col items-start gap-5 md:px-0'>
         {children}
       </section>
-      {/* <CookiesMessage /> */}
       <ContactMeFixed />
       <ScrollToTop />
       <Contact />
