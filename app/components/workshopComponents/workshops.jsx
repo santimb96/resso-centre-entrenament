@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Suspense } from 'react'
 import { ArrowDown, ArrowRight, ExternalLink } from '../icons'
-import Slider from '../slider'
 import Workshop from './workshop'
 
 async function WorkshopsList (){
@@ -74,13 +73,6 @@ async function WorkshopsList (){
 
   return (
     <div className='w-full flex flex-col justify-start items-start gap-5'>
-      <div className='sliderWrapper'>
-        <Slider>
-          {data.map((workshop, index) => (
-            <Workshop key={index} {...workshop} />
-          ))}
-        </Slider>
-      </div>
       <div className='w-full workshopList md:grid md:grid-cols-2 xl:grid-cols-3 items-center gap-2.5'>
         {data.map((workshop, index) => (
           <Workshop key={index} {...workshop} />

@@ -1,8 +1,14 @@
+import bundleAnalyzer from '@next/bundle-analyzer'
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+})
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: false,
   experimental: {
-    optimizePackageImports: ['react-icons', 'keen-slider'],
+    optimizePackageImports: ['react-icons/fa', 'react-icons/fa6', 'react-icons/rx', 'react-icons/io', 'react-icons/io5', 'react-icons/lu', 'react-icons/md', 'react-icons/pi', 'react-icons/ri', 'react-icons/tb', 'react-icons/bi'],
   },
   async redirects() {
     return [
@@ -46,4 +52,4 @@ const nextConfig = {
 }
 
 
-export default nextConfig
+export default withBundleAnalyzer(nextConfig)

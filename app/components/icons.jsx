@@ -1,8 +1,7 @@
 import { BiCopy } from 'react-icons/bi'
-import { BsTelephone } from 'react-icons/bs'
 import { FaGithub, FaInstagram, FaRegBell, FaRegCalendar, FaRegClock, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { FaArrowDown, FaArrowRight, FaArrowUp, FaCheck, FaSquareFacebook } from 'react-icons/fa6'
-import { IoMdCheckmarkCircle, IoMdCloseCircle } from 'react-icons/io'
+import { IoMdCheckmarkCircle } from 'react-icons/io'
 import { IoBagCheckOutline, IoCloseOutline } from 'react-icons/io5'
 import { LuCircleCheckBig, LuGoal, LuMapPin, LuMouse } from 'react-icons/lu'
 import { MdOutlineCookie, MdOutlineEmail } from 'react-icons/md'
@@ -32,10 +31,6 @@ export function ArrowRight ({size = 24}) {
   return <FaArrowRight size={size} />
 }
 
-export function ArrowRightHamMenu ({size = 24}) {
-  return <FaArrowRight size={size} />
-}
-
 export function Location ({size = 24}) {
   return <LuMapPin size={size} />
 }
@@ -54,10 +49,6 @@ export function CaretDown ({size = 24}) {
 
 export function CheckCircle ({size = 24}) {
   return <IoMdCheckmarkCircle size={size} />
-}
-
-export function CloseCircle ({size = 24}) {
-  return <IoMdCloseCircle size={size} />
 }
 
 export function Instagram ({size = 24}) {
@@ -82,10 +73,6 @@ export function Tiktok ({size = 24}) {
 
 export function Clock ({size = 24}) {
   return <FaRegClock size={size} />
-}
-
-export function Tlf ({size = 24}) {
-  return <BsTelephone size={size} />
 }
 
 export function Whatsapp ({size = 24}) {
