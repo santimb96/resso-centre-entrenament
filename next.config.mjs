@@ -7,6 +7,9 @@ const withBundleAnalyzer = bundleAnalyzer({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: false,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
   experimental: {
     optimizePackageImports: ['react-icons/fa', 'react-icons/fa6', 'react-icons/rx', 'react-icons/io', 'react-icons/io5', 'react-icons/lu', 'react-icons/md', 'react-icons/pi', 'react-icons/ri', 'react-icons/tb', 'react-icons/bi'],
   },
