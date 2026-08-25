@@ -69,10 +69,32 @@ export const jsonLD = {
   'sameAs': [
     'https://www.instagram.com/resso_ct/'
   ],
-  'areaServed': {
-    '@type': 'City',
-    'name': 'Pont d\'Inca'
-  },
+  'areaServed': [
+    {
+      '@type': 'City',
+      'name': 'Pont d\'Inca'
+    },
+    {
+      '@type': 'City',
+      'name': 'Pont d\'Inca Nou'
+    },
+    {
+      '@type': 'City',
+      'name': 'Marratxí'
+    },
+    {
+      '@type': 'Place',
+      'name': 'Festival Park'
+    },
+    {
+      '@type': 'City',
+      'name': 'Palma de Mallorca'
+    },
+    {
+      '@type': 'City',
+      'name': 'Bunyola'
+    }
+  ],
   'employee': [
     {
       '@type': 'Person',
@@ -80,6 +102,69 @@ export const jsonLD = {
       'jobTitle': 'Entrenador Personal',
       'description': 'Entrenador personal con experiencia en entrenamiento funcional',
       'sameAs': ['https://www.instagram.com/resso_ct/']
+    }
+  ],
+}
+
+export const jsonLDFAQ = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    {
+      '@type': 'Question',
+      'name': '¿Dónde está ubicado el centro de entrenamiento?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Ressò Centre d\'Entrenament está ubicado en Avinguda d\'Antoni Maura, 69, Pont d\'Inca, Mallorca (07141). Fácil acceso desde Palma, Marratxí y alrededores.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': '¿Qué planes de entrenamiento ofrecen?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Ofrecemos tres planes: Iniciación (90€/mes, 2 entrenos semanales), Avanzado (100€/mes, 3 entrenos semanales) y Élite (140€/mes, 5 entrenos semanales). Todos incluyen acceso a workshops mensuales, entrevista y valoración inicial, y valoración nutricional.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': '¿Los entrenos son individuales o en grupo?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Trabajamos con grupos reducidos de máximo 4 personas para garantizar una supervisión constante y un plan personalizado adaptado a tus objetivos.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': '¿Ofrecen servicios de nutrición y fisioterapia?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Sí, contamos con un equipo compuesto por un nutricionista y un fisioterapeuta para ayudarte a alcanzar tus metas de forma integral.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': '¿Tienen horarios de mañana y tarde?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Sí, ofrecemos sesiones de lunes a viernes de 08:00 a 12:00 y de 16:00 a 20:00. Los sábados de 09:00 a 13:00 con simulacros y talleres. Domingos cerrado.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': '¿Qué son los workshops de los sábados?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Los sábados organizamos simulacros de carrera y competiciones para medir tu progreso, además de talleres prácticos con profesionales de la salud y el entrenamiento.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': '¿Necesito experiencia previa para entrenar en Ressò?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'No, ofrecemos una evaluación inicial para determinar tu nivel de condición física y establecer objetivos claros y alcanzables, tanto si eres principiante como si tienes experiencia.'
+      }
     }
   ],
 }
@@ -113,6 +198,19 @@ export const metadata = {
     'rendimiento deportivo',
     'readaptación',
     'recuperación deportiva',
+    'entrenador personal cerca de mí',
+    'gimnasio con nutricionista Mallorca',
+    'entrenamiento en grupo reducido',
+    'planes entrenamiento personalizados',
+    'entrenamiento funcional Mallorca',
+    'gimnasio Marratxí',
+    'entrenador personal Palma',
+    'gimnasio cerca de Festival Park',
+    'entrenamiento Pont d\'Inca Nou',
+    'centro entrenamiento Bunyola',
+    'evaluación física gratuita Mallorca',
+    'entrenamiento grupos pequeños',
+    'preparación física deportiva',
   ],
   authors: [{ name: 'Ressò - Centre d\'entrenament', url: 'https://ressocentre.es' }],
   creator: 'Ressò - Centre d\'entrenament',
@@ -192,6 +290,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLDFAQ) }}
         />
       </body>
     </html>
