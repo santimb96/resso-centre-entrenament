@@ -243,14 +243,6 @@ section[id] {
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%)
 }
 
-.scrollToTopActive {
-	opacity: 1 !important;
-}
-
-.goToPlansVisible {
-	opacity: 1 !important;
-}
-
 .rowNav {
   display: none;
 }

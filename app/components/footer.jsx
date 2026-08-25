@@ -34,7 +34,7 @@ export default function Footer() {
         <div className={`${workSans.className} flex flex-col justify-center items-center lg:items-start gap-2.5 mt-5`}>
           <h4 className='text-accent text-[1.5rem]'>Secciones</h4>
           {MENU.map((menuItem, index) => (
-            <Link aria-label={menuItem.name} className='hover:text-accent duration-150 ease-in-out' key={index + menuItem.name} href={`/${menuItem.href}`}>
+            <Link aria-label={menuItem.name} className='hover:text-accent duration-150 ease-in-out' key={index + menuItem.name} href={`/${menuItem.href}`} prefetch={false}>
               <span>{menuItem.name}</span>
             </Link>
           ))}

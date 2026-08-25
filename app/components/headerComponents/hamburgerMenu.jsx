@@ -51,6 +51,7 @@ export default function HamburgerMenu () {
               onClick={handleMenu}
               key={index + menuItem.name}
               href={pathname !== '/' ? `/${menuItem.href}` : menuItem.href}
+              prefetch={false}
             >
               <span>{menuItem.name}</span>
             </Link>

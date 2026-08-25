@@ -48,6 +48,7 @@ export default function RowMenu() {
               key={`menu-${index}`}
               title={`Ir a la sección ${menuItem.name}`}
               href={pathname !== '/' ? `/${menuItem.href}` : menuItem.href}
+              prefetch={isActive}
               className={`text-sm font-bold hover:text-accent duration-150 ease-in-out ${isActive ? 'text-accent' : ''}`}
             >
               {menuItem.name}
