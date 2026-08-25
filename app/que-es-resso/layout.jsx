@@ -3,9 +3,16 @@ import ScrollToTop from '@/components/scrollToTop'
 import { notoSans } from '../lib/fonts'
 
 export const metadata = {
-  title: {
-    default: '¿Qué es Ressò?'
-  },
+  title: 'Sobre Ressò - Centro de Entrenamiento en Pont d\'Inca, Mallorca',
+  description: 'Conoce Ressò, centro de entrenamiento personal en Pont d\'Inca, Mallorca. Nuestra filosofía, equipo de entrenadores certificados y enfoque personalizado para alcanzar tus objetivos.',
+  keywords: [
+    'sobre Ressò',
+    'centro entrenamiento Pont d\'Inca',
+    'equipo entrenadores Mallorca',
+    'filosofía entrenamiento',
+    'entrenadores certificados Mallorca',
+    'gimnasio Pont d\'Inca historia',
+  ],
 }
 
 export default function AboutUsLayout({ children }){

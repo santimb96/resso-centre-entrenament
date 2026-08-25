@@ -37,9 +37,9 @@ function Pack ({pack}) {
       </div>
       <div className={`flex justify-start items-end gap-2.5 ${premium && 'text-primary!'} ${popular ? 'text-accent' : 'text-secondary'}`}>
         <div className='flex justify-start items-end'>
-          <h2 className={`text-6xl ${workSans.className} font-extrabold`}>
+          <div className={`text-6xl ${workSans.className} font-extrabold`} aria-hidden='true'>
             {price}
-          </h2>
+          </div>
           <span className='text-3xl font-bold pb-[8.5px]'>€</span>
         </div>
         <div className='flex flex-col justify-end items-start gap-0.5'>

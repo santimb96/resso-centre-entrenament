@@ -5,9 +5,17 @@ import ScrollToTop from '@/components/scrollToTop'
 import { notoSans } from '../lib/fonts'
 
 export const metadata = {
-  title: {
-    default: 'Workshops',
-  },
+  title: 'Talleres de Fitness y Entrenamiento Funcional en Mallorca | Workshops Ressò',
+  description: 'Talleres prácticos de fitness y entrenamiento funcional en Mallorca. Simulacros de carrera, charlas con profesionales y entrenamientos especializados. ¡Reserva tu plaza!',
+  keywords: [
+    'talleres fitness Mallorca',
+    'workshops entrenamiento',
+    'entrenamiento funcional talleres',
+    'simulacros carrera Mallorca',
+    'charlas fitness',
+    'formación deportiva Mallorca',
+    'eventos fitness Palma',
+  ],
 }
 
 export default function WorkshopLayout({ children }) {

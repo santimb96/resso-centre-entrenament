@@ -247,7 +247,6 @@ section[id] {
   display: none;
 }
 
-/* MARQUEE (replaces @devnomic/marquee) */
 .marquee-container {
   position: relative;
   overflow: hidden;

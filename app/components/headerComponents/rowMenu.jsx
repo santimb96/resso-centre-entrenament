@@ -12,16 +12,17 @@ export default function RowMenu() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY
+      const scrollPosition = window.scrollY + 100
       let currentSection = ''
 
       for (const sectionId of sectionsIds) {
         const section = document.getElementById(sectionId)
         if (section) {
-          const offsetTop = section.offsetTop
-          const sectionHeight = section.offsetHeight
+          const rect = section.getBoundingClientRect()
+          const sectionTop = rect.top + window.scrollY
+          const sectionBottom = sectionTop + rect.height
 
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + sectionHeight) {
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
             currentSection = sectionId
           }
         }
